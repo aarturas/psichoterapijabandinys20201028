@@ -1,0 +1,1197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================================================================= */
+/*                                  HTML                                   */
+/* ======================================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================================================================= */
+/*                                  BODY                                   */
+/* ======================================================================= */
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* ======================================================================= */
+/*                               CONTAINER                                 */
+/* ======================================================================= */
+
+.container  {
+
+  max-width: 1440px;
+  border: 1px solid  rgb(177, 175, 175, 0.5) ;
+  margin: auto;
+
+}
+
+/* ======================================================== */
+/*                 Idesime HEADERiui stiliu                 */
+/* ======================================================== */
+
+header {
+
+  /* visa NAV "persoks" i virsu */
+  display: flex;
+  /* pastumsime logo i kaire puse */
+  justify-content: space-between;
+  /* sucentruosime NAV vertikaliai i centra */
+  align-items: center;
+  /* atitrauksime nuo virsaus truputi */
+  /* margin-top: 10px; */
+  /* position: fixed; */
+  /* position: sticky; */
+  z-index: 100;
+  background-color: rgb(255,255,255,1);
+  border-bottom: 1px solid rgba(77, 77, 78, 0.2);
+  /*  Pameginsiu nustatyti NAV dalies auksti:   */
+  height: 7.7em;
+    /* max-width: 1440px; */
+    /* margin-right: 0; */
+
+    position: relative;
+
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*          Viršutinė NAV juosta padarome nejudančia       */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+header nav {
+   
+   position: sticky;
+   top: 0;
+}
+
+/* ======================================================================= */
+/*                      Bandau padaryti FLEX'a                             */
+/* ======================================================================= */
+
+.section {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.s3 {
+
+    background-color: rgb(255,255,255,1);
+    height: calc(100vh - 8rem);
+    width: 100%;
+}
+
+
+/* =============================================================== */
+/*                     Sekcijos H - 1 raidžių dydis:               */
+/* =============================================================== */
+
+/* ---------------------------------------------------- */
+/*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
+/* ---------------------------------------------------- */
+
+.s3 h1 {
+
+    position: relative;
+    top: 31%;
+    left: -5.7%;
+    transform: translate(12%,-100%);
+    color: #034958;
+    text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+    font-weight: 400;
+    font-size: 3em;
+}
+
+
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+/*   "KALBA" pasirinkimas - DIV'as /  Nustatome rėmelio dydį ir vietą:   */
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+.s3 .kalba {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 4em;
+    padding: 0.1rem 0.55rem ;
+    width: 4.4rem;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    cursor: pointer;
+    margin-top: 10.25em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
+/*        Nuotrauka   /    Nustatome pačios nuotraukos dydį:       */
+/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
+
+ .kalba img {
+
+    width: 20px;
+    height: 13px;
+    object-fit: cover;
+}
+
+/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+/*          Nuotrauka "Paslaugos" skyrelyje         */
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+ .pagalbinis {
+
+    float: right;
+    margin-top: 18.6rem;
+    margin-right: -3.1%;
+    height: 395px;
+    width: 505px;
+    object-fit: cover;
+}
+
+/* ================================================== */
+/*                       H - 2                        */
+/* ================================================== */
+
+h2 {
+
+    color: #050620;
+    text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+    font-weight: 400;
+    margin: 1em 2em;
+    padding: 0 3em;
+}
+
+/* ================================================== */
+/*                    /    P   /                      */
+/* ================================================== */
+
+p {
+
+    font-weight: 100;
+    top: 20em;
+}
+
+/* ======================================================================= */
+/*                            Aprašymas teksto                             */
+/* ======================================================================= */
+
+.description {
+
+    margin-top: -9%;
+}
+
+.description p {
+
+    margin: 50px 50px;
+}
+
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+/*           Tekstas "Paslaugos" skyrelyje          */
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+.description h4 {
+
+   color: #034958;
+   display: flex;
+   /* width: 48%; */
+   font-size: 1.45rem;
+   /* font-size: 1.58em; */
+   font-weight: 400;
+   /* margin-left: 0.3em; */
+       margin-left: 3.9em;
+   line-height: 1.34;
+   /* margin-top: -2rem; */
+   margin-top: 14.3rem;
+}
+
+/* -------------------------------------------------------------- */
+/*         Pirma teksto eilute po "Paslaugos" uzraso:             */
+/* -------------------------------------------------------------- */
+
+/* .description h4:nth-of-type(1) {
+  margin-top: 25.8%;
+} */
+
+/* -------------------------------------------------------------- */
+/*         Antra teksto eilute po "Paslaugos" uzraso:             */
+/* -------------------------------------------------------------- */
+
+.description h4:nth-of-type(2) {
+
+  margin-top: 2.2%;
+}
+
+/* -------------------------------------------------------------- */
+/*         Trecia teksto eilute po "Paslaugos" uzraso:            */
+/* -------------------------------------------------------------- */
+
+.description h4:nth-of-type(3) {
+
+  margin-top: 2.2%;
+}
+
+/* -------------------------------------------------------------- */
+/*         Ketvirta teksto eilute po "Paslaugos" uzraso:          */
+/* -------------------------------------------------------------- */
+
+.description h4:nth-of-type(4) {
+
+  margin-top: 2.2%;
+  margin-right: 20rem;
+  width: 40rem;
+}
+
+/* -------------------------------------------------------------- */
+/*      " Nelikite vienas su savo problema, mes esame tam, "      */
+/* -------------------------------------------------------------- */
+
+.description h4:nth-of-type(5) {
+
+  margin-top: 2.2%;
+}
+
+/* -------------------------------------------------------------- */
+/*             " Užtikriname konfidencialumą. "            */
+/* -------------------------------------------------------------- */
+
+.description h4:nth-of-type(6) {
+
+  /* margin-top: 2%; */
+  margin-top: 4.2%;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+.melynas {
+
+    padding: 0.5em 0.8em;
+    border-radius: 27px;
+    background-color: #236389;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-right: 42px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ====================================================== */
+/*                Mygtukas-Button: "Plačiau"              */
+/* ====================================================== */
+
+.button .placiau {
+
+    position: relative;
+    background: #0a667e;
+    display: flex;
+    padding: 0.49em 0.8em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: 600;
+    margin: auto;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ======================================================== */
+/*           P, LI, A + MED __ BUTTON                       */
+/* ======================================================== */
+
+p,
+li,
+a  {
+
+    font-size: 1.23em;
+    color: rgba(77, 77, 78, 0.9);
+    text-decoration: none;
+}
+
+/* ======================================================== */
+/*               Pridesime  UL stiliu                       */
+/* ======================================================== */
+
+.hero {
+
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ======================================================== */
+/*   Dabar HEADERi, idesime nuotrauka su SUDO elementu      */
+/* ======================================================== */
+
+.hero:before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* su minuso zenklu, kad IMG butu "zemiau" visu sluoksniu */
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* galime naudoti FILTER, kad pakoreguoti stiliu */
+    filter: blur(10px);
+    /* dar daugiau BLUR stiliaus? */
+    transform: scale(1.2);
+}
+
+
+
+/* ======================================================== */
+/*                      HAMBURGERIO MENU                    */
+/* ======================================================== */
+
+.mobile__menu {
+
+  display: none;
+}
+
+/* ======================================================== */
+/*                          LOGO                            */
+/* ======================================================== */
+
+.logo {
+
+    cursor: pointer;
+    margin-left: 3em;
+    max-height: 5.1em;
+    left: 79px;
+    top: 18.89px;
+}
+
+/* ======================================================== */
+/*          NAV __ LINKS ( visu nuorodu blokas )            */
+/* ======================================================== */
+
+.nav__links {
+
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+
+}
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    */
+/* ======================================================== */
+
+.nav__links li {
+
+  /* inline-block bus vienoje eiluteje, vienas salia kito */
+  display: inline-block;
+  padding: 0 30px;
+}
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI  A: ( Paciu nuorodu aprasymas  )    */
+/* ======================================================== */
+
+.nav__links li a {
+
+    transition: all 0.4s ease 0s;
+}
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI  A:HOVER   ( parinksime spalva )    */
+/* ======================================================== */
+
+.nav__links li a:hover {
+
+    color: #089714;
+}
+
+/* KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK */
+
+/* ======================================================== */
+/*      HAMBURGER menu  /     paslepsime is pradziu         */
+/* ======================================================== */
+
+.mobile__menu {
+
+    display: none;
+}
+
+/* ======================================================== */
+/*      HAMBURGER menu  /     nustatysime pozicija          */
+/* ======================================================== */
+
+.hamburger {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 14px;
+    right: 10%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER menu DIV  /    Bus tris bruksneliai       */
+/* ======================================================== */
+
+.hamburger div {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #0a667e;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*   /  TOGGLE  /  Paprastai nesimato, tik mazinant ekrana  */
+/* ======================================================== */
+
+#toggle {
+  display: none;
+}
+
+/* ======================================================== */
+/*   Naudosime SUDO klase, kaip "checkbox'e". Kur galima  */
+/* pazymeti arba nezymeti langeli. Ir naudosime Json Selector  */
+/* paspaudus HAMBURGER'i, bruksneliai pasisuks 45 laipsniais */
+/*  Is HTML kodo, TOGGLE INPUT'e, "paziuresime" ( checkbox )  */
+/*  ir CSS kode, irasysime (toggle:checked su + ir ka reikia */
+/*  patikrinti, bus (hamburger klases CHILD (hamburger__top) */
+/*  ir ta elementa transformuos, pasuks 45 laipsniu kampu */
+/* ======================================================== */
+
+#toggle:checked + .hamburger .hamburger__top {
+  transform: rotate(-45deg);
+  margin-top: 17.5px; /* Half the size of hamburger height */
+}
+
+#toggle:checked + .hamburger .hamburger__meat {
+  transform: rotate(45deg);
+  margin-top: -3px; /* Negative value of hamburger div height */
+}
+
+/* kad pranyktu bruksnelis, nustatome nuli */
+#toggle:checked + .hamburger .hamburger__bottom {
+  transform: scale(0);
+}
+
+#toggle:checked + .hamburger + .hamburger__nav {
+  top: 0;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER __ NAV  /    Visas hamburgerio langas     */
+/* ======================================================== */
+
+.hamburger__nav {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: #050620;
+  /*  Paspaudus "hamburgeri", nustumsime fona i virsu */
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  WRAPPER  /                */
+/* ======================================================== */
+
+.hamburger__nav .hamburger__nav--wrapper {
+  position: relative;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER __ NAV  ITEMS  /  Tvarkysime vidines      */
+/*  "hamburgerio" tekstus ir nuorodas                       */
+/* ======================================================== */
+
+.hamburger__nav--items {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS nuorodos  /         */
+/* ======================================================== */
+
+.hamburger__nav--items a {
+  margin-top: 40px;
+  color: #0c7e9b;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 2em;
+  transition: all 0.3s ease 0s;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/* ======================================================== */
+
+.hamburger__nav--items a:first-child {
+  margin-top: 0;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/*     Su OPACITY, matysime MOB skyriuje nuorodas           */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a {
+  opacity: 1;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/*    viduje MOB menu, nuorodos keis spalva uzvedus pele    */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a:hover {
+  opacity: 1;
+  color: #e74d71;
+}
+
+/* ---------------------------------------------------------------------------- */
+/*     /  Cia nesuprantu ka darome ...  /  Atrodo bus linija po uzrasu  /       */
+/* ---------------------------------------------------------------------------- */
+
+body > p:first-of-type::after {
+
+   content: '';
+   display: block;
+   position: absolute;
+   margin: 1em 0;
+   height: 2px;
+   width: 100%;
+   background: red;
+}
+
+/* *************************************************************** */
+/*                     ACTIVE klases aprasymas                     */
+/* *************************************************************** */
+
+.active {
+  color: red;
+}
+
+/* ================================================== */
+/*                      .FOOTER                       */
+/* ================================================== */
+
+footer {
+  background-color: rgb(255,255,255,1);
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ================================================== */
+/*                 .FOOTER - DISTRIBUTED              */
+/* ================================================== */
+
+.footer-visas{
+
+	box-sizing: border-box;
+	width: 100%;
+    /* padding: 8px 0 30px 0; */
+    padding: 1rem;
+    text-align: center;
+    max-height: 120px;
+    border: 1px solid rgba(77,77,78,0.2);
+    /*   Truputi pakoreguojame FOOTERio vieta apacioje: */
+    bottom: -3%;
+}
+
+.footer-visas .footer-left,
+.footer-visas .footer-center,
+.footer-visas .footer-right,
+.footer-side {
+
+   display: inline-block;
+   vertical-align: top;
+   border: 1px solid rgba(77, 77, 78, 0.2);
+}
+
+/* ================================================== */
+/*                  Footer links                      */
+/* ================================================== */
+
+ .footer-links {
+
+    color: #2c292f;
+	margin: 20px 0 12px;
+}
+
+/* ================================================== */
+/*                    .footer-links  A                */
+/* ================================================== */
+
+ .footer-links a {
+
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
+/* ================================================== */
+
+ .footer-icons {
+
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* ================================================== */
+/*   .footer-icons A /  Aprašymas SOC. įkonėlių:      */
+/* ================================================== */
+
+ .footer-icons a {
+
+    display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #236389;
+	border-radius: 3px;
+	font-size: 20px;
+    color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+    margin: 0 0.3em;
+}
+
+/* ================================================== */
+/*                      FOOTER                        */
+/* ================================================== */
+
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+footer {
+    
+    position: absolute;
+    display: flex;
+    bottom: -25em;
+    bottom: 1em;
+    height: 7.7em;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1440px;
+
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    border-top: none;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* --------------------------------------------- */
+/*        FOOTER - PIRMAS langelis kaireje       */
+/* --------------------------------------------- */
+
+.footer-pirmas {
+
+    width: 17%;
+    height: 68px;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    border-right: none;
+    margin-left: 4em;
+}
+
+/* --------------------------------------------- */
+/*    FOOTER - ANTRAS lanlelis : VsI Ulonu ...   */
+/* --------------------------------------------- */
+
+.footer-antras {
+
+    width: 26%;
+    height: 68px;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    border-right: none;
+    padding-top: 1.3rem;
+}
+
+/* --------------------------------------------- */
+/*     Trecias FOOTER- TRECIAS: Darbo laikas ..  */
+/* --------------------------------------------- */
+
+.footer-trecias {
+
+    width: 22%;
+    height: 68px;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    border-right: none;
+    padding-top: 0.6rem;
+
+}
+
+/* --------------------------------------------- */
+/*    Ketvirtas: FOOTER - KETVIRTAS: email'as    */
+/* --------------------------------------------- */
+
+.footer-ketvirtas {
+
+    width: 24%;
+    height: 68px;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    padding-top: 0.7rem;
+
+}
+
+/* ================================================== */
+/*                      footer P                      */
+/* ================================================== */
+
+footer p {
+
+    color: #050620;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*             @ MEDIA QUERIES :       ( 1400 PX )         */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+@media screen and (max-width: 1400px) {
+
+    .nav__links li {
+
+        padding: 0 1rem;
+    }
+
+    /* -------------------------------------------- */
+    /*            Tekstas po "Paslaugos"            */
+    /* -------------------------------------------- */
+
+    .description h4 {
+
+        font-size: 1.2rem;
+    }
+
+    /* ------------------------------------------------------- */
+    /*       Ketvirta teksto eilute po "Paslaugos" uzraso:     */
+    /* ------------------------------------------------------- */
+
+    .description h4:nth-of-type(4) {
+
+        width: 30rem;
+    }
+        
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*             @ MEDIA QUERIES :       ( 1230 PX )         */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+@media screen and (max-width: 1230px) {
+
+    .nav__links li {
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .melynas {
+
+        margin-right: 0.5rem;
+    }
+
+    /* --------------------------- */
+    /*   NAV nuorodu teksto dydis  */
+    /* --------------------------- */
+
+    p {
+
+        font-size: 1rem;
+    }
+
+    /* ---------------------------------------------------- */
+    /*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
+    /* ---------------------------------------------------- */
+
+    img.pagalbinis {
+
+        height: 300px;
+        width: 400px;
+    }
+
+    /* ---------------------------------------------------- */
+
+    h4:nth-of-type(4) {
+
+        width: 20rem;
+        width: auto;
+    }
+
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*             @ MEDIA QUERIES :       ( 1080 PX )         */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+@media screen and (max-width: 1080px) {
+
+    /* --------------------------------------------------- */
+    /*  Aktyvuojame-parodome HAMBURGERIO menu bruksnelius  */
+    /* --------------------------------------------------- */
+
+    .mobile__menu {
+
+        display: inherit;
+    }
+
+    /* ---------------------------------------------------- */
+    /*     NAV juosta su nuorodomis/linkais paslepiame      */
+    /* ---------------------------------------------------- */
+
+    .nav__links {
+
+        display: none;
+    }
+
+    /* ---------------------------------------------------- */
+    /*        FOOTER'io juosta taip pat paslepiame          */
+    /* ---------------------------------------------------- */
+
+    footer {
+
+        display: none;
+    }
+
+    /* ------------------------------------------------------- */
+    /*      Ketvirta teksto eilute po "Paslaugos" uzraso:      */
+    /* ------------------------------------------------------- */
+
+    .description h4:nth-of-type(4) {
+
+        width: 20rem;
+    }
+
+    /* ---------------------------------------------------- */
+    /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
+    /* ---------------------------------------------------- */
+
+    .s3 h1 {
+        margin-top: -2rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*               @ MEDIA QUERIES:  980 PX             */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width: 980px) {
+
+	.footer-visas .footer-left,
+	.footer-visas .footer-center,
+    .footer-visas .footer-right,
+    .footer-side {
+
+        display: none;
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid red;
+	}
+
+	 .footer-center i {
+
+        margin-left: 0;
+        padding: 0;
+    }
+  
+    .section .s1 h2 {
+
+        display: inline;
+        margin: 0 0.5em ;
+        padding: 0;
+    }
+
+    /* ---------------------------------------------------- */
+    /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
+    /* ---------------------------------------------------- */
+
+    .s3 h1 {
+
+        /* margin-top: -50%; */
+        margin-top: -110%;
+
+    }
+
+    /* ---------------------------------------------------- */
+    /*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
+    /* ---------------------------------------------------- */
+
+      img.pagalbinis {
+
+        height: 500px;
+        width: 300px;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .s3 .kalba {
+
+        margin-top: 8em;
+    }
+
+    /* ---------------------------------------------------- */
+
+      /* ---------------------------------------------------- */
+    /*    "Asmeninė terapija, porų terapija, grupinė .."    */
+    /* ---------------------------------------------------- */
+
+    .s3 .description h4 {
+
+        margin-top: 80%;
+    }
+
+    /* ---------------------------------------------------- */
+  
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ======================================================== */
+/*      MEDIA QUERIES :        iki 860 px                   */
+/* ======================================================== */
+
+/* @media screen and (max-width: 860px) {
+
+  .mobile__menu {
+    display: inherit;
+  }
+
+  .nav__links {
+    display: none;
+  }
+} */
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*               @ MEDIA QUERIES:  800 PX             */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width:800px) {
+        
+    /* header {
+    padding-top:40px;
+    } */
+
+    /* ---------------------------------------------------- */
+    /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
+    /* ---------------------------------------------------- */
+
+    .s3 h1 {
+
+        /* margin-top: -3rem; */
+        /* margin-top: -53rem; */
+        margin-top: -110%;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .s3 .description h4 {
+
+        margin-top: 80%;
+    }
+
+    /* ---------------------------------------------------- */
+
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* =========================================================== */
+/*                Media queries : 400 px                       */
+/* =========================================================== */
+
+@media (max-width: 400px) {
+   
+    header ul {
+
+         /* position: sticky;  */
+        top: 0;
+    }
+
+    /* ******************************************* */
+    /*        BACKGROUND - IMAGE   ( 400 px  )     */
+    /* ******************************************* */
+
+    background-image {
+
+        width: 30%;
+    }
+
+    /* ******************************************* */
+    /*      Gerai neprisimenu kas ka cia daro?     */
+    /* ******************************************* */
+
+    .fp-tableCell {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ********************************************* */
+    /*   DESCRIPTION P / teksto aprašymas / Bendras: */
+    /* ********************************************* */
+
+    .description p {
+
+        font-size: 1.2em;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    /* ---------------------------------------------------- */
+    /*   Pagrindinis:  " PASLAUGOS " h1 uzrasas ( 400 px )  */
+    /* ---------------------------------------------------- */
+
+    .s3 h1 {
+
+        justify-content: center;
+        font-size: 3.1em;
+        font-weight: 500;
+        text-align: center;
+        top: 18%;
+    }
+
+    /* ---------------------------------------------------- */
+    /*    "Asmeninė terapija, porų terapija, grupinė .."    */
+    /* ---------------------------------------------------- */
+
+    .s3 .description p:nth-child(2) {
+
+        padding: 1em 0 0 0;
+        background: #c5fac0;
+        margin: 4em 0 0 1em;
+    }
+
+    /* ---------------------------------------------------- */
+    /*     " Konsultuojame suaugusiuosius, paauglius. "     */
+    /* ---------------------------------------------------- */
+
+    .s3 .description p:nth-child(3) {
+
+        background: #dbf7e2;
+        margin: 1.3em 0 0 1em;
+    }
+
+    /* ---------------------------------------------------- */
+    /*   " Esant būtinybei rekomenduojame gydytojo - .. "   */
+    /* ---------------------------------------------------- */
+
+    .s3 .description p:nth-child(4) {
+        
+        background: #f3f5da;
+        margin: 1.3em 0 0 1em;
+    }
+
+    /* ******************************************* */
+
+    span {
+
+        display: none;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .s3 .kalba {
+
+        margin-top: 3em;
+        margin-right: 2rem;
+    }
+
+     /* ---------------------------------------------------- */
+    /*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
+    /* ---------------------------------------------------- */
+
+      img.pagalbinis {
+
+        height: 400px;
+        width: 350px;
+        margin-top: 22%;
+        margin-right: 3%;
+    }
+    
+    /* ---------------------------------------------------- */
+
+    .description h4 {
+
+        margin-top: 155%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+}

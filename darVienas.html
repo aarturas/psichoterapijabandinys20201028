@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME CDN: "https://www.bootstrapcdn.com/fontawesome/" -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="darVienas.css">
+   <title>Dar vienas responsive bandymas</title>
+</head>
+
+
+<body>
+    <header>
+
+        <a href="#" class="logo">
+            <img src="img/UPC5 antra.png" alt="logotipas">
+        </a>
+
+        <!--  Turime nustatyti "onclick", kad galetume per JS valdyti:  -->
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+            <ul class="menu">
+                <li><a href="#home"onclick="toggleMenu();" >Pirmas</a></li>
+                <li><a href="#about" onclick="toggleMenu();">Antras</a></li>
+                <li><a href="#services" onclick="toggleMenu();">Trecias</a></li>
+                <li><a href="#work" onclick="toggleMenu();">Ketvirtas</a></li>
+                <li><a href="#testimonial" onclick="toggleMenu();">Penktas</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">E-psichoterapija</a></li>
+            </ul>
+
+    </header>
+
+    <!-- =================================================== -->
+    <!--       Pirma SECTION :      / BANNER /               -->
+    <!-- =================================================== -->
+
+    <section class="banner" id="home">
+
+        <div class="textBx">
+            <!-- <h2>VšĮ<br><span>Ulonu psichoterapijos</span>centras</h2> -->
+            <h2>VšĮ Ulonu psichoterapijos centras</h2>
+
+            <!-- <h3>Pirmojo langelio tekstas - h3</h3> -->
+            <a href="#about" class="btn">Placiau</a>
+            
+        </div>  <!--  .text Bx : == pabaiga. -->
+
+    </section>  <!--  .banner : == pabaiga. -->
+
+    <!-- =================================================== -->
+    <!--          Antra SECTION :      /  ABOUT  /           -->
+    <!-- =================================================== -->
+
+    <section class="about">
+
+        <div class="heading">
+            <h2>Heading SECTION - h2</h2>
+        </div>  <!--  .heading : == pabaiga. -->
+
+        <div class="content" id="about">
+            <div class="contentBx w50">
+                <h3>Antros SECTION tekstas</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic exercitationem voluptate. Repudiandae qui porro debitis ea nesciunt aspernatur facilis impedit sed incidunt optio architecto est inventore fuga expedita dolor iure itaque et, accusantium atque?<br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente et iusto numquam vero aspernatur officia ex commodi harum similique!
+                </p>
+            </div>  <!--  .contentBx w50 : == pabaiga. -->
+
+            <div class="w50">
+                <img src="img/miestas vakareja 3.jpg" alt="miestas vakare" class="img">
+            </div>   <!--  .w 50 : == pabaiga. -->
+        </div>    <!--  .content : == pabaiga. -->
+
+    </section>   <!--  .about : == pabaiga. -->
+
+    <!-- ============================================================================= -->
+    <!--                      Trečia SECTION :      /  SERVICES  /                     -->
+    <!-- ============================================================================= -->
+
+    <section class="services" id="services">
+
+        <div class="heading white">
+            <h2>Trecios dalies HEADING h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et at nisi id  a
+            </p>
+        </div>  <!--  .heading : == pabaiga. -->
+
+        <!-- ........................................................................ -->
+        <!--              SVG logo nuotraukytes penkios CONTENT skyriuje              -->
+        <!-- ........................................................................ -->
+
+
+        <div class="content">
+
+            <!-- ........................................................................ -->
+            <!--                  Pirma SVG nuotrauka su pavadinimu ir tekstu             -->
+            <!-- ........................................................................ -->
+
+            <div class="servicesBx">
+                <img src="img/draugystė.svg" alt="mergaite ir suo">
+                <h2>Pirms SVG su tekstu</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo neque pariatur dolore vel, veritatis consequuntur perferendis, assumenda deleniti fugit quibusdam iste veniam in, autem quo nulla delectus earum!
+                </P>
+            </div>  <!-- .servicesBx : == pabaiga. -->
+
+            <!-- ........................................................................ -->
+            <!--                 Antra SVG nuotrauka su pavadinimu ir tekstu              -->
+            <!-- ........................................................................ -->
+
+            <div class="servicesBx">
+                <img src="img/debesuota.svg" alt="mergaite ir suo">
+                <h2>Antras SVG su tekstu</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo neque pariatur dolore vel, veritatis consequuntur perferendis, assumenda deleniti fugit quibusdam iste veniam in, autem quo nulla delectus earum!
+                </P>
+            </div>  <!-- .servicesBx : == pabaiga. -->
+
+            <!-- ........................................................................ -->
+            <!--                Trecia SVG nuotrauka su pavadinimu ir tekstu              -->
+            <!-- ........................................................................ -->
+
+            <div class="servicesBx">
+                <img src="img/kava.svg" alt="mergaite ir suo">
+                <h2>Trecias SVG su tekstu</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo neque pariatur dolore vel, veritatis consequuntur perferendis, assumenda deleniti fugit quibusdam iste veniam in, autem quo nulla delectus earum!
+                </P>
+            </div>  <!-- .servicesBx : == pabaiga. -->
+
+            <!-- ........................................................................ -->
+            <!--                Ketvirta SVG nuotrauka su pavadinimu ir tekstu            -->
+            <!-- ........................................................................ -->
+
+            <div class="servicesBx">
+                <img src="img/medis.svg" alt="mergaite ir suo">
+                <h2>Ketvirtas SVG su tekstu</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo neque pariatur dolore vel, veritatis consequuntur perferendis, assumenda deleniti fugit quibusdam iste veniam in, autem quo nulla delectus earum!
+                </P>
+            </div>  <!-- .servicesBx : == pabaiga. -->
+
+            <!-- ........................................................................ -->
+            <!--                 Penkta SVG nuotrauka su pavadinimu ir tekstu             -->
+            <!-- ........................................................................ -->
+
+            <div class="servicesBx">
+                <img src="img/miegantis-mėnulis.svg" alt="mergaite ir suo">
+                <h2>Penktas SVG su tekstu</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo neque pariatur dolore vel, veritatis consequuntur perferendis, assumenda deleniti fugit quibusdam iste veniam in, autem quo nulla delectus earum!
+                </P>
+            </div>  <!-- .servicesBx : == pabaiga. -->
+  
+        </div>  <!--  .content : == pabaiga. -->
+
+        <!-- ........................................................................ -->
+        <!-- ........................................................................ -->
+
+        
+    </section>  <!--  .services : == pabaiga. -->
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!--       Ketvirta dalis : WORK su keturiomis nuotraukelemis greta viena kitos       -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <section class="work" id="work">
+
+        <div class="heading">
+            <h2>Ketvirtos SECTION dalies HEADING h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et at nisi id  a
+            </p>
+        </div>  <!--  .heading : == pabaiga. -->
+
+        <div class="content">
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+            <div class="workBx">
+                <img src="img/mergaite_ir_suo 4.jpg" alt="mergaite ir suo">
+            </div>
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+            <div class="workBx">
+                <img src="img/peanuts.jpg" alt="riesutai">
+            </div>
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+            <div class="workBx">
+                <img src="img/pietus.jpg" alt="pietauja">
+            </div>
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+            <div class="workBx">
+                <img src="img/musliSuBanan.jpg" alt="bananai ir miusli">
+            </div>
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+        </div>  <!--  .content : == pabaiga. -->
+
+
+            <!-- ****************************************************************** -->
+            <!--               Dar pridesime Mygtuka / BUTTON'A                     -->
+            <!-- ****************************************************************** -->
+
+            <div class="heading">
+                <a href="#" class="btn">Dar kazkas</a>
+            </div>  <!--  .heading : == pabaiga. -->
+
+
+            <!-- ****************************************************************** -->
+            <!-- ****************************************************************** -->
+
+
+    </section>  <!--  .work : == pabaiga. -->
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!--                       Penkta dalis : TESTIMONIAL                                 -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <section class="testimonial" id="testimonial">
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+        <div class="heading">
+            <h2>Penktos SECTION dalies HEADING h2 pirma dalis</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et at nisi id  a
+            </p>
+        </div>  <!--  .heading : == pabaiga. -->
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <!--       CONTENT dalis su dviem TESTIMONILA BX dalimis melyname fone          -->
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+        <div class="content">
+
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolore in voluptas aliquam aut aperiam architecto reprehenderit cum voluptatum maxime quibusdam consequatur quas quaerat voluptatem optio, asperiores cumque beatae possimus. Soluta explicabo porro deleniti dolorem ipsum repudiandae officiis veritatis.
+                </p>
+                <h3>Papildoma pirmoji medziaga<br><span>Su dar kazkuo</span></h3>
+            </div>  <!--  .testimonialBx : == pabaiga. -->
+
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolore in voluptas aliquam aut aperiam architecto reprehenderit cum voluptatum maxime quibusdam consequatur quas quaerat voluptatem optio, asperiores cumque beatae possimus. Soluta explicabo porro deleniti dolorem ipsum repudiandae officiis veritatis.
+                </p>
+                <h3>Papildoma antroji medziaga<br><span>Su dar kazkuo</span></h3>
+            </div>  <!--  .testimonialBx : == pabaiga. -->
+
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+        </div>  <!--  .content : == pabaiga. -->
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    </section>   <!--  .testimonial : == pabaiga. -->
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!--                                 Šešta dalis :                                    -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <section class="contact" id="contact">
+
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <!--        HEADING WHITE, padarys H- 1 uzrasa baltos spalvos juodame fone        -->
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        <div class="heading white">
+
+            <h2>Šeštos SECTION dalies HEADING h2 pirma dalis</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt et at nisi id  a
+            </p>
+
+        </div>  <!--  .heading : == pabaiga. -->
+
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        <div class="content">
+            <div class="contactInfo">
+
+                <h3>Contaktine Info: </h3>
+
+                <!--  Info Bx t.y. INFO BOX -->
+                <div class="contactInfoBx">
+
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <div class="box">
+
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>   <!--  .icon : == pabaiga. -->
+
+                        <div class="text">
+
+                            <h3>Adresas</h3>
+                            <p> info@ulonupc.lt<br>322223</p>
+
+                        </div>   <!--  .text : == pabaiga. -->
+
+                    </div>  <!--  .box : == pabaiga. -->
+                    
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    
+                    <div class="box">
+
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>   <!--  .icon : == pabaiga. -->
+
+                        <div class="text">
+
+                            <h3>Telefonas</h3>
+                            <p> +370 620 84494</p>
+
+                        </div>   <!--  .text : == pabaiga. -->
+
+                    </div>  <!--  .box : == pabaiga. -->
+
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    
+                    <div class="box">
+
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>  <!--  .icon : == pabaiga. -->
+
+                            <div class="text">
+                                <h3>EL.pastas</h3>
+                                <p> info@ulonupc.lt</p>
+                            </div>  <!--  .box : == pabaiga. -->
+
+                    </div>  <!--  .text : == pabaiga. -->
+
+                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>  <!--  .contactInfoBx : == pabaiga. -->
+            </div>  <!--  .contactInfo : == pabaiga. -->
+
+            <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+            <!--                           FORMOS langelio aprasymas                          -->
+            <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+            <div class="formBx">
+
+                <form>
+
+                    <h3>Message Me</h3>
+                    <input type="text" name="text" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea placeholder="Parasykite mums"></textarea>
+                    <input type="submit" value="send">
+
+                </form>
+
+            </div>  <!--  .formBx : == pabaiga. -->
+
+            <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        </div>   <!--  .content : == pabaiga. -->
+
+
+    </section>  <!--  .contact : == pabaiga. -->
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!--                           COPYRIGHT apraso juosta                                -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <div class="copyright">
+        <p>Copyright &copy; 2020 aarturas. All Right Reserved.</p>
+    </div>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+
+
+    <!-- ===================================================================== -->
+
+    <!-- <script type="text/javascript"></script> -->
+    <script src="antras.js"></script>
+
+    <!-- ===================================================================== -->
+
+</body>
+</html>

@@ -1,0 +1,1963 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================================================= */
+/*      Bandau panaikinti mob. ekrane tuscia vieta:        */
+/* ======================================================= */
+
+/* html, body {
+   overflow-x:hidden;
+} */
+
+/* ======================================================== */
+
+body {
+
+  /* font-family: 'PT Sans', sans-serif; */
+  background-color: #ffffff;
+}
+
+/* ======================================================================= */
+/*                               CONTAINER                                 */
+/* ======================================================================= */
+
+.container  {
+
+  max-width: 1440px;
+  margin: auto;
+  border: 1px solid  rgb(177, 175, 175, 0.5);
+  /* height: 100vh; */
+}
+
+/* ======================================================== */
+/*                 Idesime HEADERiui stiliu                 */
+/* ======================================================== */
+
+header {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(255,255,255,1);
+    border-bottom: 1px solid rgba(77, 77, 78, 0.2);
+    box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);
+    height: 7.7em;
+    /* height: calc(100vh - 53em); */
+
+    /* ******************************************* */
+    /*       Bus per visa MOB ekrano ploti         */
+    /* ******************************************* */
+    
+    position: relative;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*        Viršutinė NAV juosta padarome nejudančia      */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+header nav {
+   
+   /* position: sticky; */
+   top: 0;
+
+   /* -------------------------------------------- */
+   /*         Kad butu visa laika per viduri       */
+   /* -------------------------------------------- */
+
+   /* line-height: 7rem; */
+}
+
+/* section .s1 {
+   height: calc(100vh - 7.7em);
+} */
+
+/* section .s1 {
+   height: calc(100vh - 2em);
+} */
+
+/* ================================================ */
+/*          NAV juostoje nuorodų aprašymas          */
+/* ================================================ */
+
+.nav__links {
+
+   display: flex;
+}
+
+/* ======================================================== */
+/*                          LOGO                            */
+/* ======================================================== */
+
+.logo {
+
+    cursor: pointer;
+    margin-left: 2.6em;
+    height: 4.7em;
+    top: 18.89px;
+}
+
+/* ================================================== */
+/*                       H - 2                        */
+/* ================================================== */
+
+h2 {
+
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+  font-weight: 400;
+  margin: 1em 2em;
+  padding: 0 3em;
+}
+
+/* ================================================== */
+/*                    /    P   /                      */
+/* ================================================== */
+
+p {
+  color: #236389;
+}
+
+/* ======================================================================= */
+/*                    Nuotrauku klase:   CHAIR                             */
+/* ======================================================================= */
+
+/* .chair {
+  height: 80%;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-70%, -70%);
+  padding-bottom: 10%;
+} */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ======================================================================= */
+/*                      Bandau padaryti FLEX'a                             */
+/* ======================================================================= */
+
+.section {
+    
+  display: flex;
+  flex-direction: column;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*                    ( "PSICHOTERAPEUTAS" ) Mygtukas:                        */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+.melynas {
+  padding: 0.5em 0.7em;
+  border-radius: 27px;
+  background-color: #236389;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-right: 2em;
+}
+
+/* ====================================================== */
+/*                Mygtukas-Button: "Plačiau"              */
+/* ====================================================== */
+
+.button .placiau {
+
+    position: relative;
+    background: #0a667e;
+    display: flex;
+    padding: 0.49em 0.8em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: 600;
+    /* right: 50%; */
+    margin: 0.7em auto;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                             S-1  H-1                           */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .s1 h1 {
+
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+  text-align: center;
+  margin-top: 1.6em;
+  font-size: 4.5em;
+  font-weight: lighter;
+} */
+
+/* .s1 h2 {
+   font-size: 2.2em;
+   font-weight: lighter;
+   margin: 1.3em 5.8em 0 5.8em;
+} */
+
+/* .s1 h2:nth-child(3) {
+   margin: 0.5em;
+} */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/* ======================================================================= */
+/*        Pirma sekcija :   " Ulonų psichoterapijos centras "              */
+/* ======================================================================= */
+
+/* .s2 {
+
+  background-image: url('./img/OfisasPataisytas4.jpg');
+  background-color:rgba(44, 23, 23, 0.6);
+  background-blend-mode: multiply;
+  background-size: cover;
+} */
+
+/* ======================================================================= */
+/*         ( "APIE MUS" )          Antra sekcija                           */
+/* ======================================================================= */
+
+.s2 {
+
+    background-color: rgb(255,255,255,1);
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    /* height: calc(100vh - 112px - 151px); */
+    
+   /* height: calc(100vh - 8rem); */
+   /* height: 100%; */
+   height: calc(100vh - 6rem);
+   max-height: calc(100vh - 9rem);
+   
+   background-color: #d9dbdd;
+
+}
+
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+/*       "KALBA" pasirinkimas - DIV'as /  Nustatome rėmelio dydį ir vietą:   */
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+.s2 .kalba {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 4em;
+    padding: 0.1rem 0.55rem ;
+    width: 4.4rem;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    cursor: pointer;
+    margin-top: -6em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+/*        Nuotrauka   /    Nustatome pačios nuotraukos dydį:                 */
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+ .kalba img {
+
+    width: 20px;
+    height: 13px;
+    object-fit: cover;
+}
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ***************************************************** */
+/*     SECTION - 2 arba antra dalis /b ( "Apie Mus" )    */
+/* ***************************************************** */
+
+.s2 h1 {
+
+  color: #034958;
+  /*  Panaikinsime stačiakampį foną aplink užrašą: */
+  /* -webkit-background-clip: text; */
+  /* font-size: 1rem; */
+  /* font-weight: lighter; */
+   font-size: 3em;
+   letter-spacing: 2.7px;
+   margin-left: 1.4em;
+   /* margin-top: 1.6em; */
+   /* margin-top: 13.36em; */
+    margin-top: 1.55em;
+}
+
+/* .s2 .footer-distributed {
+
+   height: calc(100vh - 84em);
+   border: 1px solid green;
+} */
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ====================================================== */
+/*                ( Laimos nuotrauka )                    */
+/* ====================================================== */
+
+.laima {
+
+  height: 305px;
+  width: 303px;
+  position: relative;
+  object-fit: cover;
+  margin-left: 2.2em;
+  margin-top: 3.6em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ====================================================== */
+/*              Užrašas:   "LAIMA MATULIONIENE"           */
+/* ====================================================== */
+
+/* .s2 h4 { */
+    .s2 .laimute {
+    
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #236389;
+    margin-top: 1.75rem;
+    /* margin-left: -0.3em; */
+}
+
+/* ====================================================== */
+/*       Pagrindinis     H - 5 teksto aprasymas           */
+/* ====================================================== */
+
+.s2 h5 {
+    color: #236389;
+    font-size: 1.52rem;
+    font-weight: lighter;
+}
+
+/* ====================================================== */
+/*        Antros dalies:     Pirmasis   tekstas           */
+/* ====================================================== */
+
+/* .s2 h5 {
+
+    position: relative;
+    font-weight: lighter;
+    font-size: 1.52rem;
+    color: #236389;
+
+    margin: 20em 18em 0 1em;
+    margin-top: 1.15em;
+    overflow: hidden;
+    letter-spacing: 0.08rem;
+    line-height: 1.2;
+} */
+
+.s2 h5.tekstas-1 {
+
+     /* position: relative; */
+    /* font-weight: lighter; */
+    /* font-size: 1.52rem; */
+    color: #236389;
+
+    /* margin: 20em 18em 0 1em; */
+    margin: 20em 18em 0 0;
+
+    margin-top: 2.55rem;
+    overflow: hidden;
+    /* letter-spacing: 0.08rem; */
+    line-height: 1.2;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+
+/* ----------------------------------------- */
+/*            Antrasis tekstas               */
+/* ----------------------------------------- */
+
+/* .s2 h5:nth-child(4) {
+
+    overflow: hidden;
+    margin-top: 1.15em;
+
+} */
+
+.s2 h5.tekstas-2 { 
+
+    margin-top: 1.15em;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+
+/* ----------------------------------------- */
+/*  Trečiasis teksto langelis (didziausias)  */
+/* ----------------------------------------- */
+
+/* .s2 h5:last-of-type {
+
+   margin-top: -22.4em;
+   margin-right: 7em;
+   margin-left: 21.8em;
+} */
+
+.s2 h5.tekstas-3 {
+
+    /* font-size: 1rem; */
+    /* margin-top: -28.4em; */
+    margin-top: -22.25em;
+    margin-right: 7rem;
+    margin-left: 21.8em;
+    /* color: red; */
+
+}
+
+/* ====================================================== */
+/* ====================================================== */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ======================================================================= */
+/*                            Aprašymas teksto                             */
+/* ======================================================================= */
+
+.description {
+   /*  Nustatome erdve aplink nuotrauka:   */
+  margin-left: 5%;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+footer {
+    
+    /* position: relative; */
+    position: absolute;
+    display: flex;
+    /* bottom: -14.05em; */
+    /* bottom: -18em; */
+    bottom: -25em;
+    bottom: 1em;
+    height: 7.7em;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ----------------------------------------------------- */
+/*                     SOC ikoneles                      */
+/* ----------------------------------------------------- */
+
+footer .footer-pirmas {
+
+    display: block;
+    /* border: 1px solid red; */
+    text-align: center;
+    max-height: 5em;
+    width: 17%;
+    height: 4em;
+    margin-left: 4em;
+
+    border: 1px solid rgba(77, 77, 78, 0.2);
+
+}
+
+/* ----------------------------------------------------- */
+/*          Ulonu psichoterapijos centras                */
+/* ----------------------------------------------------- */
+
+footer .footer-antras {
+
+  /* border: 1px solid red; */
+  text-align: center;
+  max-height: 5em;
+  width: 26%;
+  /* height: 3.6em; */
+  height: 3.635em;
+  /*  Atskirsime nuo virsaus truputi:   */
+  /* padding-top: 1em; */
+  border: 1px solid rgba(77, 77, 78, 0.2);
+  border-left: none;
+  font-size: 1.1em;
+}
+
+footer .footer-antras p {
+  padding-top: 0.8em;
+}
+
+/* ----------------------------------------------------- */
+/*                     Darbo Laikas                      */
+/* ----------------------------------------------------- */
+
+footer .footer-trecias {
+
+    border: 1px solid red;
+    text-align: center;
+    max-height: 5em;
+    width: 22%;
+    height: 4em;
+    padding-left: 0;
+    padding-top: 0.5em;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    border-left: none;
+
+}
+
+/* ----------------------------------------------------- */
+/*                 INFO + Telefonas                      */
+/* ----------------------------------------------------- */
+
+footer .footer-ketvirtas {
+
+   border: 1px solid red;
+   text-align: center;
+   max-height: 5em;
+   width: 25%;
+   height: 4em;
+   padding-top: 0.5em;
+   border: 1px solid rgba(77, 77, 78, 0.2);
+   border-left: none;
+
+}
+
+
+
+/* ================================================== */
+/*   .FOOTER - PAGRINDINIS / left, center-1, ...      */
+/* ================================================== */
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center-1,
+.footer-distributed .footer-center-2,
+.footer-distributed .footer-right {
+
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid rgba(77, 77, 78, 0.2); */
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*    1.  Pirmasis footerio langas   /    IKONOS      */
+/* ================================================== */
+
+.footer-left {
+  width: 20%;
+  height: 73px;
+  margin-left: -20px;
+}
+
+
+/* ================================================== */
+/*                  Footer links                      */
+/* ================================================== */
+
+.footer-links {
+
+  color: #2c292f;
+  margin: 20px 0 12px;
+}
+
+/* ================================================== */
+/*                    .footer-links  A                */
+/* ================================================== */
+
+.footer-links a {
+
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* ================================================== */
+/*                 .FOOTER - DISTRIBUTED              */
+/* ================================================== */
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right,
+.footer-side {
+
+	display: inline-block;
+    vertical-align: top;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+}
+
+/* ================================================== */
+/*    1.  Pirmasis footerio langas   /    IKONOS      */
+/* ================================================== */
+
+.footer-left {
+    width: 20%;
+    height: 73px;
+    margin-left: -20px;
+}
+
+/* ================================================== */
+/*                  Footer links                      */
+/* ================================================== */
+
+.footer-links {
+
+    color: #2c292f;
+    margin: 20px 0 12px;
+}
+
+/* ================================================== */
+/*                    .footer-links  A                */
+/* ================================================== */
+
+.footer-links a {
+
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* ================================================== */
+/*   2.   Footer Center /  Antras langelis footerio   */
+/* ================================================== */
+
+.footer-center{
+    width: 31%;
+    height: 73px;
+}
+
+/* ================================================== */
+/*                  .footer-center i                  */
+/* ================================================== */
+
+ .footer-center i {
+
+  color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+/* ================================================== */
+/*     2.           .footer-center P                  */
+/* ================================================== */
+
+.footer-center p {
+
+	display: inline-block;
+    color: #2c292f;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* ================================================== */
+/*      2.         .footer-center p SPAN              */
+/* ================================================== */
+
+.footer-center p span {
+
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+/* ================================================== */
+/*     2.          .footer-center p A                 */
+/* ================================================== */
+
+.footer-center p a {
+
+	color:  #e0ac1c;
+	text-decoration: none;
+}
+
+/* ================================================== */
+/*   3.  Footer Right  /  Trečiasis langas-blokas     */
+/* ================================================== */
+
+.footer-right {
+
+    width: 27%;
+    height: 73px;
+}
+
+.footer-right p {
+
+    justify-content: center;
+}
+
+/* ================================================== */
+/*             .footer-company- ABOUT                 */
+/* ================================================== */
+
+.footer-company-about {
+
+	line-height: 5px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+    margin-top: 20px;
+}
+
+/* ================================================== */
+/*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
+/* ================================================== */
+
+.footer-icons {
+
+  margin: 0.8rem auto;
+}
+
+/* ================================================== */
+/*   .footer-icons A /  Aprašymas SOC. įkonėlių:      */
+/* ================================================== */
+
+.footer-icons a {
+
+    display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #236389;
+	border-radius: 3px;
+	font-size: 20px;
+    color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+    margin: 0 0.5em;
+}
+
+/* ================================================== */
+/*  4. FOOTER - SIDE  /  Paskutinis langas FOOTERyje  */
+/* ================================================== */
+
+.footer-side {
+    width: 23%;
+    height: 73px;
+}
+
+/* ================================================== */
+/*           FOOTER - SIDE  /      P                  */
+/* ================================================== */
+
+.footer-side p {
+    justify-content: center;
+}
+
+/* ================================================== */
+/*                      footer P                      */
+/* ================================================== */
+
+footer p {
+    color: #050620;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ======================================================== */
+/*           P, LI, A + MED __ BUTTON                       */
+/* ======================================================== */
+
+p,
+li,
+a  {
+
+  font-size: 1.3em;
+  color: rgba(77, 77, 78, 0.9);
+  text-decoration: none;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+/* ======================================================== */
+/*               Pridesime  UL stiliu                       */
+/* ======================================================== */
+
+.hero {
+
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ======================================================== */
+/*   Dabar HEADERi, idesime nuotrauka su SUDO elementu      */
+/* ======================================================== */
+
+.hero:before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    transform: scale(1.2);
+}
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    */
+/* ======================================================== */
+
+.nav__links li {
+
+  /* inline-block bus vienoje eiluteje, vienas salia kito */
+  display: inline-block;
+  padding: 0 1.2em;
+}
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI  A:HOVER   ( parinksime spalva )    */
+/* ======================================================== */
+
+.nav__links li a:hover {
+  color: #bec0be;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+/* ======================================================== */
+/*      HAMBURGER menu  /     nustatysime pozicija          */
+/* ======================================================== */
+
+.hamburger {
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  top: 14px;
+  right: 10%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER menu DIV  /    Bus tris bruksneliai       */
+/* ======================================================== */
+
+.hamburger div {
+  position: relative;
+  width: 35px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #0a667e;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*   /  TOGGLE  /  Paprastai nesimato, tik mazinant ekrana  */
+/* ======================================================== */
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .hamburger .hamburger__top {
+  transform: rotate(-45deg);
+  margin-top: 17.5px; /* Half the size of hamburger height */
+}
+
+#toggle:checked + .hamburger .hamburger__meat {
+  transform: rotate(45deg);
+  margin-top: -3px; /* Negative value of hamburger div height */
+}
+
+/* kad pranyktu bruksnelis, nustatome nuli */
+#toggle:checked + .hamburger .hamburger__bottom {
+  transform: scale(0);
+}
+
+#toggle:checked + .hamburger + .hamburger__nav {
+  top: 0;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER __ NAV  /    Visas hamburgerio langas     */
+/* ======================================================== */
+
+.hamburger__nav {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: #050620;
+  /*  Paspaudus "hamburgeri", nustumsime fona i virsu */
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  WRAPPER  /                */
+/* ======================================================== */
+
+.hamburger__nav .hamburger__nav--wrapper {
+  position: relative;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER __ NAV  ITEMS  /  Tvarkysime vidines      */
+/*  "hamburgerio" tekstus ir nuorodas                       */
+/* ======================================================== */
+
+.hamburger__nav--items {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS nuorodos  /         */
+/* ======================================================== */
+
+.hamburger__nav--items a {
+  margin-top: 40px;
+  color: #0c7e9b;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 2em;
+  transition: all 0.3s ease 0s;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/* ======================================================== */
+
+.hamburger__nav--items a:first-child {
+  margin-top: 0;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/*     Su OPACITY, matysime MOB skyriuje nuorodas           */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a {
+  opacity: 1;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /                 */
+/*    viduje MOB menu, nuorodos keis spalva uzvedus pele    */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a:hover {
+  opacity: 1;
+  color: #e74d71;
+}
+
+/* *************************************************************** */
+/*                     ACTIVE klases aprasymas                     */
+/* *************************************************************** */
+
+.active {
+  color: red;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*   2. Footer Center - 1 / Antras langelis footerio  */
+/* ================================================== */
+
+.footer-center-1 {
+  width: 31%;
+  height: 73px;
+}
+
+/* ================================================== */
+/*                  .footer-center i                  */
+/* ================================================== */
+
+.footer-center-1 i {
+
+    display: inline-block;
+
+    color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+/* ================================================== */
+/*     2.           .footer-center P                  */
+/* ================================================== */
+
+.footer-center-1 p {
+
+   display: inline-block;
+   color: #2c292f;
+   font-family: 'Encode Sans', sans-serif;
+   font-weight: 700;
+}
+
+/* ================================================== */
+/*      2.         .footer-center p SPAN              */
+/* ================================================== */
+
+.footer-center-1 p span {
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+/* ================================================== */
+/*     2.          .footer-center p A                 */
+/* ================================================== */
+
+.footer-center-1 p a {
+	color:  #e0ac1c;
+	text-decoration: none;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*   3. Footer Center - 2 / Antras langelis footerio  */
+/* ================================================== */
+
+ .footer-center-2 {
+  width: 31%;
+  height: 73px;
+}
+
+/* ================================================== */
+/*    3.             .footer-center i                 */
+/* ================================================== */
+
+ .footer-center-2 i {
+
+  color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+/* ================================================== */
+/*     3.           .footer-center P                  */
+/* ================================================== */
+
+.footer-center-2 p {
+
+	display: inline-block;
+   color: #2c292f;
+   font-family: 'Encode Sans', sans-serif;
+   font-weight: 700;
+}
+
+/* ================================================== */
+/*      3.         .footer-center p SPAN              */
+/* ================================================== */
+
+.footer-center-2 p span {
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+/* ================================================== */
+/*     3.          .footer-center p A                 */
+/* ================================================== */
+
+.footer-center-2 p a {
+	color:  #e0ac1c;
+	text-decoration: none;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*   4.  Footer Right  /  Trečiasis langas-blokas     */
+/* ================================================== */
+
+.footer-right {
+  width: 27%;
+  height: 73px;
+}
+
+.footer-right p {
+  justify-content: center;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*  4. FOOTER - SIDE  /  Paskutinis langas FOOTERyje  */
+/* ================================================== */
+
+ .footer-side {
+  width: 23%;
+  height: 73px;
+  
+}
+
+.footer-side p {
+  justify-content: center;
+}
+
+/* ================================================== */
+/*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
+/* ================================================== */
+
+ .footer-icons {
+
+  margin: 0.5em 0;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ================================================== */
+/*   .footer-icons A /  Aprašymas SOC. įkonėlių:      */
+/* ================================================== */
+
+ .footer-icons a {
+
+    display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #236389;
+	border-radius: 3px;
+	font-size: 20px;
+    color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+    margin: 0 0.5em;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================== */
+/*                      FOOTER                        */
+/* ================================================== */
+
+/* footer {
+  margin-bottom: 3em;
+} */
+
+/* ================================================== */
+/*                      footer P                      */
+/* ================================================== */
+
+footer p {
+  color: #050620;
+}
+
+/* ---------------------------------------------------------------------------- */
+/*     /  Cia nesuprantu ka darome ...  /  Atrodo bus linija po uzrasu  /       */
+/* ---------------------------------------------------------------------------- */
+
+body > p:first-of-type::after {
+
+   content: '';
+   display: block;
+   position: absolute;
+   margin: 1em 0;
+   height: 2px;
+   width: 100%;
+   background: red;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*   Bandau @MEDIA QUERIES  :  1400 PX ,nes netelpa "psichoterapija:     */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media screen and (max-width: 1440px) {
+
+   .nav__links li {
+      padding: 0 0.5em;
+   }
+
+    /* ---------------------------------------------------------------- */
+    /*       Tarpai tarp NAV nuorodų , reikalingi mažinant ekraną       */
+    /* ---------------------------------------------------------------- */
+
+    /*  Kol kas derinu "melyno" mygtuko pozicija: */
+
+   /* .nav__links li a {
+       margin: 0 1rem;
+   } */
+
+   .s1 {
+       height: calc(100vh - 10rem);
+   }
+} 
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*  Bandau @MEDIA QUERIES: ( 1400 PX ) nes netelpa "psichoterapija:     */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media screen and (max-width: 1400px) {
+
+   .nav__links li {
+      padding: 0 0.5em;
+   }
+
+    .placiau {
+       position: relative;
+
+      /* float: right; */
+      margin: 0 10em;
+   }
+
+   /* ----------------------------------------- */
+   /*            Pirmasis tekstas               */
+   /* ----------------------------------------- */
+
+   /* .s2 h5 {
+      font-size: 1.55em;
+   } */
+
+   /* ----------------------------------------- */
+   /*            Antrasis tekstas               */
+   /* ----------------------------------------- */
+
+   /* .s2 h5:nth-child(4) {
+      margin: 23em 9em 0 1em;
+   } */
+
+   /* ----------------------------------------- */
+   /*           Trečiasis tekstas               */
+   /* ----------------------------------------- */
+
+   /* .s2 h5:last-of-type {
+      margin-right: 5em;
+      margin-left: 16em;
+      font-size: 1.55em;
+      margin-top: -21.7em;
+   }      */
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*      @ MEDIA QUERIES:        ( 1334 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 1334px) {
+
+   /* .button .placiau {
+      margin: -2em 4em;
+   } */
+
+   .button .placiau {
+      margin: -4em 4em;
+   }
+
+   /* ----------------------------------------- */
+   /*      Pirmasis tekstas       ( 1334px )    */
+   /* ----------------------------------------- */
+
+   /* .s2 h5 {
+          margin: 1em 0em auto 1em;
+   } */
+
+     .nav__links li {
+    padding: 0 0.8em;
+  }
+
+    /* ----------------------------------------- */
+    /*          Trečiasis tekstas    ( 1334px )  */
+    /* ----------------------------------------- */
+
+   /* .s2 h5:last-of-type {
+      margin-right: 5em;
+      margin-left: 16em;
+      font-size: 1.55em;
+      margin-top: -21.7em;
+   }    */
+
+    /* ----------------------------------------- */
+    /*        DIV kalba :            ( 1334px )  */
+    /* ----------------------------------------- */
+
+  /* .s2 .kalba {
+       margin-left: 70em;
+   } */
+
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*      @ MEDIA QUERIES:        ( 1240 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 1240px) {
+/* @media screen and (max-width: 1240px) and (min-width: 1000px)  { */
+
+    /* .s2 {
+        width: 100%;
+    } */
+
+    /* ---------------------------------------------------------------- */
+    /*       Tarpai tarp NAV nuorodų , reikalingi mažinant ekraną       */
+    /* ---------------------------------------------------------------- */
+
+    .nav__links li {
+        padding: 0 0.5em;
+    }
+
+    .button .placiau {
+        margin: 2em 5em 0 auto;
+    }
+
+    /* ---------------------------------------------------------------- */
+    /*   Reikia palikti, nes mažinant ekraną "peršoka" mėlynas button   */
+    /* ---------------------------------------------------------------- */
+    
+    .logo {
+        /* margin-left: -1em; */
+        margin-left: 1em;
+    }
+
+    /* -------------------------------------------------------- */
+    /*                    Soc. ikoneles:      ( 1240 PX )       */
+    /* -------------------------------------------------------- */
+
+    .footer-icons {
+
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .footer-antras div {
+
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        max-height: 7em;
+        padding-top: 0em;
+    }
+
+    /* =========================================== */
+    /*         FOOTER'is  ( 1240 PX )              */
+    /* =========================================== */
+
+    footer.footer-distributed {
+        /* display: inline; */
+        font-size: 0.8rem;
+    }
+
+    footer.footer-distributed p { 
+        color: red;
+
+    }
+
+
+
+    /* =========================================== */
+
+    /* ---------------------------------------------------------- */
+    /*   Trecias langelis / "VsI Ulonu psichoterapijos centras"   */
+    /* ---------------------------------------------------------- */
+
+    footer .footer-trecias {
+
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        padding-top: 0.4em;
+        /* height: 9em; */
+    }
+
+    /* ----------------------------------------- */
+    /*       Pirmasis tekstas    ( 1240 PX )     */
+    /* ----------------------------------------- */
+    
+    .s2 h5 {
+        margin: 1.5em 0 0 0;
+    }
+
+    /* ----------------------------------------- */
+    /*      Trečiasis tekstas    ( 1240 PX )     */
+    /* ----------------------------------------- */
+
+    /* .s2 h5:last-of-type {
+        margin-top: -4em;
+    }      */
+
+    /* .s2 .kalba {
+       margin-left: 70em;
+   } */
+
+    /* ----------------------------------------- */
+    /*      Trečiasis tekstas    ( 1240 PX )     */
+    /* ----------------------------------------- */
+
+   .s2 h5.tekstas-3 {
+       margin: -35.5rem 3rem 0 24rem;
+       /* margin: -33.5rem 3rem 0 24rem; */
+   }
+
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*      @ MEDIA QUERIES:        ( 1130 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+@media screen and (max-width: 1130px) {
+
+   /* .s1 h1 {
+      padding: 0 0.7em;
+   } */
+
+   .s2 h4 {
+       margin-left: -1em;
+   }
+
+    /* ----------------------------------------- */
+   /*       Pirmasis tekstas    ( 1130 PX )     */
+   /* ----------------------------------------- */
+
+   /* .s2 h5 {
+      margin: 25.75em 3em auto 1em;
+      font-size: 1.4em;
+   } */
+
+   /* ----------------------------------------- */
+   /*        Antrasis tekstas     ( 1130 PX )   */
+   /* ----------------------------------------- */
+
+   /* .s2 h5:nth-child(4) {
+      margin: 29em 9em 0 1em;
+      font-size: 1.4em;
+   } */
+
+   /* ----------------------------------------- */
+   /*      Trečiasis tekstas    ( 1130 PX )     */
+   /* ----------------------------------------- */
+/* 
+   .s2 h5:last-of-type {
+      margin-top: -3.5em;
+      font-size: 1.4em;
+   }      */
+
+      .nav__links li a {
+       margin: 0 0.1rem;
+       font-size: 1.5rem;
+   }
+
+   /* ------------------------------------------- */
+   /*  Pastumiu LOGO i kaire puse, kad sulygiuoti */
+   /* ------------------------------------------- */
+
+   /* .logo {
+       margin-left: auto;
+   } */
+
+   /* ------------------------------------------- */
+   /*     Paslepiu NAV nuorodas prie ( 1130 px )  */
+   /* ------------------------------------------- */
+
+    .nav__links {
+        display: none;
+    }
+
+    /* ------------------------------------------- */
+    /*   Hamburberio MENU bruksneliai: ( 1130 px ) */
+    /* ------------------------------------------- */
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+       footer {
+    display: none;
+    }
+
+    .s2 h4 {
+        margin-left: 0.1em;
+    }
+
+
+     /* ----------------------------------------- */
+    /*      Trečiasis tekstas    ( 1240 PX )     */
+    /* ----------------------------------------- */
+
+   .s2 h5.tekstas-3 {
+       margin: -37rem 3rem 0 24rem;
+   }
+
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*               @ MEDIA QUERIES: ( 980 PX )          */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width: 980px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right,
+    .footer-side {
+ 
+        display: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-center i {
+
+        margin-left: 0;
+        padding: 0;
+    }
+    
+    .section .s2 h2 {
+
+        display: inline;
+        margin: 0 0.5em ;
+    }
+
+     .s2 footer {
+        display: none;
+    }
+
+     /* .s2 {
+       height: calc(100vh - 8rem);
+   } */
+
+    /* .nav__links li a {
+        margin: 0 0.3em;
+    } */
+
+     .laima {
+       position: relative;
+       /* top: 35em; */
+       /* margin: auto; */
+   }
+ 
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*      @ MEDIA QUERIES:        ( 940 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 940px) {
+
+   /* ----------------------------------------------------- */
+   /*   ( Apie Mus )    Pirmasis tekstas    ( 940 PX )      */
+   /* ----------------------------------------------------- */
+
+     /* .s2 h5 {
+
+      margin: 28.3em 3em auto 1em;
+      font-size: 1.3em;
+   } */
+
+   /* ----------------------------------------------------- */
+   /*   ( Apie Mus )    Antrasis tekstas      ( 940 PX )   */
+   /* ----------------------------------------------------- */
+
+   /* .s2 h5:nth-child(4) {
+
+      margin: 32em 8em auto 1em;
+      font-size: 1.3em;
+   } */
+
+   /* ----------------------------------------------------- */
+   /*   ( Apie Mus )   Trečiasis tekstas    ( 940 PX )      */
+   /* ----------------------------------------------------- */
+
+   /* .s2 h5:last-of-type {
+
+      position: absolute;
+      margin: 5em 2em auto 17em;
+      font-size: 1.3em;
+   }      */
+
+   .laima {
+       position: relative;
+       /* top: 35em; */
+       /* margin: auto; */
+   }
+ 
+} 
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ======================================================== */
+/*      MEDIA QUERIES :       iki 860 px                   */
+/* ======================================================== */
+
+@media screen and (max-width: 876px) {
+
+   .mobile__menu {
+      display: inherit;
+   }
+
+   .nav__links {
+      display: none;
+   }
+
+    /* ------------------------------------ */
+   /*     Trečiasis tekstas, didžiausias   */
+   /* ------------------------------------ */
+
+   .s2 h5:last-of-type {
+      display: none;
+   }     
+
+   /* -------------------------------------- */
+   /*        Laimos nuotraukos  ( DIV )      */
+   /* -------------------------------------- */
+
+    .nuotrauka {
+
+      /* font-size: 3.6em; */
+      /* right: 10%; */
+      transform: translate(-10%);
+      margin-left: 0.1em;
+      transform: translate(0.1em);
+      margin-top: -2.5em;
+   }
+
+   /* ------------------------------------------- */
+   /*   "Laima Matulioniene" uzrasas  ( 876px )   */
+   /* ------------------------------------------- */
+
+   .s2 h4 {
+      /* font-size: 3.2em; */
+      right: 10%;
+      transform: translate(-10%);
+      margin-left: 1.5em;
+   }
+
+   /* ---------------------------------------- */
+   /*   Paslepsime "konsultuoja anglu kalba"   */
+   /* ---------------------------------------- */
+
+   /* .s2 h5:nth-child(4) {
+      display: none;
+   } */
+
+   .laima {
+       position: relative;
+       /* top: 35em; */
+
+   }
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*       @ MEDIA QUERIES:        ( 850 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 850px) {
+
+   
+   /* ---------------------------------------------- */
+   /*       Visa .S2 SECTION dalis     ( 850 PX )    */
+   /* ---------------------------------------------- */
+
+   /* .s2 {
+      display: none;
+   } */
+
+   /* ---------------------------------------------- */
+   /*        .S1 dalies tekstas:       ( 850 PX )    */
+   /* ---------------------------------------------- */
+
+   .s2 h2 {
+      padding: 0 0.7em;
+   }
+
+   /* ------------------------------------------------ */
+   /*     "Mėlynasis" mygtukas su užrašu "Plačiau":    */
+   /* ------------------------------------------------ */
+
+   /* ======================================================== */
+   /*   /  TOGGLE  /  Paprastai nesimato, tik mazinant ekrana  */
+   /* ======================================================== */
+
+   /* #toggle {
+      display: inline-block;
+   } */
+
+   /* .button .placiau {
+      margin: 3em 4em;
+   } */
+
+   .s1 h1 {
+      line-height: 60px;
+      font-size: 3.2em;
+   }
+
+    .s1 h2 {
+      margin: 0.5em;
+      font-size: 1.6em;
+   }
+
+   /* .nav__links li a {
+      margin-left: 0;
+   } */
+
+   .melynas {
+      display: none;
+   }
+
+   .nav__links li a {
+      margin: 0 0.2em;
+   }
+
+   .s1 p {
+      font-size: 1.1em;
+   }
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+    .s2 h1 {
+        margin: 1em auto 0;
+    }
+
+     .laima {
+       position: relative;
+       top: 35em;
+       margin: auto;
+   }
+    
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*               @ MEDIA QUERIES:  800 PX             */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width:800px){
+
+    /* footer {
+    display: none;
+    } */
+        
+    header {
+    padding-top:40px;
+    }
+
+       .laima {
+       position: relative;
+       top: 35em;
+       margin: auto;
+   }
+
+    
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*       @ MEDIA QUERIES:        ( 600 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 600px) {
+
+   /* ----------------------------------------- */
+   /*      Paslepiame "Aprasymo" teksto dali    */
+   /* ----------------------------------------- */
+
+   /* .s2 h5 {
+      display: none;
+   } */
+
+   /* ----------------------------------------- */
+   /*      Pavadinimas: "Apie mus" uzrasas      */
+   /* ----------------------------------------- */
+
+   .s2 h1 {
+      font-size: 3.2em;
+      /* right: -50%; */
+      /* transform: translate(50%); */
+      /* margin-left: 1.5em; */
+      margin: auto;
+   }
+   .laima {
+       position: relative;
+       top: 35em;
+       margin: auto;
+   }
+   
+}
+
+/* ******************************************* */
+/*        BACKGROUND - IMAGE   ( 400 px  )     */
+/* ******************************************* */
+
+@media screen and (max-width: 400px) {
+
+  /* ******************************************* */
+  /*                    HEADER      ( 400 px  )  */
+  /* ******************************************* */
+
+  header {
+    position: relative;
+  }
+
+
+  background-image {
+    width: 30%;
+  }
+
+  /* ******************************************* */
+  /*      Gerai neprisimenu kas ka cia daro?     */
+  /* ******************************************* */
+
+  .fp-tableCell {
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ******************************************* */
+  /*    IMG arba nuotrauku klase    ( 400 px  )  */
+  /* ******************************************* */
+
+  .chair {
+    display: none;
+  }
+ 
+  /* ******************************************* */
+
+  span {
+    display: none;
+  }
+
+  /* ******************************************* */
+
+  .footer-distributed {
+    display: none;
+  }
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*       @ MEDIA QUERIES:        ( 370 PX )               */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (min-height: 370px) {
+
+   header ul {
+      top: 0;
+   }
+
+   /* header {
+      padding-top: 0;
+   } */
+
+   .container {
+      height: auto;
+      /* width: 124%; */
+   }
+
+ 
+
+   .nuotrauka {
+       margin: auto;
+   }
+
+   .logo {
+       /* width: 50%; */
+       object-fit: cover;
+       /* margin-top: 6em; */
+   }
+
+      /* ----------------------------------------- */
+    /*        DIV kalba :            ( 1334px )  */
+    /* ----------------------------------------- */
+
+  
+  
+}
+
