@@ -687,7 +687,7 @@ footer .footer-ketvirtas {
 
   font-size: 3.5em;
   color: #034958;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   padding-left: 2em;
   left: 86px;
 }
@@ -703,7 +703,7 @@ footer .footer-ketvirtas {
 .s4 h1 {
 
   font-size: 3.5em;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   color: #034958;
 }
 
@@ -719,7 +719,7 @@ footer .footer-ketvirtas {
 
   font-size: 3.5em;
   color: #034958;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -739,7 +739,7 @@ footer .footer-ketvirtas {
 .s7 h1 {
   font-size: 3.8em;
   color: #034958;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
