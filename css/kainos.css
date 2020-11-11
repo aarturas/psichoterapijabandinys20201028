@@ -1222,24 +1222,35 @@ img.pagalbinis {
         margin-top: 4rem;
     }
 
+    /* ---------------------------------------- */
+
     .kaina-1 {
-        margin-left: 19rem;
+        margin-left: 18rem;
         margin-top: -1.2rem;
     }
 
-     .kaina-2 {
-        margin-left: 19rem;
+    /* ---------------------------------------- */
+
+    .kaina-2 {
+        margin-left: 18rem;
         /* margin-top: -1.2rem; */
     }
 
-        .kaina-3 {
-        margin-left: 19rem;
+    /* ---------------------------------------- */
+
+    .kaina-3 {
+        margin-left: 18rem;
         /* margin-top: -1.2rem; */
     }
 
-        .kaina-4 {
-        margin-left: 19rem;
+    /* ---------------------------------------- */
+
+    .kaina-4 {
+        margin-left: 18rem;
         /* margin-top: -1.2rem; */
+    }
+
+    /* ---------------------------------------- */
     }
 
 
