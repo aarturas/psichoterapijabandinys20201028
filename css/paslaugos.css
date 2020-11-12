@@ -17,7 +17,8 @@ html {
 /* ======================================================================= */
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Merriweather', serif;
 }
 
 /* ======================================================================= */
@@ -29,6 +30,7 @@ body {
   max-width: 1440px;
   border: 1px solid  rgb(177, 175, 175, 0.5) ;
   margin: auto;
+
 
 }
 
@@ -99,13 +101,13 @@ header nav {
 .s3 h1 {
 
     position: relative;
-    top: 31%;
-    left: -5.7%;
-    transform: translate(12%,-100%);
+    margin-left: 2.1em;
     color: #034958;
     text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
-    font-weight: 400;
-    font-size: 3em;
+    font-weight: 600;
+    font-size: 2.35rem;
+    letter-spacing: 1px;
+    top: 5.4em;
 }
 
 
@@ -125,7 +127,8 @@ header nav {
     width: 4.4rem;
     border: 1px solid rgba(77, 77, 78, 0.2);
     cursor: pointer;
-    margin-top: 10.25em;
+    /* margin-top: 12rem; */
+    margin-top: 11em;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -210,17 +213,15 @@ p {
 
 .description h4 {
 
-   color: #034958;
-   display: flex;
-   /* width: 48%; */
-   font-size: 1.45rem;
-   /* font-size: 1.58em; */
-   font-weight: 400;
-   /* margin-left: 0.3em; */
-       margin-left: 3.9em;
-   line-height: 1.34;
-   /* margin-top: -2rem; */
-   margin-top: 14.3rem;
+    color: #034958;
+    display: flex;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 3.9em;
+    line-height: 1.49;
+    /* margin-top: 12em; */
+    margin-top: 11.9em;
 }
 
 /* -------------------------------------------------------------- */
@@ -325,7 +326,7 @@ p,
 li,
 a  {
 
-    font-size: 1.23em;
+    font-size: 1.23rem;
     color: rgba(77, 77, 78, 0.9);
     text-decoration: none;
 }
@@ -627,7 +628,7 @@ footer {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* ================================================== */
-/*                 .FOOTER - DISTRIBUTED              */
+/*                   .FOOTER - VISAS                  */
 /* ================================================== */
 
 .footer-visas{
@@ -829,14 +830,29 @@ footer p {
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*             @ MEDIA QUERIES :       ( 1230 PX )         */
+/*             @ MEDIA QUERIES :       ( 1240 PX )         */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1240px) {
 
     .nav__links li {
         padding: 0 0.5rem;
         font-size: 1.1rem;
+    }
+
+    /* -------------------------------------------- */
+    /*   Pirmas tekstas po "Paslaugos"  ( 1240 PX ) */
+    /* -------------------------------------------- */
+
+    .description h4 {
+
+        font-size: 1.1rem;
+    }
+
+  
+
+    .s3 h1 {
+        top: 4.6em;
     }
 
     /* ---------------------------------------------------- */
@@ -861,8 +877,9 @@ footer p {
 
     img.pagalbinis {
 
-        height: 300px;
+        height: 450px;
         width: 400px;
+        margin-right: -5%;
     }
 
     /* ---------------------------------------------------- */
@@ -870,7 +887,15 @@ footer p {
     h4:nth-of-type(4) {
 
         width: 20rem;
-        width: auto;
+        /* width: auto; */
+    }
+
+    /* ---------------------------------------------------- */
+    /*                   ( 1240 px )                        */
+    /* ---------------------------------------------------- */
+
+    .s3 .kalba {
+        margin-top: 9rem;
     }
 
 }
@@ -927,6 +952,18 @@ footer p {
 
     /* ---------------------------------------------------- */
 
+    img.pagalbinis {
+        height: 500px;
+
+    }
+
+    /* ---------------------------------------------------- */
+
+    .s3 h4 {
+        font-size: 1rem;
+        /* font-weight: 600; */
+    }
+
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -966,23 +1003,24 @@ footer p {
     /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
     /* ---------------------------------------------------- */
 
-    .s3 h1 {
+    /* .s3 h1 {
 
-        /* margin-top: -50%; */
-        margin-top: -110%;
+       margin: auto;
 
-    }
+    } */
 
     /* ---------------------------------------------------- */
     /*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
     /* ---------------------------------------------------- */
 
-      img.pagalbinis {
+    img.pagalbinis {
 
-        height: 500px;
-        width: 300px;
+        /* height: 400px; */
+        height: 300px;
         width: 100%;
-        margin-top: 10%;
+        /* margin-top: 18%; */
+        /* margin-top: 10%; */
+        margin-top: 8%;
     }
 
     /* ---------------------------------------------------- */
@@ -1000,7 +1038,34 @@ footer p {
 
     .s3 .description h4 {
 
-        margin-top: 80%;
+        /* margin-top: 80%; */
+        /* margin-top: 75%; */
+        /* margin-top: 69%; */
+        margin-top: 63%;
+    }
+
+    .description h4:nth-of-type(2) { 
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(3) {
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(4) {
+
+        margin-top: 1em;
+        width: 90%;
+    }
+
+     .description h4:nth-of-type(5) {
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(6) {
+        margin-top: 1em;
     }
 
     /* ---------------------------------------------------- */
@@ -1014,16 +1079,53 @@ footer p {
 /*      MEDIA QUERIES :        iki 860 px                   */
 /* ======================================================== */
 
-/* @media screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
 
-  .mobile__menu {
-    display: inherit;
-  }
+    .s3 .description h4 { 
 
-  .nav__links {
-    display: none;
-  }
-} */
+        margin-top: 65%;
+    }
+ 
+    .description h4:nth-of-type(2) { 
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(3) {
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(4) {
+
+        margin-top: 1em;
+        width: 90%;
+    }
+
+     .description h4:nth-of-type(5) {
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(6) {
+        margin-top: 1em;
+    }
+ 
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+@media (max-width:800px) {
+
+     .s3 .description h4 { 
+
+        margin-top: 70%;
+    }
+ 
+}
+
+
+
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1038,22 +1140,63 @@ footer p {
     padding-top:40px;
     } */
 
+    img.pagalbinis {
+        height: 300px;
+    }
+
     /* ---------------------------------------------------- */
     /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
     /* ---------------------------------------------------- */
 
     .s3 h1 {
 
-        /* margin-top: -3rem; */
-        /* margin-top: -53rem; */
-        margin-top: -110%;
+        margin-top: -12%;
     }
 
     /* ---------------------------------------------------- */
 
     .s3 .description h4 {
 
-        margin-top: 80%;
+        /* margin-top: 160%; */
+        /* color: red; */
+        /* margin-top: 70%; */
+        /* margin-top: 80%; */
+        /* margin-top: 100%; */
+        /* margin-top: 35em; */
+            margin-top: 33em;
+    }
+
+     .description h4:nth-of-type(2) { 
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(3) {
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(4) {
+
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .description h4:nth-of-type(5) {
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(6) {
+        margin-top: 1em;
+    }
+
+    /* ---------------------------------------------------- */
+    /*                   ( 800 px )                        */
+    /* ---------------------------------------------------- */
+
+    .s3 .kalba {
+        /* margin-top: 7rem; */
+        margin-top: 5em;
     }
 
     /* ---------------------------------------------------- */
@@ -1063,6 +1206,52 @@ footer p {
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*               @ MEDIA QUERIES:  600 PX             */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width:600px) { 
+
+      .s3 .description h4 {
+
+        margin-top: 32em;
+    }
+
+       .description h4:nth-of-type(2) { 
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(3) {
+
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(4) {
+
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .description h4:nth-of-type(5) {
+        margin-top: 1em;
+    }
+
+    .description h4:nth-of-type(6) {
+        margin-top: 1em;
+    }
+
+      /* ---------------------------------------------------- */
+    /*        Pagrindinis:  " PASLAUGOS " h1 uzrasas        */
+    /* ---------------------------------------------------- */
+
+    .s3 h1 {
+
+        margin-top: -2.5em;
+    }
+
+
+}
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1086,6 +1275,25 @@ footer p {
     background-image {
 
         width: 30%;
+    }
+
+      /* ---------------------------------------------------- */
+
+    .s3 .description h4 {
+
+        margin-top: 10%;
+        font-size: 1.1rem;
+        /* color: red; */
+    }
+
+    /* ---------------------------------------------------- */
+
+    /* ---------------------------------------------------- */
+    /*                   ( 400 px )                        */
+    /* ---------------------------------------------------- */
+
+    .s3 .kalba {
+        margin-top: 4em;
     }
 
     /* ******************************************* */
@@ -1117,10 +1325,11 @@ footer p {
     .s3 h1 {
 
         justify-content: center;
-        font-size: 3.1em;
+        /* font-size: 3.1em; */
         font-weight: 500;
-        text-align: center;
-        top: 18%;
+        /* text-align: center; */
+        /* top: 18%; */
+        top: -37%;
     }
 
     /* ---------------------------------------------------- */
@@ -1163,11 +1372,7 @@ footer p {
 
     /* ---------------------------------------------------- */
 
-    .s3 .kalba {
-
-        margin-top: 3em;
-        margin-right: 2rem;
-    }
+   
 
      /* ---------------------------------------------------- */
     /*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
@@ -1175,10 +1380,13 @@ footer p {
 
       img.pagalbinis {
 
-        height: 400px;
-        width: 350px;
-        margin-top: 22%;
-        margin-right: 3%;
+        /* height: 400px; */
+        /* width: 350px; */
+        /* margin-top: 22%; */
+        /* margin-right: 3%; */
+        width: 100%;
+        margin-top: 32%;
+        margin-right: 0;
     }
     
     /* ---------------------------------------------------- */
@@ -1189,7 +1397,7 @@ footer p {
         margin-left: 1rem;
         margin-right: 1rem;
         margin-bottom: 2rem;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
     /* ---------------------------------------------------- */
