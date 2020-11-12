@@ -1658,7 +1658,7 @@ body > p:first-of-type::after {
    } */
 
    /* ----------------------------------------------------- */
-   /*   ( Apie Mus )   Trečiasis tekstas    ( 940 PX )      */
+   /*   ( Apie Mus )   Trečiasis tekstas       ( 940 PX )   */
    /* ----------------------------------------------------- */
 
    /* .s2 h5:last-of-type {
@@ -1670,12 +1670,10 @@ body > p:first-of-type::after {
 
    .laima {
        position: relative;
-       /* top: 35em; */
-       /* margin: auto; */
    }
 
-         .s2 .kalba {
-       margin-left: 85%;
+    .s2 .kalba {
+        margin-left: 85%;
    }
  
 } 
@@ -1683,32 +1681,52 @@ body > p:first-of-type::after {
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-/* ======================================================== */
-/*      MEDIA QUERIES :       iki 860 px                   */
-/* ======================================================== */
+/* ============================================================ */
+/*      MEDIA QUERIES :                       iki ( 860 px )    */
+/* ============================================================ */
 
 @media screen and (max-width: 876px) {
 
-   .mobile__menu {
-      display: inherit;
-   }
+    /* -------------------------------------------------------- */
+    /*   Atsiranda "Hamburgerio" bruksneliai  iki ( 860 px )    */
+    /* -------------------------------------------------------- */
 
-   .nav__links {
-      display: none;
-   }
+    .mobile__menu {
+        display: inherit;
+    }
 
-    /* ------------------------------------ */
-   /*     Trečiasis tekstas, didžiausias   */
-   /* ------------------------------------ */
+    /* -------------------------------------------------------- */
+    /*    Paslepiame NAV juosta su nuorodomis   iki ( 860 px )  */
+    /* -------------------------------------------------------- */
 
-   .s2 h5:last-of-type {
-      display: none;
-   }     
+    .nav__links {
+        display: none;
+    }
 
-   .s2 h5.tekstas-1 { 
+    /* --------------------------------------------------------- */
+    /*      Trečiasis tekstas, didžiausias     iki ( 860 px )    */
+    /* --------------------------------------------------------- */
 
-    width: 100%;
-   }
+
+    .s2 h5:last-of-type {
+        display: none;
+    }    
+    
+    /* ---------------------------------------------------------- */
+    /*   ( Apie Mus )  "Psichologė - psichoterap ..." ( 940 PX )  */
+    /* ---------------------------------------------------------- */
+
+    .s2 h5.tekstas-1 { 
+        width: 100%;
+    }
+
+    /* --------------------------------------------------------- */
+    /*        Laimos nuotraukos  ( DIV )   iki ( 860 px )     */
+    /* --------------------------------------------------------- */
+
+    .nuotrauka {
+        margin-left: 2em;
+    }
 
    /* -------------------------------------- */
    /*        Laimos nuotraukos  ( DIV )      */
@@ -1824,7 +1842,7 @@ body > p:first-of-type::after {
     .laima {
        position: relative;
        /* top: 35em; */
-       margin: auto;
+       /* margin: auto; */
    }
     
 }
@@ -1890,7 +1908,7 @@ body > p:first-of-type::after {
    .laima {
        position: relative;
        top: 35%;
-       margin: auto;
+       /* margin: auto; */
    }
 
     /* .s2 .kalba {
