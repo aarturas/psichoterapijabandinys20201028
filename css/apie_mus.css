@@ -32,10 +32,10 @@ body {
 
 .container  {
 
-  max-width: 1440px;
-  margin: auto;
-  border: 1px solid  rgb(177, 175, 175, 0.5);
-  /* height: 100vh; */
+    max-width: 1440px;
+    margin: auto;
+    border: 1px solid  rgb(177, 175, 175, 0.5);
+    /* height: 100vh; */
 }
 
 /* ======================================================== */
@@ -52,7 +52,8 @@ header {
     background-color: rgb(255,255,255,1);
     border-bottom: 1px solid rgba(77, 77, 78, 0.2);
     box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);
-    height: 7.7em;
+    /* height: 7.7em; */
+    max-height: 7.7em;
     /* height: calc(100vh - 53em); */
 
     /* ******************************************* */
@@ -104,7 +105,8 @@ header nav {
     cursor: pointer;
     margin-left: 2.6em;
     height: 4.7em;
-    top: 18.89px;
+
+    /* top: 18.89px; */
 }
 
 /* ================================================== */
@@ -270,12 +272,17 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     float: right;
-    margin-right: 4em;
+    /* margin-right: 4em; */
     padding: 0.1rem 0.55rem ;
     width: 4.4rem;
     border: 1px solid rgba(77, 77, 78, 0.2);
     cursor: pointer;
-    margin-top: -6em;
+    /* margin-top: -6em; */
+    /* margin-top: -23%; */
+
+    margin-left: 90.7%;
+    margin-top: 2.5%;
+
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -303,17 +310,12 @@ p {
 
 .s2 h1 {
 
-  color: #034958;
-  /*  Panaikinsime stačiakampį foną aplink užrašą: */
-  /* -webkit-background-clip: text; */
-  /* font-size: 1rem; */
-  /* font-weight: lighter; */
-   font-size: 3em;
-   letter-spacing: 2.7px;
-   margin-left: 1.4em;
-   /* margin-top: 1.6em; */
-   /* margin-top: 13.36em; */
-    margin-top: 1.55em;
+    color: #034958;
+    font-size: 3em;
+    letter-spacing: 2.7px;
+    margin-left: 1.4em;
+    /* margin-top: 1%; */
+    margin-top: 1.3%;
 }
 
 /* .s2 .footer-distributed {
@@ -322,8 +324,29 @@ p {
    border: 1px solid green;
 } */
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ======================================================================= */
+/*    Aprašymas teksto : / Description / laimute / nuotrauka / tekstas...  */
+/* ======================================================================= */
+
+.description {
+  margin-left: 5%;
+  /* margin-top: -10%; */
+  margin-top: -21em;
+  margin-top: -68em;
+
+}
+
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+.nuotrauka {
+    /* background-color: rgb(247, 153, 153); */
+    /* margin-top: -23em; */
+    margin-top: -24em;
+}
 
 /* ====================================================== */
 /*                ( Laimos nuotrauka )                    */
@@ -331,12 +354,14 @@ p {
 
 .laima {
 
-  height: 305px;
-  width: 303px;
-  position: relative;
-  object-fit: cover;
-  margin-left: 2.2em;
-  margin-top: 3.6em;
+    height: 305px;
+    width: 303px;
+    /* position: relative; */
+    object-fit: cover;
+    margin-left: 2.2em;
+    /* margin-top: 3.6em; */
+    /* margin-top: -32%; */
+    /* margin-top: -70%; */
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -354,6 +379,12 @@ p {
     color: #236389;
     margin-top: 1.75rem;
     /* margin-left: -0.3em; */
+    /* margin-top: 28rem; */
+        /* margin-top: 33.5rem; */
+        /* margin-top: 40.5rem; */
+        /* margin-top: 40em; */
+            margin-top: 40.27em;
+                margin-top: 40.06em;
 }
 
 /* ====================================================== */
@@ -384,20 +415,18 @@ p {
     line-height: 1.2;
 } */
 
+/* --------------------------------------------------- */
+/*     Pirmoji teksto eilute po Vardo ir Pavardes:     */
+/* --------------------------------------------------- */
+
 .s2 h5.tekstas-1 {
 
-     /* position: relative; */
-    /* font-weight: lighter; */
-    /* font-size: 1.52rem; */
     color: #236389;
-
-    /* margin: 20em 18em 0 1em; */
     margin: 20em 18em 0 0;
-
-    margin-top: 2.55rem;
     overflow: hidden;
-    /* letter-spacing: 0.08rem; */
     line-height: 1.2;
+    /* margin-top: 4.1em; */
+    margin-top: 4.75em;
 }
 
 /* ====================================================== */
@@ -435,29 +464,16 @@ p {
 
 .s2 h5.tekstas-3 {
 
-    /* font-size: 1rem; */
-    /* margin-top: -28.4em; */
-    margin-top: -22.25em;
     margin-right: 7rem;
     margin-left: 21.8em;
-    /* color: red; */
-
+    margin-top: -21.9em;
+    /* background-color: #e0ac1c; */
 }
 
 /* ====================================================== */
 /* ====================================================== */
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-/* ======================================================================= */
-/*                            Aprašymas teksto                             */
-/* ======================================================================= */
-
-.description {
-   /*  Nustatome erdve aplink nuotrauka:   */
-  margin-left: 5%;
-}
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1384,7 +1400,6 @@ body > p:first-of-type::after {
     /* ---------------------------------------------------------------- */
     
     .logo {
-        /* margin-left: -1em; */
         margin-left: 1em;
     }
 
@@ -1417,10 +1432,9 @@ body > p:first-of-type::after {
         font-size: 0.8rem;
     }
 
-    footer.footer-distributed p { 
+    /* footer.footer-distributed p { 
         color: red;
-
-    }
+    } */
 
 
 
@@ -1461,12 +1475,14 @@ body > p:first-of-type::after {
    } */
 
     /* ----------------------------------------- */
-    /*      Trečiasis tekstas    ( 1240 PX )     */
+    /*  Didžiausias: Trečiasis tekstas ( 1240 PX ) */
     /* ----------------------------------------- */
 
    .s2 h5.tekstas-3 {
-       margin: -35.5rem 3rem 0 24rem;
-       /* margin: -33.5rem 3rem 0 24rem; */
+       /* margin: -35.5rem 3rem 0 24rem; */
+       /* width: 100%; */
+       margin-right: 3em;
+       margin-left: 38%;
    }
 
 }
@@ -1482,9 +1498,9 @@ body > p:first-of-type::after {
       padding: 0 0.7em;
    } */
 
-   .s2 h4 {
+   /* .s2 h4 {
        margin-left: -1em;
-   }
+   } */
 
     /* ----------------------------------------- */
    /*       Pirmasis tekstas    ( 1130 PX )     */
@@ -1546,9 +1562,9 @@ body > p:first-of-type::after {
     display: none;
     }
 
-    .s2 h4 {
+    /* .s2 h4 {
         margin-left: 0.1em;
-    }
+    } */
 
 
      /* ----------------------------------------- */
@@ -1657,6 +1673,10 @@ body > p:first-of-type::after {
        /* top: 35em; */
        /* margin: auto; */
    }
+
+         .s2 .kalba {
+       margin-left: 85%;
+   }
  
 } 
 
@@ -1685,30 +1705,32 @@ body > p:first-of-type::after {
       display: none;
    }     
 
+   .s2 h5.tekstas-1 { 
+
+    width: 100%;
+   }
+
    /* -------------------------------------- */
    /*        Laimos nuotraukos  ( DIV )      */
    /* -------------------------------------- */
 
-    .nuotrauka {
+    /* .nuotrauka {
 
-      /* font-size: 3.6em; */
-      /* right: 10%; */
       transform: translate(-10%);
       margin-left: 0.1em;
       transform: translate(0.1em);
       margin-top: -2.5em;
-   }
+   } */
 
    /* ------------------------------------------- */
    /*   "Laima Matulioniene" uzrasas  ( 876px )   */
    /* ------------------------------------------- */
 
-   .s2 h4 {
-      /* font-size: 3.2em; */
+   /* .s2 h4 {
       right: 10%;
       transform: translate(-10%);
       margin-left: 1.5em;
-   }
+   } */
 
    /* ---------------------------------------- */
    /*   Paslepsime "konsultuoja anglu kalba"   */
@@ -1718,11 +1740,9 @@ body > p:first-of-type::after {
       display: none;
    } */
 
-   .laima {
+   /* .laima {
        position: relative;
-       /* top: 35em; */
-
-   }
+   } */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1797,13 +1817,13 @@ body > p:first-of-type::after {
         display: inherit;
     }
 
-    .s2 h1 {
+    /* .s2 h1 {
         margin: 1em auto 0;
-    }
+    } */
 
-     .laima {
+    .laima {
        position: relative;
-       top: 35em;
+       /* top: 35em; */
        margin: auto;
    }
     
@@ -1822,14 +1842,18 @@ body > p:first-of-type::after {
     display: none;
     } */
         
-    header {
+    /* header {
     padding-top:40px;
-    }
+    } */
 
        .laima {
        position: relative;
-       top: 35em;
-       margin: auto;
+       /* top: 35em; */
+       /* margin: auto; */
+   }
+
+       .s2 .kalba {
+       margin-left: 80%;
    }
 
     
@@ -1861,13 +1885,17 @@ body > p:first-of-type::after {
       /* right: -50%; */
       /* transform: translate(50%); */
       /* margin-left: 1.5em; */
-      margin: auto;
+      /* margin: auto; */
    }
    .laima {
        position: relative;
-       top: 35em;
+       top: 35%;
        margin: auto;
    }
+
+    /* .s2 .kalba {
+       margin-left: 80%;
+   } */
    
 }
 
@@ -1943,15 +1971,13 @@ body > p:first-of-type::after {
 
  
 
-   .nuotrauka {
+   /* .nuotrauka {
        margin: auto;
-   }
+   } */
 
-   .logo {
-       /* width: 50%; */
+   /* .logo {
        object-fit: cover;
-       /* margin-top: 6em; */
-   }
+   } */
 
       /* ----------------------------------------- */
     /*        DIV kalba :            ( 1334px )  */
