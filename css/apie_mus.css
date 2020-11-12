@@ -1937,7 +1937,8 @@ body > p:first-of-type::after {
   }
 
   .nuotrauka {
-      margin-left: 0;
+      /* margin-left: 0; */
+      margin-left: -1em;
   }
 
   /* ******************************************* */
@@ -1969,6 +1970,9 @@ body > p:first-of-type::after {
   .footer-distributed {
     display: none;
   }
+
+  /* ******************************************* */
+
 }
 
 
