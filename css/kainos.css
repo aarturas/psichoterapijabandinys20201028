@@ -7,7 +7,9 @@
 
 body {
 
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Merriweather', serif;
+  
 
         width:100%;
         height: 100%;
@@ -146,10 +148,12 @@ h2 {
     font-size: 2.8rem;
     color: #174f6e;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
-    margin-top: -48rem;
-    margin-top: -56.5rem;
+    /* margin-top: -48rem; */
+    /* margin-top: -56.5rem; */
+    margin-top: -48.7rem;
+
 }
 
 
@@ -433,11 +437,11 @@ footer .footer-ketvirtas {
 
 .s1 {
 
-  background-image: url('./img/OfisasPataisytas4.jpg');
-  background-color:rgba(44, 23, 23, 0.3);
-  background-blend-mode: multiply;
-  background-size: cover;
-  /* background-attachment: fixed; */
+    background-image: url('./img/OfisasPataisytas4.jpg');
+    background-color:rgba(44, 23, 23, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    /* background-attachment: fixed; */
 }
 
 /* ======================================================== */
@@ -450,27 +454,14 @@ footer .footer-ketvirtas {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                     Sekcijos H - 1 raidžių dydis:                  */
+/*     Pagrindinis skyriaus pavadinimas:  Sekcijos :   ( "KAINOS" )   */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .section h1 {
-  /*  Pagrindinis užrašas "Pcihoterapija" pirmas psl., ir t.t. */
-  /* font-size: 64px; */
-  /* position: absolute; */
-  /*       Nuo viršaus truputį atitrauksime: */
-  /* top: 10%; */
-  /*   Pastumsime užraša H - 1 į dešinę pusę: */
-  /* left: 35%; */
-  /* Kadangi užrašas (pavadinimas - h1) pasislinko, grąžinsime į vidurį: */
-  /* transform: translate(-20%, -35%); */
-  /* z-index: 100; */
 
-  /* padding: 0 2em; */
-
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
-   /* font-size: 1rem; */
-  font-weight: 300;
+    /* color: rgb(255, 255, 255); */
+    text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+    font-weight: 300;
 }
 
 /* ======================================================== */
@@ -478,8 +469,9 @@ footer .footer-ketvirtas {
 /* ======================================================== */
 
 .s2 h1 {
-  font-size: 2rem;
-  color: #034958;
+
+    font-size: 2rem;
+    color: #034958;
 }
 
 /* ======================================================== */
@@ -498,8 +490,8 @@ footer .footer-ketvirtas {
 
 .s4 h1 {
 
-  font-size: 3.5em;
-  color: #034958;
+    font-size: 3.5em;
+    color: #034958;
 }
 
 /* ======================================================== */
@@ -508,8 +500,8 @@ footer .footer-ketvirtas {
 
 .s5 h1 {
 
-  font-size: 3.5em;
-  color: #034958;
+    font-size: 3.5em;
+    color: #034958;
 }
 
 /* ======================================================== */
@@ -518,8 +510,8 @@ footer .footer-ketvirtas {
 
 .s6 h1 {
 
-  font-size: 3.5em;
-  color: #034958;
+    font-size: 3.5em;
+    color: #034958;
 }
 
 /* ======================================================== */
@@ -528,8 +520,8 @@ footer .footer-ketvirtas {
 
 .s7 h1 {
 
-  font-size: 3.8em;
-  color: #034958;
+    font-size: 3.8em;
+    color: #034958;
 }
 
 /* ======================================================== */
@@ -538,15 +530,15 @@ footer .footer-ketvirtas {
 
 .hero {
     
-  min-height: 100%;
-  position: relative;
-  /* padding: 0px 10%; */
-  /* viska isrykiuosime i eilutes ir stulpelius */
-  display: flex;
-  /* dabar viskas stulpeliu is eiles bus */
-  flex-direction: column;
-  /* background-color: rgba(5, 6, 32, 0.7); */
-  overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    /* padding: 0px 10%; */
+    /* viska isrykiuosime i eilutes ir stulpelius */
+    display: flex;
+    /* dabar viskas stulpeliu is eiles bus */
+    flex-direction: column;
+    /* background-color: rgba(5, 6, 32, 0.7); */
+    overflow: hidden;
 }
 
 /* ======================================================== */
@@ -555,22 +547,22 @@ footer .footer-ketvirtas {
 
 .hero:before {
 
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* su minuso zenklu, kad IMG butu "zemiau" visu sluoksniu */
-  z-index: -10;
-  /* background-image: url(img/Islandija.jpg); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* galime naudoti FILTER, kad pakoreguoti stiliu */
-  filter: blur(10px);
-  /* dar daugiau BLUR stiliaus? */
-  transform: scale(1.2);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* su minuso zenklu, kad IMG butu "zemiau" visu sluoksniu */
+    z-index: -10;
+    /* background-image: url(img/Islandija.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* galime naudoti FILTER, kad pakoreguoti stiliu */
+    filter: blur(10px);
+    /* dar daugiau BLUR stiliaus? */
+    transform: scale(1.2);
 }
 
 /* ======================================================== */
@@ -579,21 +571,31 @@ footer .footer-ketvirtas {
 
 header {
 
-  /* visa NAV "persoks" i virsu */
-  display: flex;
-  /* pastumsime logo i kaire puse */
-  justify-content: space-between;
-  justify-self: center;
-  /* sucentruosime NAV vertikaliai i centra */
-  align-items: center;
-  /* atitrauksime nuo virsaus truputi */
-  /* margin-top: 10px; */
-  position: fixed;
-  z-index: 100;
-  background-color: rgb(255,255,255,1);
-  /*  Aprasau apatine NAV linija: */
-  border-bottom: 1px solid rgba(77, 77, 78, 0.2);
-  box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);
+    /* visa NAV "persoks" i virsu */
+    display: flex;
+    /* pastumsime logo i kaire puse */
+    justify-content: space-between;
+    justify-self: center;
+    /* sucentruosime NAV vertikaliai i centra */
+    align-items: center;
+    /* atitrauksime nuo virsaus truputi */
+    /* margin-top: 10px; */
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(255,255,255,1);
+    /*  Aprasau apatine NAV linija: */
+    border-bottom: 1px solid rgba(77, 77, 78, 0.2);
+    box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);
+}
+
+/* ======================================================== */
+/*          Viršutinė NAV juosta padarome nejudančia        */
+/* ======================================================== */
+
+header nav {
+
+    position: sticky;
+    top: 0;
 }
 
 /* ======================================================== */
@@ -665,6 +667,8 @@ header {
 
   display: none;
 }
+
+
 
 /* ======================================================== */
 /*      HAMBURGER menu  /     nustatysime pozicija          */
@@ -824,15 +828,7 @@ header {
   color: #e74d71;
 }
 
-/* ======================================================== */
-/*          Viršutinė NAV juosta padarome nejudančia        */
-/* ======================================================== */
 
-header nav {
-
-    position: sticky;
-    top: 0;
-}
 
 /* ======================================================== */
 /*                  ACTIVE klases aprasymas                 */
@@ -1007,8 +1003,6 @@ body > p:first-of-type::after {
 	line-height: 35px;
     margin: 0 0.5em;
 }
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* ================================================== */
 /*                      footer P                      */
@@ -1211,14 +1205,19 @@ img.pagalbinis {
 @media (max-width: 400px) {
 
     .container .container-2 h1 {
-        /* margin-top: -50rem; */
-            margin-top: -53rem;
 
+        /* margin-top: -50rem; */
+        /* margin-top: -56rem; */
+        margin-top: -53rem;
     }
+
+    /* ---------------------------------------- */
 
     .tekstas {
         line-height: 1;
     }
+
+    /* ---------------------------------------- */
 
     .pirminis {
         margin-top: 4rem;
@@ -1253,11 +1252,6 @@ img.pagalbinis {
     }
 
     /* ---------------------------------------- */
-    }
-
-
-
-
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -1482,7 +1476,7 @@ img.pagalbinis {
 
     .s1 h1 {
 
-        top: 10%;
+        /* top: 10%; */
         font-size: 3em;
         text-align: center;
     }
@@ -1565,13 +1559,13 @@ img.pagalbinis {
 
     .s4 h1 {
 
-        top: 1%;
-        justify-content: center;
-        font-size: 3.5em;
-        margin: 15px;
+        /* top: 1%; */
+        /* justify-content: center; */
+        /* font-size: 3.5em; */
+        /* margin: 15px; */
         text-align: center;
 
-        color: #089714;
+        /* color: #089714; */
     }
 
     /* ******************************************* */

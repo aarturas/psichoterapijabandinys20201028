@@ -1936,6 +1936,10 @@ body > p:first-of-type::after {
     width: 30%;
   }
 
+  .nuotrauka {
+      margin-left: 0;
+  }
+
   /* ******************************************* */
   /*      Gerai neprisimenu kas ka cia daro?     */
   /* ******************************************* */
