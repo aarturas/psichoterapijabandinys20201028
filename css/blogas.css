@@ -150,6 +150,7 @@ a.melynas {
 .s6 {
 
     background-color: rgb(255,255,255,1);
+    /* height: 100vh; */
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -800,7 +801,7 @@ footer .footer-ketvirtas {
 /*               @ MEDIA QUERIES:  980 PX             */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
@@ -914,7 +915,7 @@ footer .footer-ketvirtas {
 /*    Small devices ( landscape phones, 576px and up )     */
 /* ======================================================= */
 
-@media (min-width: 356px)  { 
+@media screen and (min-width: 356px)  { 
 
     .s6 h1 {
         text-align: center;
@@ -1251,7 +1252,7 @@ footer .footer-ketvirtas {
 /*    Small devices ( landscape phones, 576px and up )     */
 /* ======================================================= */
 
-@media (min-width: 576px)  { 
+@media screen and (min-width: 576px)  { 
 
   
 
@@ -1624,7 +1625,7 @@ footer .footer-ketvirtas {
 /*          Medium devices ( tablets, 768px and up )       */
 /* ======================================================= */
 
-@media (min-width: 768px) { 
+@media screen and (min-width: 768px) and (orientation: landscape) { 
  
     .straipsniai {
 
@@ -1709,9 +1710,9 @@ footer .footer-ketvirtas {
 
     /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-    .tekstas1 {
-        margin-top: -2em;
-    }
+    /* .tekstas1 {
+        margin-top: -1em;
+    } */
 
     /* ========================================================== */
     /*                  BUTTON -- Mygtukai                        */
@@ -1727,7 +1728,7 @@ footer .footer-ketvirtas {
         /* top: -0.5em; */
         /* top: 1.5em; */
         left: 30%;
-        top: 1em;
+        /* top: 1em; */
         top: 0em;
     }
 
@@ -1777,7 +1778,7 @@ footer .footer-ketvirtas {
 /*         Large devices  ( desktops, 992px and up )       */
 /* ======================================================= */
 
-@media (min-width: 992px) { 
+@media screen and (min-width: 992px) { 
 
       .straipsniai {
 
@@ -1949,7 +1950,7 @@ footer .footer-ketvirtas {
 /*   Extra large devices (large desktops, 1200px and up)   */
 /* ======================================================= */
 
-@media (min-width: 1200px) { 
+@media screen and (min-width: 1200px) { 
 
     .straipsniai {
         grid-template-columns: repeat(8, 1fr);
@@ -2105,7 +2106,7 @@ footer .footer-ketvirtas {
 /*   Extra large devices ( large desktops, 1400 px and up )  */
 /* ========================================================= */
 
-@media (min-width: 1400px) { 
+@media screen and (min-width: 1400px) { 
 
     .s6 h1 {
         
@@ -2646,7 +2647,7 @@ footer .footer-ketvirtas {
 /*          /  Naudojame MAX - WIDTH nustatyma  /          */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-@media (max-width: 575.98px) { 
+@media screen and(max-width: 575.98px) { 
 
  }
 
@@ -2654,7 +2655,7 @@ footer .footer-ketvirtas {
 
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media screen and (max-width: 767.98px) { 
 
 }
 
@@ -2662,7 +2663,7 @@ footer .footer-ketvirtas {
 
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media screen and (max-width: 991.98px) { 
 
  }
 
@@ -2670,7 +2671,7 @@ footer .footer-ketvirtas {
 
 
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
+@media screen and (max-width: 1199.98px) { 
 
  }
 
