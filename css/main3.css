@@ -11,61 +11,37 @@ html {
 	scroll-behavior: smooth;
 }
 
-
 /* ======================================================== */
 
 body {
 	font-family: 'PT Sans', sans-serif;
 	background-color: #ffffff;
-	/* width:100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x:hidden; */
 	/*  Mobiliajame paslepiame tolimesnius puslapius:   */
 	overflow-y: hidden;
 }
 
 
 /* ============================================================ */
-
-
 /*                         CONTAINER                            */
-
-
 /* ============================================================ */
 
 .container {
-	/* position: relative; */
+
 	max-width: 1440px;
 	margin: auto;
 	border: 1px solid rgb(177, 175, 175, 0.5);
-	/* border: 1px solid red; */
-	/* height: 100vh; */
-	/* background-color: #e0ac1c; */
-	/* height: 100vh; */
 }
 
-
 /* ============================================================ */
-
-
 /*                            MAIN                              */
-
-
 /* ============================================================ */
 
 main {
 	background-color: #e0ac1c;
 }
 
-
 /* ============================================================ */
-
-
 /*                      .FULL - PAGE                            */
-
-
 /* ============================================================ */
 
 .full-page {
@@ -148,7 +124,24 @@ header nav {
 /*    NAV juostoje nuorodų tarpų reguliavimas:      */
 
 
+
+
+/* ======================================================== */
+/*    NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    */
+/* ======================================================== */
+
+/* .nav__links li { */
+.s1 .nav__links li {
+
+
+  /* inline-block bus vienoje eiluteje, vienas salia kito */
+  display: inline-block;
+  /* padding: 0 1.2em; */
+  padding: 0;
+}
 /* ================================================ */
+
+
 
 .nav__links li a {
 	margin: 0 1.7rem;
