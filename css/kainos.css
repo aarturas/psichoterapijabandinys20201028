@@ -6,6 +6,16 @@
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+html {
+
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 /* ======================================================== */
 /*                     /   BODY  /                          */
 /* ======================================================== */
@@ -1268,7 +1278,9 @@ section.features ol li div {
     section.features ol li div {
 
         display: grid;
-        grid-template-columns: fit-content(80%) fit-content(20%);
+        /* grid-template-columns: fit-content(80%) fit-content(20%); */
+        grid-template-columns: 70% 30%;
+
     }
 
     /*   Lentelės viduje esančio teksto dydis:  */
@@ -1334,6 +1346,9 @@ section.features ol li div {
 
  }
 
+ /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+ /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
 @media screen and (max-width: 672px) {
 
     section.features ol li {
@@ -1342,7 +1357,7 @@ section.features ol li div {
         /* grid-template-columns: 50% 50%; */
         grid-template-columns: 70% 30%;
         /* grid-template-columns: minmax(min-content, 1fr); */
-        background-color: rgb(157, 241, 252);
+        /* background-color: rgb(157, 241, 252); */
 
         /* define two template "rows per grid" (this is my murky understanding) */
         grid-template-rows: auto auto;
