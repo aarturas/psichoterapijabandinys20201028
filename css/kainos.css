@@ -1,4 +1,5 @@
 * {
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,7 +14,7 @@ html {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 /* ======================================================== */
@@ -57,8 +58,12 @@ body {
     z-index: 100; 
     background-color: rgb(255,255,255,1); 
     /*  Aprasau apatine NAV linija: */
-    border-bottom: 1px solid rgba(77, 77, 78, 0.2); 
-    box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2); 
+    /* border-bottom: 1px solid rgba(77, 77, 78, 0.2);  */
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1)
+
+    /* box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);  */
  } 
 
 /* ======================================================== */
@@ -97,7 +102,9 @@ header nav {
     cursor: pointer;
 
     /* margin-left: 76%; */
-    margin-left: 70%;
+    /* margin-left: 70%; */
+    margin-left: 75%;
+
     /* margin-top: -10em; */
     /* margin-top: auto; */
     margin-top: 1em;
@@ -171,11 +178,13 @@ a.melynas {
 
 .logo {
 
-  cursor: pointer;
-  height: 5.9rem;
+    cursor: pointer;
+    height: 5.9rem;
 
-  left: 79px;
-  top: 10em;
+    left: 79px;
+    top: 10em;
+
+    transition: 0.5s;
 }
 
 /*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -188,9 +197,14 @@ a.melynas {
 
     background-color: rgb(255,255,255,1);
     /* height: 100vh; */
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    border: 1px solid rgba(77, 77, 78, 0.2); 
 
-    max-height: 100vh;
+    /* border-right: 1px solid rgba(77, 77, 78, 0.2);  */
+    /* border-left: 1px solid rgba(77, 77, 78, 0.2); */
+
+    /* max-height: 100vh; */
+    height: 100vh;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -201,8 +215,9 @@ a.melynas {
 
     /* font-family: 'Commissioner', sans-serif; */
     text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.1rem;
+    /* font-weight: 600; */
+    font-weight: 400;
     color: #034958;
 
     margin-top: 4em;
@@ -242,10 +257,10 @@ a.melynas {
 /*          NAV juostoje nuorodų aprašymas          */
 /* ================================================ */
 
-.nav__links {
+/* .nav__links {
 
    display: flex;
-}
+} */
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /*          Bandau perkelti NAV nuorodu: HEADER'io linkus            */
@@ -273,7 +288,8 @@ a.melynas {
 
 .nav__links li a {
 
-   margin: 0 1.7rem;
+   /* margin: 0 1.7rem; */
+
    font-size: 1.6rem;
    font-weight: 100;
    text-decoration: none;
@@ -474,19 +490,21 @@ a.melynas {
     display: flex;
     width: 100%;
     max-width: 1436px;
-    height: 8.6em;
 
-    margin-top: -29%;
+    /* height: 8.6em; */
+
+    /* margin-top: -29%; */
 }
 
 /* ---------------------------------------------------- */
 /*    Visas FOOTER'io blokas: FOOTER - DISTRIBUTED      */
 /* ---------------------------------------------------- */
 
-.footer-distributed {
+/* .footer-distributed {
 
     padding-top: 2.82em;
-}
+
+} */
 
 /* ================================================== */
 /*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
@@ -542,7 +560,8 @@ footer p {
 
 	display: inline-block;
     vertical-align: top;
-    border: 1px solid rgba(77, 77, 78, 0.2);
+
+    /* border: 1px solid rgba(77, 77, 78, 0.2); */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -581,7 +600,7 @@ footer p {
 
     margin: 0.5em 0;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -808,11 +827,13 @@ footer .footer-ketvirtas {
 /*        Paslepiame NAV nuorodu  menu prie 1130 px          */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1150px) {
+
 
     .nav__links {
         display: none;
     }
+    
 
     .s3 footer {
         display: none;
@@ -854,7 +875,9 @@ footer .footer-ketvirtas {
 
         /* '''''''''''''''''''''' */
 
-        height: 100vh;
+        /* height: 100vh; */
+
+
         /* display: flex; */
         /* flex-direction: column; */
         /* align-items: center; */
@@ -1072,9 +1095,7 @@ footer .footer-ketvirtas {
         font-size: 2rem;
         text-align: center;
         padding-bottom: 1rem;
-        /* color: #034958; */
         color: rgba(3, 73, 88, 0.8);
-
         font-weight: 600;
     }
 
@@ -1083,9 +1104,7 @@ footer .footer-ketvirtas {
         font-size: 1.5rem;
         font-weight: 200;
         padding-bottom: 1rem;
-        /* color: #034958; */
         color: rgba(3, 73, 88, 0.8);
-
         font-weight: 100;
     }
 
@@ -1093,7 +1112,6 @@ footer .footer-ketvirtas {
 
     .tekstas3 button {
 
-        /* display: grid; */
         margin: auto;
         width: 100%;
         bottom: 0;
@@ -1116,36 +1134,24 @@ footer .footer-ketvirtas {
 
     .tekstas1 {
 
-        /* border: 1px solid #ffe066; */
-        /* border-radius: 5px; */
         display: flex;
         flex-direction: column;
-
-        /* background-color: rgb(241, 238, 208); */
     }
 
     /* ------------------------------------------ */
 
     .tekstas2 {
 
-        /* border: 1px solid #f3c715; */
-        /* border-radius: 5px; */
         display: flex;
         flex-direction: column;
-
-        /* background-color: rgb(202, 252, 204); */
     }
 
     /* ------------------------------------------ */
 
     .tekstas3 {
 
-        /* border: 1px solid #f3633f; */
-        /* border-radius: 5px; */
         display: flex;
         flex-direction: column;
-
-        /* background-color: rgb(245, 200, 200); */
     }
 
     /* -------------------------------------------- */
@@ -1153,10 +1159,12 @@ footer .footer-ketvirtas {
     /* -------------------------------------------- */
 
     img {
-        max-width: 100%;
+
         display: block;
-        /* margin-left: 2%; */
-        /* margin-top: 2em; */
+    }
+
+    .nuotrauka img {
+        width: 100%;
     }
 }
 
@@ -1167,45 +1175,24 @@ section.features {
     max-width: 1000px;
     margin: 1em 2em;
     margin: 1em 1em;
-        background-color: rgb(248, 248, 229);
-
 }
 
 section.features ol li div {
 
     margin-left: 1em;
     margin-right: 1em;
-
     font-size: 1.4rem;
     color: #034958;
-
-    
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
 
 section.features ol li {
 
    list-style-type: none;
    display: grid;
-   /* grid-template-columns: 50% 25% 25%; */
-   /* grid-template-columns: 50% 25%; */
    grid-template-columns: 80% 20%;
    grid-template-columns: 75% 25%;
-   /* grid-template-columns: 85% 15%; */
-   /* grid-template-columns: 70% 30%; */
-   /* grid-template-columns: fit-content(70% 30%); */
-
-   /* grid-template-columns: minmax(1fr, max-content); */
-   /* grid-template-columns: fit-content (80% 20%); */
-
-   /* grid-template-columns: fit-content( 80%) fit-content( 20%); */
-    /* border-bottom: 1px solid rgb(224, 222, 222); */
-
-
-  /* box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2); */
-
 }
 
 /* sssssssssssssssssssssssssssssssssssssssssssssssss */
@@ -1214,24 +1201,15 @@ section.features ol li {
 
 section.features ol li:hover {
 
-  /* box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2) */
-  /* box-shadow: 8px 8px 12px 0 rgba(0,0,0,0.2) */
-  box-shadow: 8px 8px 12px 4px rgba(0,0,0,0.2)
-
-
+    box-shadow: 8px 8px 12px 4px rgba(0,0,0,0.2)
 }
 
 /* ---------------------------------------------------------------------------- */
 
-/* section.features ol li.header { */
 section.features ol li.header {
 
-
-   position: sticky;
-
-   /* this must be modified if you have a static top navigation for example */
-   /* top: 0px; */
-   /* top: 2em; */
+    /*  ---   Nežinau ar turi būti nustatyta "STICKY" paziciją?  ---  */
+   /* position: sticky; */
 
    /* hide feature cells when header is "over" them */
    background-color: #fff;
@@ -1239,19 +1217,16 @@ section.features ol li.header {
    /* some styling to make the header stand out a little from the features */
    border-bottom: 1px solid #666;
    font-weight: bold;
-   /* margin: 1em 2em; */
-    /* margin-bottom: 1em; */
-
 }
 
 /* ---------------------------------------------------------------------------- */
 
+/*  Sulygiuojame tekstą kairėje pusėje */
+
 section.features ol li div {
 
-    /* text-align: center; */
     text-align: start;
     padding: 0.3rem;
-
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -1265,22 +1240,12 @@ section.features ol li div {
     section.features {
 
         width: 100%;
-        /* background-color: rgb(248, 248, 229); */
-        
     }
 
     /*  Atstumas nuo viršaus, dešinės, apačios ir kairės pusių */
 
     section.features li {
         margin: 0.5em 0.5em 0 -1em;
-
-    }
-
-    section.features ol li div {
-
-        display: grid;
-        /* grid-template-columns: fit-content(80%) fit-content(20%); */
-        grid-template-columns: 70% 30%;
 
     }
 
@@ -1291,6 +1256,9 @@ section.features ol li div {
         font-size: 1.7rem;
         padding: 0.5rem;
         margin: 1em 0 0 1em;
+
+        display: grid;
+        grid-template-columns: 70% 30%;
     }
 
     /* -------------------------------------- */
@@ -1307,7 +1275,7 @@ section.features ol li div {
         grid-row-start: 2;
         grid-row-end: 3;
 
-        background-color: rgb(243, 227, 227);
+        /* background-color: rgb(243, 227, 227); */
 
 
     }
@@ -1345,6 +1313,8 @@ section.features ol li div {
         width: 97%;
     }
 
+  
+
  }
 
  /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
@@ -1368,7 +1338,9 @@ section.features ol li div {
 
         /* define first div (cell) to be 3 columns wide and span a whole row */
         grid-column-start: 1;
-        grid-column-end: 3;
+        /* grid-column-end: 3; */
+        grid-column-end: 2;
+
         grid-row-start: 1;
         grid-row-end: 2;
 
@@ -1395,6 +1367,8 @@ section.features ol li div {
         /* width: 100%; */
     }
 
+    /*  Visas FEATURES, arba teksto dalis */
+
     section.features {
         /* display: flex; */
         /* width: 80%; */
@@ -1412,26 +1386,36 @@ section.features ol li div {
     } */
 
     
+
+    
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
 
-/* ======================================================= */
-/*          Medium devices ( tablets, 768px and up )       */
-/* ======================================================= */
+/* ============================================================= */
+/*          Medium devices            ( tablets, 768px and up )  */
+/* ============================================================= */
 
 /* @media screen and (min-width: 768px) and (orientation: landscape) { */
 @media screen and (min-width: 768px) {
 
-
     /*  Prie 944 px, nuotrauka "peršoka" į mažesnį langą   */
+
     .nuotrauka img {
         margin-left: 3em;
     }
 
       section.features {
+        width: 70%;
+    }
+
+    .kalba {
+        margin-left: 85%;
+    }
+
+      .nuotrauka img {
         width: 70%;
     }
 }
@@ -1446,23 +1430,39 @@ section.features ol li div {
 @media screen and (min-width: 992px) {
 
     /*  Reguliuojame fono nuotrauką link dešinės pusės  */
+
     .nuotrauka img {
 
         float: right;
         margin-right: 2em;
         margin-top: 0em;
+        margin-top: -2em;
+        margin-bottom: 2em;
     }
 
     /*   "Kalba" langelį "pastumiame prie dešiniojo krašto   */
+
     .kalba {
         margin-left: 88%;
     }
 
+    /*  Visos dalies FEATURES / teksto išplėtimas */
+
        section.features {
         width: 60%;
+        width: 55%;
         /* background-color: rgb(248, 248, 229); */
     }
- }
+
+   .logo {
+        margin-left: 6;
+    }
+
+       .nuotrauka img {
+        width: 50%;
+    }
+
+}
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1478,8 +1478,14 @@ section.features ol li div {
     }
 
     section.features {
-        width: 50%;
+        width: 45%;
     }
+
+      /* .nav__links {
+        display: flex;
+        flex-wrap: nowrap;
+    } */
+   
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1492,32 +1498,34 @@ section.features ol li div {
 @media screen and (min-width: 1400px) { 
 
     /*    "Sekcijos" pavadinimas ( "Kainos" )   */
+
     .s3 h1 {
         display: flex;
         margin-left: 1.95em;
-        margin-top: 1.76em;
+        /* margin-top: 1.76em; */
+        margin-top: 1.5em;
     }   
 
     /*  Visa kainų teksto su kainomis dalis */
     /*   " Pirminė psichoterapeuto konsultacija " */
+
     section.features {
 
-        margin-top: 3.6%;
+        margin-top: 3.2%;
         line-height: 1.12;
         width: 38%;
         margin-left: 4.3em;
     }
 
     /* Foninė nuotrauka su "offiso erdvė" vaizdu */
+
     img.pagalbinis {
 
         display: flex;
         float: right;
         margin-right: 10.25%;
         margin-right: 5.7%;
-        /* margin-top: 1em; */
-        /* margin-top: -11.3em; */
-        margin-top: -17%;
+        margin-top: -16.55%;
     }
 
     /*   Paskutine eilutė: ( "1 sesija trunka 50 min" )  */
@@ -1529,8 +1537,56 @@ section.features ol li div {
     }
 
     .kalba {
-        margin-left: 85%;
+        margin-left: 91%;
     }
+
+    .s3 footer {
+
+            margin-top: 21em;
+    }
+
+    /*    LOGOtipa atitraukiu nuo kairiojo krašto   */
+
+    .logo {
+        margin-left: 5em;
+    }
+
+    /*  Atitraukiu nuorodas su "mėlynu" mygtuku nuo dešiniojo šono */
+    .nav__links {
+        margin-right: 5%;
+    }
+
+    /*  Reguliuoju atstumą nuo dešiniojo krašto iki "mėlynas' mygtuko */
+
+    .nav__links {
+        margin: 0 2.4em 0 auto;
+    }
+
+    /*  Noriu, kad "neperšoktų" nuorodos į kitą eilutę   */
+
+    .nav__links {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /*  Padarau tarpus "padding'o" paglaba, kad atskirti nuorodas */
+
+    .nav__links a {
+        padding: 0 0.6em;
+    }
+
+    /*  Bandau padidinti aplink "mėlunas" mygtuką erdvę */
+
+    a.melynas {
+        padding: 0.4em;
+    }
+
+    .paskutinis div::first-line {
+        /* background-color: rgb(160, 166, 250); */
+        font-size: 1.7rem;
+        /* top: 1em; */
+    }
+
 }
 
 
