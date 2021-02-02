@@ -27,11 +27,9 @@ body {
     /* font-family: 'Commissioner', sans-serif; */
     /* font-family: 'Signika', sans-serif; */
     height: 100vh;
-    /* width: 100vw; */
     overflow-x: hidden; 
     max-width: 1440px;
     margin: auto;
-
 }
 
 
@@ -58,12 +56,9 @@ body {
     z-index: 100; 
     background-color: rgb(255,255,255,1); 
     /*  Aprasau apatine NAV linija: */
-    /* border-bottom: 1px solid rgba(77, 77, 78, 0.2);  */
     border: 1px solid rgba(0,0,0,0.2);
     border-bottom: none;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1)
-
-    /* box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);  */
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1)
  } 
 
 /* ======================================================== */
@@ -84,7 +79,6 @@ header nav {
 
     margin-top: 0em;
     padding: 0;
-    /* height: 15px; */
 }
 
 /* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
@@ -100,13 +94,7 @@ header nav {
     width: 4.4rem;
     border: 1px solid rgba(77, 77, 78, 0.2);
     cursor: pointer;
-
-    /* margin-left: 76%; */
-    /* margin-left: 70%; */
     margin-left: 75%;
-
-    /* margin-top: -10em; */
-    /* margin-top: auto; */
     margin-top: 1em;
 }
 
@@ -153,9 +141,9 @@ header nav {
 
 .melynas {
 
-  padding: 0.5em 0.8em;
-  border-radius: 27px;
-  background-color: #236389;
+    padding: 0.5em 0.8em;
+    border-radius: 27px;
+    background-color: #236389;
 }
 
 a.melynas {
@@ -166,9 +154,9 @@ a.melynas {
 
 .melynas:hover {
 
-  background-color: #465252;
-  color: #fff;
-  transition: all 0.4s ease-in-out 0.2s;
+    background-color: #465252;
+    color: #fff;
+    transition: all 0.4s ease-in-out 0.2s;
 }
 
 /*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -197,14 +185,7 @@ a.melynas {
 .s3 {
 
     background-color: rgb(255,255,255,1);
-    /* height: 100vh; */
-    /* border: 1px solid grey; */
     border: 1px solid rgba(77, 77, 78, 0.2); 
-
-    /* border-right: 1px solid rgba(77, 77, 78, 0.2);  */
-    /* border-left: 1px solid rgba(77, 77, 78, 0.2); */
-
-    /* max-height: 100vh; */
     height: 100vh;
 }
 
@@ -217,11 +198,8 @@ a.melynas {
     /* font-family: 'Commissioner', sans-serif; */
     text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
     font-size: 3.1rem;
-    /* font-weight: 600; */
     font-weight: 400;
     color: #034958;
-
-    margin-top: 4em;
     margin-top: 1em;
     text-align: center;
     margin-bottom: 0.5em;
@@ -247,22 +225,13 @@ a.melynas {
 
 .nav__links {
 
-  list-style-type: none;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
-
-/* ================================================ */
-/*          NAV juostoje nuorodų aprašymas          */
-/* ================================================ */
-
-/* .nav__links {
-
-   display: flex;
-} */
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /*          Bandau perkelti NAV nuorodu: HEADER'io linkus            */
@@ -274,9 +243,9 @@ a.melynas {
 
 .nav__links li {
 
-  /* inline-block bus vienoje eiluteje, vienas salia kito */
-  display: inline-block;
-  padding: 0 1.2em;
+    /* inline-block bus vienoje eiluteje, vienas salia kito */
+    display: inline-block;
+    padding: 0 1.2em;
 }
 
 /* ======================================================== */
@@ -285,7 +254,7 @@ a.melynas {
 
 .nav__links li a {
 
-  transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 1s;
 }
 
 .nav__links li a {
@@ -303,6 +272,7 @@ a.melynas {
 /* ======================================================== */
 
 .nav__links li a:hover {
+
   color: #bec0be;
   transition: all 0.3s ease-in-out 0.1s;
 }
@@ -312,6 +282,7 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger {
+
   position: absolute;
   width: 35px;
   height: 30px;
@@ -326,6 +297,7 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger div {
+
   position: relative;
   width: 35px;
   height: 3px;
@@ -419,12 +391,13 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger__nav--items a {
-  margin-top: 40px;
-  color: #0c7e9b;
-  opacity: 0;
-  text-decoration: none;
-  font-size: 2em;
-  transition: all 0.3s ease 0s;
+
+    margin-top: 40px;
+    color: #0c7e9b;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 2em;
+    transition: all 0.3s ease 0s;
 }
 
 /* ======================================================== */
@@ -432,7 +405,7 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger__nav--items a:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 /* ======================================================== */
@@ -441,7 +414,7 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger__nav--wrapper nav a {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* ======================================================== */
@@ -450,8 +423,9 @@ a.melynas {
 /* ======================================================== */
 
 .hamburger__nav--wrapper nav a:hover {
-  opacity: 1;
-  color: #e74d71;
+
+    opacity: 1;
+    color: #e74d71;
 }
 
 /* ======================================================== */
@@ -531,7 +505,7 @@ a.melynas {
 /* ======================================================== */
 
 footer {
-  background-color: rgb(255,255,255,1);
+    background-color: rgb(255,255,255,1);
 }
 
 /* ======================================================== */
@@ -539,7 +513,7 @@ footer {
 /* ======================================================== */
 
 footer p {
-  color: #050620;
+    color: #050620;
 }
 
 /* ================================================== */
@@ -563,7 +537,7 @@ footer p {
 }
 
 /* ================================================== */
-/*                    .footer-links  A                */
+/*     / .footer-links  A  /     nuorodų aprašymas    */
 /* ================================================== */
 
  .footer-links a {
@@ -746,7 +720,6 @@ footer .footer-ketvirtas {
    padding-top: 1em;
    border: 1px solid rgba(77, 77, 78, 0.2);
    border-left: none;
-
 }
 
 /* ================================================== */
@@ -807,7 +780,6 @@ footer .footer-ketvirtas {
 section.features {
 
     max-width: 1000px;
-    /* margin: 1em 2em; */
     margin: 1em 1em;
 }
 
@@ -817,7 +789,6 @@ section.features ol li div {
 
     margin-left: 1em;
     margin-right: 1em;
-    font-size: 1.4rem;
     font-size: 1.35rem;
     color: #1e7d92;
 }
@@ -828,7 +799,6 @@ section.features ol li {
 
    list-style-type: none;
    display: grid;
-   grid-template-columns: 80% 20%;
    grid-template-columns: 75% 25%;
 }
 
@@ -858,7 +828,7 @@ section.features ol li.header {
 
 /* ---------------------------------------------------------------------- */
 
-/*  Sulygiuojame tekstą kairėje pusėje */
+/*  Sulygiuojame visą tekstą nuo kairės pusės pradžios  */
 
 section.features ol li div {
 
@@ -881,7 +851,6 @@ section.features ol li div {
 
     section.features li {
         margin: 0.5em 0.5em 0 -1em;
-
     }
 
     /*   Lentelės viduje esančio teksto dydis:  */
@@ -891,8 +860,8 @@ section.features ol li div {
         font-size: 1.7rem;
         padding: 0.5rem;
         margin: 1em 0 0 1em;
-
         display: grid;
+
         grid-template-columns: 70% 30%;
     }
 
@@ -902,11 +871,12 @@ section.features ol li div {
 
     section.features ol li div:nth-child(1) {
 
-    /* -------------------------------------- */
-
+        /* ----------------------------------------------------------------- */
         /* define first div (cell) to be 3 columns wide and span a whole row */
+
         grid-column-start: 1;
         grid-column-end: 2;
+
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -919,6 +889,7 @@ section.features ol li div {
 
         grid-column-start: 3;
         grid-column-end: 5;
+
         grid-row-start: 1;
         grid-row-end: 2;
     }
@@ -935,28 +906,26 @@ section.features ol li div {
       section.features {
         width: 97%;
     }
- }
+}
 
- /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
- /*  /  KAINOS  /  Perkėliau iš "aukščiau" kitas reguliavimas:   ( 672 PX  )  */
- /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+/*  /  KAINOS  /  Perkėliau iš "aukščiau" kitas reguliavimas:   ( 672 PX  )  */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
 @media screen and (max-width: 672px) {
 
     section.features ol li {
 
         /* redefine the grid to have only two columns */
-        /* grid-template-columns: 50% 50%; */
         grid-template-columns: 70% 30%;
-        /* grid-template-columns: minmax(min-content, 1fr); */
-        /* background-color: rgb(157, 241, 252); */
-
         /* define two template "rows per grid" (this is my murky understanding) */
         grid-template-rows: auto auto;
         /*  Padarau atskirymo liniją apačioje, kad mobiliajame  */
         /*  atskirtu, šiek tiek, tekstą */
         border-bottom: 1px solid rgba(209, 206, 206, 0.5);
     }
+
+    /*   Pirma teksto eilutė:  */
 
     section.features ol li div:nth-child(1) {
 
@@ -968,12 +937,11 @@ section.features ol li div {
         grid-row-end: 2;
     }
 
+    /*   Antra teksto eilutė:  */
+
     section.features ol li div:nth-child(2) {
 
-        /* define first div (cell) to be 3 columns wide and span a whole row */
-        /* grid-column-start: 1; */
         grid-column-start: 2;
-
         grid-column-end: 3;
 
         grid-row-start: 1;
@@ -983,8 +951,7 @@ section.features ol li div {
     /*  Visas FEATURES, arba teksto dalis */
 
     section.features {
-        /* display: flex; */
-        /* width: 80%; */
+
         margin: 0;
         padding: 0;
         margin-left: 0;
@@ -1035,7 +1002,6 @@ section.features ol li div {
 
         float: right;
         margin-right: 2em;
-        margin-top: 0em;
         margin-top: -2em;
         margin-bottom: 2em;
     }
@@ -1051,24 +1017,24 @@ section.features ol li div {
        section.features {
         width: 60%;
         width: 55%;
-        /* background-color: rgb(248, 248, 229); */
     }
+
+    /*  Logotipą truputį pastumiu į ... */
 
    .logo {
         margin-left: 6;
     }
 
-       .nuotrauka img {
+    .nuotrauka img {
         width: 50%;
     }
-
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
 /* ======================================================= */
-/*   Extra large devices (large desktops, 1200px and up)   */
+/*  Extra large devices ( large desktops, 1200px and up )  */
 /* ======================================================= */
 
 @media screen and (min-width: 1200px) { 
@@ -1076,6 +1042,10 @@ section.features ol li div {
     .nuotrauka img {
         margin-left: 3em;
     }
+
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*          Sumažinu viso teksto lango dydį:          */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     section.features {
         width: 45%;
@@ -1091,18 +1061,20 @@ section.features ol li div {
 
 @media screen and (min-width: 1400px) { 
 
-    /*    "Sekcijos" pavadinimas ( "Kainos" )   */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*      "Sekcijos" pavadinimas ( "Kainos" )           */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     .s3 h1 {
         display: flex;
         margin-left: 1.95em;
-        /* margin-top: 1.76em; */
-        margin-top: 1.5em;
         margin-top: 1.4em;
     }   
 
-    /*    Visa kainų teksto su kainomis dalis       */
-    /*    " Pirminė psichoterapeuto konsultacija "  */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*       Visa kainų teksto su kainomis dalis          */
+    /*    " Pirminė psichoterapeuto konsultacija "        */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     section.features {
 
@@ -1112,7 +1084,9 @@ section.features ol li div {
         margin-left: 4.3em;
     }
 
-    /*   Foninė nuotrauka su "offiso erdvė" vaizdu  */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*    Foninė nuotrauka su "offiso erdvė" vaizdu       */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     img.pagalbinis {
 
@@ -1123,15 +1097,19 @@ section.features ol li div {
         margin-top: -16.55%;
     }
 
-    /*   Paskutine eilutė: ( "1 sesija trunka 50 min" )  */
-    /*   Nustumiame žemyn nuo kitų eilučių  */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*   Paskutine eilutė: ( "1 sesija trunka 50 min" )   */
+    /*   Nustumiame žemyn nuo kitų eilučių                */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     section.features ol li:nth-child(5) {
 
-        /* background-color: rgb(245, 241, 35); */
-
         margin-top: 3.55em;
     }
+
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*   Dar toliau į dešinę pusę perstumiu KALBA langelį:    */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     .kalba {
         margin-left: 91%;
@@ -1139,51 +1117,53 @@ section.features ol li div {
 
     .s3 footer {
 
-            margin-top: 21em;
+        margin-top: 21em;
     }
 
-    /*    LOGOtipa atitraukiu nuo kairiojo krašto   */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*        LOGOtipa atitraukiu nuo kairiojo krašto     */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     .logo {
         margin-left: 5em;
     }
 
-    /*  Atitraukiu nuorodas su "mėlynu" mygtuku nuo dešiniojo šono */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*    Atitraukiu visas nuorodas kartu su "mėlynu" mygtuku nuo dešiniojo šono      */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     .nav__links {
         margin-right: 5%;
-    }
-
-    /*  Reguliuoju atstumą nuo dešiniojo krašto iki "mėlynas' mygtuko */
-
-    .nav__links {
+    /*         Reguliuoju atstumą nuo dešiniojo krašto iki "mėlynas' mygtuko */
         margin: 0 2.4em 0 auto;
-    }
-
-    /*  Noriu, kad "neperšoktų" nuorodos į kitą eilutę   */
-
-    .nav__links {
+    /*   ***********  Noriu, kad "neperšoktų" nuorodos į kitą eilutę!!!  ************ */
         display: flex;
         flex-wrap: nowrap;
     }
 
-    /*  Padarau tarpus "padding'o" paglaba, kad atskirti nuorodas */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*    Padarau tarpus "padding'o" pagalba, kad atskirti nuorodas viena nuo kitos   */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     .nav__links a {
         padding: 0 0.6em;
     }
 
-    /*  Bandau padidinti aplink "mėlunas" mygtuką erdvę */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*      Bandau padidinti "mėlyno" mygtuko dydį aplink užrašą      */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
 
     a.melynas {
         padding: 0.4em;
     }
 
-    /*  Paskutinės teksto eilutės raidžių dydžio padidinimas  */
-    /*  ( " 1 sesija trunka 50 min "  ) */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
+    /*     Paskutinės teksto eilutės raidžių dydžio padidinimas !!!   */
+    /*         ( " 1 sesija trunka 50 min "  )                        */
+    /* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
     
     .paskutinis div::first-line {
-        /* background-color: rgb(160, 166, 250); */
+
         font-size: 1.7rem;
     }
 }
