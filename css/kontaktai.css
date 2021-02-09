@@ -1377,9 +1377,9 @@ img {
     /*     Visa "KONTAKTAI" skyriaus fono spava   ( 768 PX  ) */
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-    .s5 {
+    /* .s5 {
         background-color: rgb(100, 226, 194);
-    }
+    } */
     
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*    Viso teksto reguliavimas į kairę pusę   ( 768 PX  ) */
@@ -1576,7 +1576,7 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
        .info p:nth-child(6) {
-           
+
         margin-top: -0.65em;
         float: left;
         margin-left: -0.3em;
