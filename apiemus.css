@@ -943,6 +943,10 @@ p.adresas {
 
 @media screen and (min-width: 576px)  {
 
+    .s2 {
+        overflow-y: scroll;
+    }
+
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*     Kalbos langelį truputį pastumiu į dešinę pusę  ( 576 PX  )  */
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
