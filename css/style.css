@@ -131,7 +131,6 @@ header {
     right: 0;
     max-height: 7.7em;
     position: relative;
-    /* position: fixed;  */
     z-index: 100; 
     background-color: rgb(255,255,255,1); 
     border: 1px solid rgba(0,0,0,0.2);
@@ -390,12 +389,13 @@ ul.nav__links  > *:nth-child(6) {
 .s1 {
 
     display: inline-block;
-    background-image: url('/dist/img/OfisasPataisytas4.jpg');
+    /* background-image: url('/dist/img/OfisasPataisytas4.jpg'); */
+    background-image: url(../img/OfisasPataisytas4.jpg);
+
 	background-color: rgba(44, 23, 23, 0.6);
 	background-blend-mode: multiply;
 	background-size: cover;
     /* background-attachment: fixed; */
-    /* height: calc(100vh - 8rem); */
     height: 100vh;
 }
 

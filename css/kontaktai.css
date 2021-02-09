@@ -1603,7 +1603,7 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .s5 {
-        background-color: rgb(100, 176, 226);
+        /* background-color: rgb(100, 176, 226); */
         height: calc(100vh - 17em);
 
     }
@@ -1919,26 +1919,6 @@ img {
 
 @media screen and (min-width: 1200px) { 
 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   Visa "KONTAKTAI" skyriaus fono spava   ( 1200 PX  )  */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    .s5 {
-        background-color: rgb(221, 138, 238);
-        /* height: calc(100vh - 17em); */
-
-    }
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   Dar "pareguliuoju, pagražinu" žemėlapį  ( 1200 PX  ) */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* #map iframe {
-
-        width: 70%;
-        float: right;
-    } */
-
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*  NAV nuorodų tarpelius mažinu, nes "sulūžta" mažinant ( 1200 PX  ) */
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -1946,14 +1926,6 @@ img {
     .nav__links li {
         padding: 0 1.3rem;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    INFO, visas info be H1: "KONTAKTAI" užrašo      ( 1200 PX )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-     /* .info {
-        margin-left: 4em;
-    } */
 
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*   "info@ulonupc.lt" ir "VšĮ Ulonų psichoterapijos" ( 1200 PX )  */
@@ -2005,13 +1977,6 @@ img {
         min-width: 21ch;
         
         padding: 1.1em 0;
-        /* background-color: rgb(175, 224, 119); */
-        /* border-right: 1px solid rgba(0,0,0,0.2); */
-        /* border: 1px solid rgba(0,0,0,0.2); */
-
-        /* border: none;
-        border-right: 1px solid rgba(0,0,0,0.2); */
-
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -2026,16 +1991,8 @@ img {
         padding: 1em 0;
         font-size: 1.35rem;
         font-size: 1.3rem;
-        /* font-weight: 800; */
         font-weight: border;
-        /* background-color: rgb(119, 217, 224); */
         color: #4f5b5e;
-        /* border-right: 1px solid rgba(0,0,0,0.2); */
-        /* border: 1px solid rgba(0,0,0,0.2); */
-
-        /* border: none;
-        border-right: 1px solid rgba(0,0,0,0.2); */
-
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -2046,19 +2003,11 @@ img {
 
         flex: 1 1 21.5%;
         min-width: 27ch;
-        /* background-color: rgb(173, 119, 224); */
-        /* color: #4f5b5e; */
-        color: #292d2e;
+
         color: #4f5b5e;
-
         font-weight: lighter;
-        font-size: 1.35em;
         font-size: 1.3rem;
-
         padding: 0.44em 0;
-        /* border-right: 1px solid rgba(0,0,0,0.2); */
-        /* border: 1px solid rgba(0,0,0,0.2); */
-
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -2069,21 +2018,14 @@ img {
 
         flex: 1 1 25%;
         min-width: 24ch;
-        /* background-color: rgb(224, 119, 184); */
-        color: #292d2e;
+
         color: #4f5b5e;
-
         font-weight: lighter;
-        font-size: 1.35em;
         font-size: 1.3rem;
-
         padding: 0.44em 0;
     }
 
     /* 11111111111111111111111111111111111111111111111111111111111111111111 */
-
-
-    /* sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
