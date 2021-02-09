@@ -146,6 +146,31 @@ header nav {
 	top: 0;
 }
 
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ================================================================ */
+/*    Pirma sekcija :   " Ulonų psichoterapijos centras "  ( "0" )  */
+/* ================================================================ */
+
+.s1 {
+
+    display: inline-block;
+    background-image: url(../img/OfisasPataisytas4.jpg);
+	background-color: rgba(44, 23, 23, 0.6);
+	background-blend-mode: multiply;
+	background-size: cover;
+    height: 100vh;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*      Antro teksto aukštį reguliuoju mob. ekrane:       ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.s1 h2:nth-child(2) {
+
+    margin-top: -1em;
+}
+
 /* ======================================================== */
 /*    NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    */
 /* ======================================================== */
@@ -380,33 +405,7 @@ ul.nav__links  > *:nth-child(6) {
    text-align: center;
 }
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-/* ======================================================================= */
-/*        Pirma sekcija :   " Ulonų psichoterapijos centras "     ( "0" )  */
-/* ======================================================================= */
-
-.s1 {
-
-    display: inline-block;
-    /* background-image: url('/dist/img/OfisasPataisytas4.jpg'); */
-    background-image: url(../img/OfisasPataisytas4.jpg);
-
-	background-color: rgba(44, 23, 23, 0.6);
-	background-blend-mode: multiply;
-	background-size: cover;
-    /* background-attachment: fixed; */
-    height: 100vh;
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*      Antro teksto aukštį reguliuoju mob. ekrane:       ( "0" )  */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-.s1 h2:nth-child(2) {
-
-    margin-top: -1em;
-}
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /*     FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER   */
@@ -862,6 +861,7 @@ a.melynas {
         /* background-color: rgb(187, 243, 97); */
         /* height: 100vh; */
         height: calc(100vh - 7.8em);
+        height: calc(100vh - -7em);
     }
 
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
