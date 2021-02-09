@@ -1085,32 +1085,13 @@ ul.nav__links  > *:nth-child(6) {
     max-width: 1436px;
     padding: 0 2em;
     margin-left: 2.8em;
-
-    /* align-items: center; */
-    
 }
-
-/* div {
-    border: 1px solid blue;
-} */
-
-/* .even-columns {
-    display: flex;
-} */
 
 .grid-ish {
     display: flex;
-    border: 1px solid red;
     border: 1px solid rgba(0,0,0,0.2);
-
-    /*  Dabar gražiai "peršoks" kada mažinsime į kitą eilutę  */
     flex-wrap: wrap;
 }
-
-/* .grid-ish > * {
-    flex: 1 1 33%;
-    flex: 1 1 10em;
-} */
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /*    1.       Pirmas langelis su soc. įkonėlėmis               */
@@ -1123,10 +1104,8 @@ ul.nav__links  > *:nth-child(6) {
     min-width: 21ch;
     
     padding: 1.1em 0;
-    /* background-color: rgb(175, 224, 119); */
     border-right: 1px solid rgba(0,0,0,0.2);
     border: 1px solid rgba(0,0,0,0.2);
-
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -1139,15 +1118,10 @@ ul.nav__links  > *:nth-child(6) {
     min-width: 30ch;
 
     padding: 1em 0;
-    font-size: 1.35rem;
     font-size: 1.2rem;
-    /* font-weight: 800; */
     font-weight: border;
-    /* background-color: rgb(119, 217, 224); */
     color: #4f5b5e;
-    /* border-right: 1px solid rgba(0,0,0,0.2); */
     border: 1px solid rgba(0,0,0,0.2);
-
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -1158,17 +1132,11 @@ ul.nav__links  > *:nth-child(6) {
 
     flex: 1 1 21.5%;
     min-width: 27ch;
-    /* background-color: rgb(173, 119, 224); */
-    /* color: #4f5b5e; */
-    color: #292d2e;
+
     color: #4f5b5e;
-
     font-weight: lighter;
-    font-size: 1.35em;
     font-size: 1.2rem;
-
     padding: 0.44em 0;
-    /* border-right: 1px solid rgba(0,0,0,0.2); */
     border: 1px solid rgba(0,0,0,0.2);
 
 }
@@ -1181,14 +1149,10 @@ ul.nav__links  > *:nth-child(6) {
 
     flex: 1 1 25%;
     min-width: 24ch;
-    /* background-color: rgb(224, 119, 184); */
-    color: #292d2e;
+
     color: #4f5b5e;
-
     font-weight: lighter;
-    font-size: 1.35em;
     font-size: 1.2rem;
-
     padding: 0.44em 0;
 }
 
@@ -1200,8 +1164,6 @@ ul.nav__links  > *:nth-child(6) {
 
 footer .footer-pirmas {
 
-    /* display: block; */
-    /* border: 1px solid rgba(77, 77, 78, 0.2); */
     text-align: center;
     width: 17%;
     height: 4.4em;
@@ -1282,7 +1244,6 @@ footer .footer-ketvirtas {
 	text-align: center;
 	line-height: 35px;
     margin: 0 0.4em;
-    /* padding: 0; */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1308,7 +1269,6 @@ footer .footer-ketvirtas {
     /* ------------------------------------------- */
     
     header ul {
-        /* position: sticky; */
         top: 0;
     }
 
@@ -1333,9 +1293,7 @@ footer .footer-ketvirtas {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 img {
-    /* width: 100%; */
     object-fit: cover;
-    /* max-width: 20%; */
 }
 
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -1346,20 +1304,6 @@ img {
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
 @media screen and (min-width: 376px) { 
-
-    /*   "VšĮ Ulonų psichoterapijos centras" */
-
-     /* .tekstas h3:nth-child(2) {
-
-        background: rgb(77, 122, 158);
-        color: #fff;
-    } */
-
-    /* iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
-
-    /* header {
-        position: fixed;
-    } */
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*    "Tel. +370 620 84494" telefono numeris  ( 376 px )  */
@@ -1383,7 +1327,6 @@ img {
     #map iframe {
 
         width: 100%;
-        /* height: auto; */
         height: 30vh;
     }
 
@@ -1399,10 +1342,6 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*       Paslepiu NAV nuorodas, kad pradingtų prie 376 px dydžio      */
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .nav__links {
-        display: none;
-    } */
 
     nav {
         display: none;
