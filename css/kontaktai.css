@@ -976,13 +976,12 @@ ul.nav__links  > *:nth-child(6) {
 /* ======================================================== */
 
 .hamburger__nav--items a {
+
     margin-top: 40px;
     color: #0c7e9b;
     opacity: 0;
     text-decoration: none;
-    /* font-size: 46px; */
     font-size: 2em;
-    /* letter-spacing: 3px; */
     transition: all 0.3s ease 0s;
 }
 
@@ -1009,66 +1008,10 @@ ul.nav__links  > *:nth-child(6) {
 /* ======================================================== */
 
 .hamburger__nav--wrapper nav a:hover {
+
   opacity: 1;
   color: #e74d71;
 }
-
-/* ======================================================== */
-/*                  ACTIVE klases aprasymas                 */
-/* ======================================================== */
-
-/* .active {
-    color: red;
-} */
-
-/* ======================================================== */
-/*  Cia nesuprantu ka darome * Atrodo bus linija po uzrasu  */
-/* ======================================================== */
-
-/* body > p:first-of-type::after {
-
-   content: '';
-   display: block;
-   position: absolute;
-   margin: 1em 0;
-   height: 2px;
-   width: 100%;
-   background: red;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* .footer-distributed {
-
-    display: flex;
-    max-width: 1436px;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-} */
-
-/* 1111111111111111111111111111111111111111111111111 */
-
-/*  Su Kevinu Powell'u bandau flex sistema: */
-
-/* .footer-distributed > * {
-    flex-basis: 100%;
-} */
-
-/* .footer-distributed > * {
-    flex-basis: 17% 26% 22% 26%;
-} */
-
-/* .footer-distributed > * {
-
-    /* flex: 1 1 100%; */
-    /* flex: 1 1 10%; */
-    /* flex: 1 1 1 1 100%; */
-    /* flex-wrap: nowrap; */
-    /* flex-wrap: wrap; */
-
-
-/* } */ 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /*       Visas skyrius, t.y., bandau FOOTER'į perdaryti    */
@@ -1076,10 +1019,8 @@ ul.nav__links  > *:nth-child(6) {
 
 .content.flow {
 
-    /* background-color: rgb(236, 217, 104); */
     margin-bottom: 5em;
     padding-bottom: 5em;
-    /* padding: 3em; */
     margin: 3em;
     text-align: center;
     max-width: 1436px;
@@ -1335,7 +1276,6 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .s5 {
-        background-color: rgb(238, 233, 162);
         height: 100vh;
     }
 
