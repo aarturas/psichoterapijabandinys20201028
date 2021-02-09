@@ -950,7 +950,7 @@ p.adresas {
 @media screen and (min-width: 576px)  {
 
     .s2 {
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: 100vh;
     }
 

@@ -925,7 +925,6 @@ a.melynas {
 
         border: none;
         font-size: 2.8rem;
-        /* background-color: #fff; */
         margin-top: 1.5em;
     }
 
@@ -939,15 +938,6 @@ a.melynas {
         color: #034958; 
         border: none;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    ( jei negalėsime atsiliepti, ...  )              ( 768 PX  )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .tekstas p:last-child {
-
-        float: right;
-    } */
 
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*       Paslepiu NAV nuorodas, kad pradingtų prie 768 px dydžio     */
@@ -970,7 +960,6 @@ a.melynas {
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     img.logo {
-        margin-left: 5em;
         margin-left: 3em;
     }
 
@@ -1009,9 +998,6 @@ a.melynas {
 
     .s1 {
 
-        /* background-color: rgb(100, 176, 226); */
-        /* height: calc(100vh - 18em); */
-        /* height: calc(100vh - 13.6em); */
         height: calc(100vh - 16.5em);
     }
 
@@ -1087,14 +1073,10 @@ a.melynas {
 
     .grid-ish > *:nth-child(1) {
 
-        /* flex: 1 1 10%; */
         flex: 1 1 9%;
-
         min-width: 21ch;
         
-        /* padding: 1.5em 0; */
         padding: 0.6em 0;
-
         border-right: 1px solid rgba(0,0,0,0.2);
     }
 
@@ -1104,10 +1086,7 @@ a.melynas {
 
     .grid-ish > *:nth-child(2) {
 
-        /* flex: 1 1 20%; */
         flex: 1 1 19%;
-
-        /* min-width: 27ch; */
         min-width: 20ch;
 
         padding: 1.1em 0;
@@ -1124,15 +1103,11 @@ a.melynas {
     .grid-ish > *:nth-child(3) {
 
         flex: 1 1 15%;
-
-        /* min-width: 25ch; */
         min-width: 25ch;
-
 
         color: #4f5b5e;
         font-weight: lighter;
         font-size: 1.2rem;
-        /* padding: 1.3em 0; */
         padding: 0.5em 0;
         border-right: 1px solid rgba(0,0,0,0.2);
     }
@@ -1143,17 +1118,12 @@ a.melynas {
 
     .grid-ish > *:nth-child(4) {
 
-        /* flex: 1 1 12%; */
         flex: 1 1 13%;
-
-        /* min-width: 13ch; */
         min-width: 8ch;
-
 
         color: #4f5b5e;
         font-weight: lighter;
         font-size: 1.2rem;
-        /* padding: 1.3em 0; */
         padding: 0.5em 0;
     }
 
