@@ -1564,7 +1564,7 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
      .info p:nth-child(5) {
-        /* background-color: rgb(151, 208, 235); */
+
         margin-top: -1em;
         margin-left: 0em;
         font-size: 1.3rem;
@@ -1576,7 +1576,7 @@ img {
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
        .info p:nth-child(6) {
-        /* background-color: rgb(216, 151, 235); */
+           
         margin-top: -0.65em;
         float: left;
         margin-left: -0.3em;
