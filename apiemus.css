@@ -1,0 +1,1822 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+html {
+	scroll-behavior: smooth;
+    
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*                                BODY                     ( "0" )     */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+body {
+
+	/* font-family: 'PT Sans', sans-serif; */
+	background-color: #ffffff;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*                            CONTAINER                    ( "0" )     */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.container {
+
+	max-width: 1440px;
+	margin: auto;
+	border: 1px solid rgb(177, 175, 175, 0.5);
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*    Kalbos pasirinkimo langelis su dviem vėliavėlėmis  / LT ir ENG /   */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+/*   1.  "KALBA" pasirinkimas - DIV'as /  Nustatome langelio dydį ir vietą:  */
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+.kalba {
+
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.3rem 0.55rem;
+    width: 4.4rem;
+    border: 1px solid rgba(77, 77, 78, 0.4);
+    cursor: pointer;
+    margin-left: 75%;
+    margin-top: 6em;
+    
+    margin-top: 2em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*    Nuotrauka   /   Nustatome pačios nuotraukos dydį:      ( "0" )   */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.kalba img {
+
+    width: 20px;
+    height: 13px;
+}
+
+/* ======================================================== */
+/*                          LOGO                   ( "0" )  */
+/* ======================================================== */
+
+.logo {
+
+	cursor: pointer;
+	margin-left: 3.8em;
+    height: 4.7em;
+    height: 6em;
+    top: 18.89px;
+    transition: 0.3s;
+}
+
+/* ======================================================== */
+/*    /  HEADER  /   Idesime HEADERiui stiliu      ( "0" )  */
+/* ======================================================== */
+
+header { 
+
+    display: flex; 
+    height: 7.7em;
+    justify-content: space-between; 
+    justify-self: center; 
+    align-items: center; 
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 7.7em;
+    position: relative;
+    z-index: 100; 
+    background-color: rgb(255,255,255,1); 
+    border-bottom: 1px solid rgb(223, 219, 219);
+    box-shadow: 1px 2px 5px 0px rgb(0 0 0 / 10%);
+} 
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*    Viršutinė NAV juosta padarome nejudančia   ( "0" )   */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+header nav {
+
+	position: sticky;
+	top: 0;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*      Virsutinės  NAV Navigacijos nuorodų "linkai" ir jų aprašymai     */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+nav {
+
+    width: 100%;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 1436px;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*    Kažkodėl čia yra kitos keturios "galinės" nuorodos  ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+nav li {
+
+    list-style: none;
+    align-items: center;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*    2.    /  S-2  /  H-1  /  "Apie mus"   /                 ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.s2 h1 {
+
+	text-align: center;
+    color: #034958;
+    font-size: 2.6em;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*     3.                  Nuotrauka 'LAIMA'                ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.nuotrauka img {
+
+    display: flex;
+    height: 400px;
+    object-fit: cover;
+    padding: 0.5em 1em;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   4. /  H - 2  /  "Laima Matulionienė"  / ( mob. ekrane )  ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.s2 h2 {
+
+    color: #034958;
+	font-weight: normal;
+    padding: 0.3em 0 0.3em 0;
+    transition: 0.3s;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   Visa teksto dalis prasideda iš karto po vardo ir pavardės: ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.description {
+
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.straipsniai p {
+
+    color: #096479;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*    1.  "Psichologė – psichoterapeutė (psichodinaminė .. )"   ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.tekstas-1 {
+
+    padding: 0.7rem 1em;
+    text-align: start;
+}
+
+.tekstas-1 p {
+    padding: 0.5em 0;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   2.  Antra teksto eilutė: "Konsultuoja lietuvių, anglų k." ( "0" )   */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.tekstas-2 {
+
+    padding: 0.5em 0 0 1em;
+    text-align: start;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*       "„Manau, kad kiekvienas žmogus turi ... "             ( "0" )   */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.tekstas-3 {
+
+    padding: 0.7rem 1em;
+    text-align: justify;
+}
+
+.papildomas {
+    display: none;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*       NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    ( "0" )   */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.s2 .nav__links li {
+
+  display: inline-block;
+  padding: 0;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*      O čia yra pirmi du nuorodų linkai:  "Apie mus" ir "Paslaugos"     */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+ul.nav__links {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*          Pačių nuorodų linkų pavadinimai        ( "0" )  */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+ul.nav__links a {
+    text-decoration: none;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*    Bandau nuorodų linkų pavadinimus padidinti   ( "0" )  */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+ul.nav__links li a {
+
+    font-size: 1.55rem;
+    color: #034958;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*           NAV nuorodų linkų HOVER              ( "0" )   */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+ul.nav__links li a:hover { 
+
+    color: red;
+    transition: ease-in-out 0.3s;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*    HEADER  / NAV /  Viršutinės navigacijos nuorodos   ( "0" )   */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ------------------------------------------------------------- */
+/*   1.  (  "Apie mus"  )   /   Pirmas langelis   /    ( "0" )   */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(1) {
+
+    flex: 1 1 11%;
+    min-width: 14ch;
+}
+
+/* ------------------------------------------------------------- */
+/*   2.  (  "Paslaugos"  )   /   Antras langelis   /   ( "0" )   */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(2) {
+
+    flex: 1 1 8%;
+    min-width: 9ch;
+
+    font-size: 1.35rem;
+    color: #4f5b5e;
+}
+
+/* ------------------------------------------------------------- */
+/*   3.   (  "Kainos"  )   /   Trečias langelis   /    ( "0" )   */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(3) {
+
+    flex: 1 1 10%;
+    min-width: 9ch;
+
+    color: #292d2e;
+    font-weight: lighter;
+    font-size: 1.35em;
+}
+
+/* ------------------------------------------------------------- */
+/*   4.  (  "Kontaktai"  )   /  Ketvirtas langelis   /  ( "0" )  */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(4) {
+
+    flex: 1 1 10%;
+    min-width: 11ch;
+
+    color: #292d2e;
+    font-weight: lighter;
+    font-size: 1.35em;
+}
+
+/* ------------------------------------------------------------- */
+/*    5.  (  "Blog"  )   /     Penktas langelis   /    ( "0" )   */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(5) {
+
+    flex: 1 1 10%;
+    min-width: 4ch;
+
+    color: #292d2e;
+    font-weight: lighter;
+    font-size: 1.35em;
+}
+
+/* ------------------------------------------------------------- */
+/*   6.  (  "E-psichoterapeutas"  )  Šeštas langelis    ( "0" )  */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(6) {
+
+    flex: 1 1 29%;
+    min-width: 26ch;
+
+    color: #292d2e;
+    font-weight: lighter;
+    font-size: 1.35em;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ------------------------------------------------------------- */
+/*      "Paslaugos"    /     Antras langelis   /      ( "0" )    */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(2) {
+
+    text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+/*        "Kainos"    /     Trečias langelis   /      ( "0" )    */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(3) {
+
+    text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+/*        "Kontaktai"    /     Ketvirtas langelis   /   ( "0" )  */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(4) {
+
+   text-align: center;
+
+}
+
+/* ------------------------------------------------------------- */
+/*           "Blog"    /     Penktas langelis   /     ( "0" )   */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(5) {
+
+   text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+/*   /  "E-psichoterapeutas"   /    Šeštas langelis   / ( "0" )  */
+/* ------------------------------------------------------------- */
+
+ul.nav__links  > *:nth-child(6) {
+
+   text-align: center;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* ======================================================================= */
+/*        Pirma sekcija :   " Ulonų psichoterapijos centras "     ( "0" )  */
+/* ======================================================================= */
+
+.s2 {
+
+    display: inline-block;
+	background-blend-mode: multiply;
+	background-size: cover;
+    height: 100vh;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ======================================================== */
+/*             /  P  /  LI  /  A  /               ( "0" )   */
+/* ======================================================== */
+
+p,
+li,
+a {
+	color: rgba(61, 61, 61, 0.9);
+	text-decoration: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*                HAMBURGER MENU     mobilus      ( "0" )   */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ======================================================== */
+/*    HAMBURGER menu  /   nustatysime poziciją    ( "0" )   */
+/* ======================================================== */
+
+.hamburger {
+	position: absolute;
+	width: 35px;
+	height: 30px;
+    top: 35px;
+	right: 10%;
+	z-index: 5;
+	cursor: pointer;
+}
+
+/* ======================================================== */
+/*  /  HAMBURGER menu DIV  /  Bus tris brūkšneliai  ( "0" ) */
+/* ======================================================== */
+
+.hamburger div {
+	position: relative;
+	width: 35px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #0a667e;
+	margin-top: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*   /  TOGGLE  /  Paprastai nesimato, tik mažinant ekraną  */
+/* ======================================================== */
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked+.hamburger .hamburger__top {
+	transform: rotate(-45deg);
+	margin-top: 17.5px;
+}
+
+#toggle:checked+.hamburger .hamburger__meat {
+	transform: rotate(45deg);
+	margin-top: -3px;
+}
+
+#toggle:checked+.hamburger .hamburger__bottom {
+	transform: scale(0);
+}
+
+#toggle:checked+.hamburger+.hamburger__nav {
+	top: 0;
+}
+
+/* ======================================================== */
+/*   HAMBURGER __ NAV  /  Visas hamburgerio langas  ( "0" ) */
+/* ======================================================== */
+
+.hamburger__nav {
+
+	position: fixed;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: #050620;
+	/*  Paspaudus "hamburgerį", nustumsime foną į viršų */
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  WRAPPER  /      ( "0" )   */
+/* ======================================================== */
+
+.hamburger__nav .hamburger__nav--wrapper {
+
+	position: relative;
+	overflow-y: auto;
+	height: 100%;
+}
+
+/* ======================================================== */
+/*   /  HAMBURGER __ NAV  ITEMS  /  Tvarkysime vidinius     */
+/*  "hamburgerio" tekstus ir nuorodas             ( "0" )   */
+/* ======================================================== */
+
+.hamburger__nav--items {
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ======================================================== */
+/*      /  HAMBURGER __ NAV  ITEMS nuorodos  /    ( "0" )   */
+/* ======================================================== */
+
+.hamburger__nav--items a {
+
+	margin-top: 40px;
+	color: #0c7e9b;
+	opacity: 0;
+	text-decoration: none;
+	font-size: 2em;
+	transition: all 0.3s ease 0s;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /       ( "0" )   */
+/* ======================================================== */
+
+.hamburger__nav--items a:first-child {
+	margin-top: 0;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /       ( "0" )   */
+/*     Su OPACITY, matysime MOB skyriuje nuorodas           */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a {
+	opacity: 1;
+}
+
+/* ======================================================== */
+/*           /  HAMBURGER __ NAV  ITEMS   /        ( "0" )  */
+/*   viduje MOB menu, nuorodos keis spalvą "užvedus pelę"   */
+/* ======================================================== */
+
+.hamburger__nav--wrapper nav a:hover {
+	opacity: 1;
+	color: #e74d71;
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*       ( "PSICHOTERAPEUTAS" )     Mygtukas:      ( "0" )   */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+.melynas {
+
+    padding: 0.5em 1.23em;
+    border-radius: 27px;
+    background-color: #236389;
+}
+
+a.melynas {
+
+    color: #fff !important;
+    z-index: 999;
+}
+
+.melynas:hover {
+
+    background-color: #465252;
+    color: #fff;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+/* ========================================================== */
+/*                Mygtukas-Button: "Plačiau"        ( "0" )   */
+/* ========================================================== */
+
+.button .placiau {
+
+	background: #0a667e;
+    display: inline-block;
+    display: block;
+	padding: 0.49em 0.8em;
+	border: none;
+	border-radius: 5px;
+    color: #fff;
+	font-size: 1.18em;
+    margin: auto;
+    bottom: 5em;
+    cursor: pointer;
+    outline: none;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*            "PLAČIAU" mygtuko efektas               ( "0" )   */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.button .placiau:before {
+
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: 1.5s;
+    transform: scale(0.9);
+    z-index: -10;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*  "PLAČIAU" pagrindinio mygtuko "hover'is" ir efektai ( "0" ) */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.button .placiau:hover {
+
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    transition: all 0.4s ease-out;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   Visas skyrius, t.y., bandau FOOTER'į perdaryti   ( "0" )   */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.content.flow {
+
+    margin-bottom: 5em;
+    padding-bottom: 5em;
+    margin: 3em;
+    text-align: center;
+    max-width: 1436px;
+    padding: 0;
+    margin-left: 2.8em;
+    max-height: 4.5em;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*             FOOTERio GRID - ISH dalis              ( "0" )   */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.grid-ish {
+
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*     FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER   */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                         S-1 FOOTER                  ( "0" )   */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.s2 footer {
+
+	display: flex;
+	position: absolute;
+	width: 100%;
+	max-width: 1440px;
+	bottom: 0;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* =========================================================== */
+/*   .FOOTER - PAGRINDINIS / left, center-1, ...     ( "0" )   */
+/* =========================================================== */
+
+.footer-distributed  {
+
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* ======================================================== */
+/*   .footer- ICONS /  Pirmo langelio SOC.iconos   ( "0" )  */
+/* ======================================================== */
+
+.footer-icons {
+
+    margin: 0.7em 0;
+	align-items: center;
+}
+
+/* ======================================================== */
+/*   .footer-icons A /  Aprašymas SOC. įkonėlių:   ( "0" )  */
+/* ======================================================== */
+
+.footer-icons a {
+
+	display: inline-block;
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+	background-color: #236389;
+	border-radius: 3px;
+    font-size: 25px;
+    padding: 0 0.1rem 0  0;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin: 0 0.3em;
+}
+
+/* ========================================================== */
+/*                      footer P                     ( "0" )  */
+/* ========================================================== */
+
+footer p {
+
+	color: #76777e;
+    font-size: 1.12em;
+}
+
+p.adresas {
+    color: rgb(41, 108, 146);
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   Visas skyrius, t.y., bandau FOOTER'į perdaryti   ( "0" )   */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+@media screen and (min-width: 376px) { 
+  
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    "Tel. +370 620 84494" telefono numeris  ( 376 px )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas p:nth-last-child(2) {
+
+        background: rgb(77, 122, 158);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     Visa "KONTAKTAI" skyriaus fono spava   ( 376 px )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 {
+
+        height: 100vh;
+        margin-top: -4.3em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    / APIE MUS /     H 1 :  "Apie mus"         ( 376 px )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+        
+        padding: 0.2em;
+        margin-top: 4em;
+        transition: 0.3s;
+        font-weight: 600;
+        margin-top: 2.8em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*               "Laima Matulionienė"        ( 376 px )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+        font-size: 2.5rem;
+        transition: 0.3s;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2. "Psichologė – psichoterapeutė (psichod .."  )      ( 376 px )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(1) {
+
+        padding: 0 0.5rem;
+        margin-bottom: 0.9rem;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2.  Noriu išskirti "Narystė: Lietuvos psichologų .."  ( 376 px )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+        padding: 0 0.5rem;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   3.           "Konsultuoja lietuvių, anglų k."                  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+      .s2 .tekstas-2 p {
+
+        padding: 0 0.5rem;
+        margin-right: 1em;
+
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   4.  Noriu išskirti "Manau, kad kiekvienas žmogus .."   ( 376 px )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .s2 .tekstas-3 p:nth-child(1) {
+
+        border: 1px solid rgb(206, 203, 203);
+        background-color: rgb(248, 246, 246);
+        padding: 0 0.5rem;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   5.   "Tereikia pasiryžti vidinei kelionei - .."        ( 376 px )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(2) {
+
+        padding: 0 0.5rem;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   6.  "Ateikite į psichoterapiją, pasiryžkite .."   ( 376 px )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .s2 .tekstas-3 p:nth-child(3) {
+
+        padding: 0 0.5rem;
+
+        border: 1px solid rgb(206, 203, 203);
+        background-color: rgb(248, 246, 246);
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       Paslepiu NAV nuorodas, kad pradingtų prie 376 px dydžio      */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    nav {
+        display: none;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*         Paslepiu FOOTER , kad pradingtų prie   ( 376 px ) dydžio   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .footer-distributed {
+        display: none;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    Tuo pačiu parodau HAMBURGER'io langelį su trimis brūkšneliais   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Niekaip negalėjau panaikinti ( .s6 ) dalies, todėl paslėpiau.    */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .section.section.s6 {
+        display: none;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       LOGOtipą "atitraukiu" nuo kairiojo krašto       ( 376 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    img.logo {
+        margin-left: 1.2em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::: */
+    /*         Mygtuko "PLAČIAU" aprašymas  :         */
+    /* :::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .button .placiau {
+        margin-top: 5em;
+    }
+
+    .tekstas-3 p {
+        margin: 0.5em 0;
+    }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 376 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+        
+        content: "376 px -- Puslapis ruošiamas ";
+        color:rgb(247, 236, 87);
+    }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+/* ======================================================================== */
+/*   /  PAGRINDINIS /  Small devices    ( landscape phones, 576px and up )  */
+/* ======================================================================== */
+
+@media screen and (min-width: 576px)  {
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     Kalbos langelį truputį pastumiu į dešinę pusę  ( 576 PX  )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .kalba {
+        margin-left: 85%;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    LOGOtipą "atitraukiu" nuo kairiojo krašto       ( 576 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    img.logo {
+        margin-left: 2em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                      "Apie mus"                    ( 576 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+
+        font-size: 2.7rem;
+        float: right;
+        transition: 0.3s;
+        margin-right: auto;
+        margin-top: 5em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*      Laimos nuotraukos pagrindinis DIV blokas       ( 576 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nuotrauka {
+        position: relative;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::: */
+    /*          Laimos nuotrauka       ( 576 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nuotrauka img {
+
+        position: absolute;
+        height: 300px;
+        float: left;
+        transition: 0.5s;
+        margin-top: 4em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Bandau įkelti tekstą į atskirą DIV bloką ...     ( 576 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .straipsniai {
+
+        height: 100vh;
+        display: inline;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Bandau įkelti tekstą į atskirą DIV bloką ...     ( 576 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .straipsniai p {
+
+        font-size: 0.9em;
+        text-align: start;
+        padding: 1em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Laima Matulionienė"  pagrindinis DIV H-2 blokas  ( 576 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .name {
+
+        position: relative;
+        width: 55%;
+        background-color: rgb(241, 46, 192);
+        float: right;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                "Laima Matulionienė"                 ( 576 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+
+        position: absolute;
+        font-size: 1.9rem;
+        width: 82%;
+        transition: 0.3s;
+        margin-left: 4em;
+        margin-top: 12.6em;
+    }
+    
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     I.             Visaas pirmo teksto DIV                 ( 576 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-1 {
+
+        position: relative;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Psichologė – psichoterapeutė (psichodinaminė psichoterapija)" ( 576 PX )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-1 p {
+
+        position: absolute;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*  "Psichologė – psichoterapeutė (psichodinaminė psichoterapija)"  ( 576 PX )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-1 p:nth-child(1) {
+
+        margin-top: 24em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2. -> 2.  "Narystė: Lietuvos psichologų sąjunga, Lietuvos"    ( 576 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-1 p:nth-child(2) {
+
+        margin-top: 26em;
+        margin-right: 1em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   II.     "Manau, kad kiekvienas žmogus turi pakankamai"         ( 576 PX )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-3 {
+        
+        padding: 0.3rem 0.9em;
+        margin-top: 22.5em;
+
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   4. -> 3. "Manau, kad kiekvienas žmogus turi pakankamai"   ( 576 PX ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(1) {
+
+        margin-top: 2.8em;
+
+        border: none;
+        background-color: #fff;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*  5. -> 4. "Tereikia pasiryžti vidinei kelionei - iš pradžių"( 576 PX ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(2) {
+
+        margin-top: 0.5em;
+        border: none;
+        background-color: #fff;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*  6. -> 5.  "Ateikite į psichoterapiją, pasiryžkite šiai "  ( 576 PX )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(3) { 
+
+        margin-top: 0.5em;
+        border: none;
+        background-color: #fff;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   III.  Noriu padaryti, kad "Konsultuoja lietuvių, anglų k."  tekstas  */
+    /*    būtų valdomas iš kitos pozicijos, bandau  ( Relative ) ( 576 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-2 {
+
+        position: relative;
+        text-align: start;
+        padding-left: 2em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   3. -> 6.      "Konsultuoja lietuvių, anglų k."          ( 576 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-2 p {
+
+        position: absolute;
+        margin-left: -1em;
+        margin-top: 44em;
+    }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 576 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+
+        content: "576 px -- Puslapis ruošiamas";
+        color:rgb(187, 243, 97);
+    }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+/* ============================================================= */
+/*          Medium devices            ( tablets, 768px and up )  */
+/* ============================================================= */
+
+@media screen and (min-width: 768px) {
+
+    body {
+        overflow: hidden;
+    }
+ 
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     Visa "APIE MUS" skyriaus fono spava    ( 768 PX  ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 {
+
+        height: 100vh;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       Paslepiu NAV nuorodas, kad pradingtų prie 768 px dydžio     */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nav__links {
+        display: none;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Tuo pačiu parodau HAMBURGER'io langelį su trimis brūkšneliais   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    LOGOtipą "atitraukiu" nuo kairiojo krašto         ( 768 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    img.logo {
+        margin-left: 3em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                  Mygtukas "PLAČIAU"                  ( 768 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .button .placiau {
+        margin-top: 8em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*      H 1:               "Apie mus"                   ( 768 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+
+        position: absolute;
+        font-size: 3rem;
+        transition: 0.3s;
+        margin-left: 7.3em;
+        margin-top: 3em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*      H 1:             "Laima Matulionienė"           ( 768 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+
+        position: absolute;
+        font-size: 2.3rem;
+        transition: 0.3s;
+        margin-left: -1em;
+        margin-top: 8em;
+    }
+
+    .straipsniai {
+        font-size: 1.4rem;
+    }
+  
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Psichologė – psichoterapeutė (psichodinaminė psicho  ( 768 PX ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(1) {
+
+        margin-top: 20em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Narystė: Lietuvos psichologų sąjunga, Lietuvos ...   ( 768 PX ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+         margin-top: 22em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Manau, kad kiekvienas žmogus turi pakankamai ...     ( 768 PX ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(1) {
+
+        margin-top: -1.5em;
+    }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 768 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+
+        content: "768 px -- Puslapis ruošiamas ";
+        color: rgb(82, 236, 198);
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       "Konsultuoja lietuvių, anglų k"       ( 768 PX )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    
+    .s2 .tekstas-2 p {
+
+        margin-top: 40em;
+    }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+/* ======================================================= */
+/*         Large devices       ( desktops, 992px and up )  */
+/* ======================================================= */
+
+@media screen and (min-width: 992px) {
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    Visa "KONTAKTAI" skyriaus fono spava    ( 992 PX  ) */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 {
+
+        height: calc(100vh - 12em);
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    Kalbos langelį dar truputį pastumiu į dešinę pusę   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .kalba {
+        margin-left: 89%;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       Paslepiu NAV nuorodas, kad pradingtų prie 992 px dydžio      */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nav__links {
+        display: inherit;
+    }
+   
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                "Parodau" NAV nuorodas prie:           ( 992 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     nav {
+        display: inherit;
+    }
+    
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    "Lūžio" taškas mažinant ekraną, paslepiu "mobilias nuorodas"    */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .mobile__menu {
+        display: none;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Lūžio" taškas didinant ekraną, "parodau" FOOTER'į  ( 992 PX  )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .footer-distributed {
+        display: inherit;
+
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    LOGOtipą "atitraukiu" nuo kairiojo krašto          ( 992 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    img.logo {
+        margin-left: 1em;
+    }
+ 
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*               NAV nuorodų pagrindinis blokas          ( 992 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .content.flow {
+
+        margin: 2em 0;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    1.       Pirmas langelis su soc. įkonėlėmis               */
+    /*      Derinu langelių ilgį ir plotį - "mėlynas"  ( 992 PX  )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .grid-ish > *:nth-child(1) {
+
+        flex: 1 1 9%;
+        min-width: 21ch;
+        
+        padding: 0.6em 0;
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2.  Antras langelis: "VšĮ Ulonų psichoterapijos centras"   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .grid-ish > *:nth-child(2) {
+
+        flex: 1 1 19%;
+        min-width: 30ch;
+
+        padding: 1.1em 0;
+        font-size: 1.35rem;
+        font-weight: bolder; 
+        color: #515e61;
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   3.  Trečias langelis: "Darbo laikas: I - V 9:00 - 20:00"   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .grid-ish > *:nth-child(3) {
+
+        flex: 1 1 15%;
+        min-width: 30ch;
+
+        color: #4f5b5e;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0.5em 0;
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   4. Ketvirtas langelis: "info@ulonupc.lt" ir tel. "+370 620 84494"  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .grid-ish > *:nth-child(4) {
+
+        flex: 1 1 6%;
+        min-width: 6ch;
+
+        color: #4f5b5e;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0.5em 0;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*             Laimos nuotrauka            ( 992 PX  )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .nuotrauka img {
+
+        float: left;
+        margin-left: 2em;
+        transition: 0.3s;
+        margin-top: 5.5em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                 "Apie mus" , arba   H 1                ( 992 PX  )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+
+        font-size: 3.3rem;
+        width: 30%;
+        transition: 0.3s;
+        margin-left: 9em;
+        margin-top: 2.5em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*              "Laima Matulionienė" , arba H 2           ( 992 PX  )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+
+        transition: 0.3s;
+        margin-top: 6.5em;
+        margin-left: -2em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2. "Psichologė – psichoterapeutė (psichod .."  )      ( 992 px )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(1) {
+
+        margin-left: 17em;
+        margin-top: 16em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   2. -> 2.  "Narystė: Lietuvos psichologų sąjunga, Lietuvos"    ( 992 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+        margin-left: 17em;
+        margin-top: 18em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       "Manau, kad kiekvienas žmogus turi pakankamai vidinių"    ( 992 PX )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(1) {
+
+        margin-top: -4em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*              "Konsultuoja lietuvių, anglų k."                  ( 992 PX )    */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-2 p {
+
+        margin-top: 36em;
+    }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 992 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+
+        content: "992 px -- Puslapis ruošiamas";
+        color: rgb(100, 176, 226);
+    }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+/* ====================================================================== */
+/*            Extra large devices   ( large desktops, 1200px and up )     */
+/* ====================================================================== */
+
+@media screen and (min-width: 1200px) { 
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*          Visa "KONTAKTAI" skyriaus fono spava       ( 1200 PX  )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  
+    .straipsniai p {
+        font-size: 1.4rem;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                     "Apie mus"                     ( 1200 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+        margin-left: 13em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*                      "Laima Matulionienė"          ( 1200 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+        
+        margin-top: 7em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Psichologė – psichoterapeutė (psichodinaminė psichoterapija)"  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(1) {
+
+        margin-top: 15em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Narystė: Lietuvos psichologų sąjunga, Lietuvos" .( 1200 PX  )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+        margin-top: 16.5em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*              Laimos nuotrauka                       ( 1200 PX  )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nuotrauka img {
+
+        margin-left: 1em;
+        transition: 0.3s;
+    }
+
+    .content.flow {
+        padding: 0 4.3em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*              "Konsultuoja lietuvių, anglų k."                 ( 1200 PX )    */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-2 p {
+
+        margin-top: 32em;
+    }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )   ( 1200 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+
+        content: "1200 px -- Puslapis ruošiamas ";
+        color: rgb(82, 236, 198);
+    }
+}  
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+/* ================================================================= */
+/*       Extra large devices ( large desktops, 1400 px and up )      */
+/* ================================================================= */
+
+@media screen and (min-width: 1400px) { 
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*       Visa "KONTAKTAI" skyriaus fono spava     ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 {
+
+        height: calc(100vh - 15.3em);
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     "KALBA" langelis "nuplaukė" kažkur...      ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .kalba {
+            position: relative;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   FOOTERio antras po "footer-distributed" div klasės blokas  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .content.flow {
+        margin-top: 1.5em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     LOGOTIPĄ dar pastumiu į dešinę pusę:    ( 1400 PX  )    */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    img.logo {
+        margin-left: 5em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Stumdau" visą NAV nuorodų juostą iš dešinės ir kairės    */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    nav {
+        margin-left: -16.7%;
+        margin-right: 1.2em;
+    }
+
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    Pagrindinis BUTTON / mygtukas "PLAČIAU"    ( 1400 PX  )   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .button .placiau {
+
+        margin-top: -0.6em;
+        font-size: 1.5rem;
+        margin-left: 17.7em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Bandau NAV nuorodas atitraukti nuo LOGOtipo  ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    ul.nav__links {
+
+        margin-left: 19em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*    / PAGRINDINIS /         H-1 "Apie mus"      ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h1 {
+
+        font-size: 3rem;
+        margin-left: 1.23em;
+        width: auto;
+        color: rgb(71, 89, 128);
+        text-shadow: none;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        margin-top: 1.6em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*      / PAGRINDINIS /    "Laimos nuotrauka"      ( 1400 PX  )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .nuotrauka img {
+
+        width: 346px;
+        height: 326px;
+        margin-left: 4em;
+        margin-top: 9em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*     / PAGRINDINIS /    "Laima Matulionienė"    ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 h2 {
+
+        font-size: 2.3rem;
+        color: rgb(71, 89, 128);
+        text-shadow: none;
+        font-weight: 600;
+        margin-left: -20.2em;
+        margin-top: 14.15em;
+    }
+
+    .straipsniai p {
+
+        font-size: 1.6rem;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Psichologė – psichoterapeutė (psichodinaminė psichoterapija)"  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(1) {
+
+        margin-left: 1.5em;
+        margin-top: 23.64em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*         "Narystė: Lietuvos psichologų sąjunga, "    ( 1400 PX  )  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+        margin-left: 1.5em;
+        margin-top: 24.8em;
+    }
+
+     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*            "Konsultuoja lietuvių, anglų k."        ( 1400 PX  )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-2 p {
+
+        margin-left: 0.6em;
+        margin-top: 26.1em;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*  "Manau, kad kiekvienas žmogus turi pakankamai vidinių"   ( 1440 PX )   */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(1) {
+
+        margin-top: -12em;
+        background-color: #fff;
+        width: 50%;
+        float: right;
+        display: none;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   "Tereikia pasiryžti vidinei kelionei - iš pradžių"  ( 1440 PX ) */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .s2 .tekstas-3 p:nth-child(2) {
+
+        margin-top: -9.4em;
+        background-color: #fff;
+        width: 50%;
+        float: right;
+        display: none;
+    }
+
+      /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*  6. -> 5.  "Ateikite į psichoterapiją, pasiryžkite šiai "  ( 576 PX )  */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .tekstas-3 p:nth-child(3) { 
+
+        display: none;
+    }
+
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*   Papildomas DIV, kad perkelti visą tekstą, o ne dalimis: ( 1440 PX ) */
+    /*   "Manau, kad kiekvienas žmogus turi pakankamai vidinių resursų ..."  */
+    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .papildomas {
+
+        display: inherit;
+        float: right;
+        width: 54.5%;
+        margin-right: 3.5em;
+        margin-top: -17.1em;
+    }
+
+    .papildomas p {
+
+        line-height: 1.17;
+        letter-spacing: 0.02rem;
+        text-align: justify;
+        color: #12748d;
+    }
+
+   .footer-distributed {
+       margin-top: -0.3em;
+   }
+
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    /*           "Puslapis Ruošiamas"   ( įterptas tekstas )   ( 1400 PX )    */
+    /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+    div .tekstas-2 p::after {
+        content: "1400 px -- Puslapis ruošiamas";
+        color: rgb(248, 101, 56);
+    }
+
+}
+
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/*    1.   |  PAGRINDINIS - PSICHOTERAPIJOS  |   |    PABAIGA    | (  PX  )  */
+/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+
