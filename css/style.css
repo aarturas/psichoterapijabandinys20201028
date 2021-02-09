@@ -35,10 +35,8 @@ body {
 .kalbacontainer {
 
     position: relative;
-    margin-top: 0em;
     margin-top: -2.7em;
     padding: 0;
-
     display: flex;
 }
 
@@ -49,7 +47,6 @@ body {
 .kalba {
 
     display: flex;
-
     justify-content: space-between;
     flex-direction: row;
     padding: 0.3rem 0.55rem;
@@ -57,7 +54,6 @@ body {
     border: 1px solid rgba(77, 77, 78, 0.4);
     cursor: pointer;
     margin-left: 75%;
-    margin-top: 1em;
     margin-top: 5em;
 }
 
@@ -71,50 +67,7 @@ body {
     height: 13px;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*   /  S-1  H-1  /  "VšĮ Ulonų psichoterapijos centras"   /  ( "0" )  */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-.s1 h1 {
-
-	text-align: center;
-	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
-    font-size: 2.5em;
-    font-weight: lighter;
-    text-shadow: 0px 4px 4px 0px rgba(0,0,0,0.9);
-    text-shadow: 0 2px 6px #000000;
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*       /  H - 2  /   Visas tekstas   ( mob. ekrane )        ( "0" )  */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-h2 {
-
-	color: rgb(255, 255, 255);
-	text-shadow: 1px 2px 4px rgba(10, 10, 10, 0.7);
-	font-weight: normal;
-    font-size: 1.5em;
-    margin: 1em 0.7em 2em 1.2em;
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*      Antras tekstas: "Esame tam, kad neliktumėte ... "   ( "0" )  */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-h2:nth-child(3) {
-
-    margin-top: -1em;
-}
-
-/* ======================================================== */
-/*                    /    P   /                   ( "0" )  */
-/* ======================================================== */
-
-p {
-	color: #236389;
-}
 
 /* ======================================================== */
 /*                 Idesime HEADERiui stiliu        ( "0" )  */
@@ -160,6 +113,51 @@ header nav {
 	background-blend-mode: multiply;
 	background-size: cover;
     height: 100vh;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*   /  S-1  H-1  /  "VšĮ Ulonų psichoterapijos centras"   /  ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.s1 h1 {
+
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-shadow: 0px 4px 4px 0px rgba(0,0,0,0.9);
+    text-shadow: 0 2px 6px #000000;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*       /  H - 2  /   Visas tekstas   ( mob. ekrane )        ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h2 {
+
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 4px rgba(10, 10, 10, 0.7);
+	font-weight: normal;
+    font-size: 1.5em;
+    margin: 1em 0.7em 2em 1.2em;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*      Antras tekstas: "Esame tam, kad neliktumėte ... "   ( "0" )  */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h2:nth-child(3) {
+
+    margin-top: -1em;
+}
+
+/* ======================================================== */
+/*                    /    P   /                   ( "0" )  */
+/* ======================================================== */
+
+p {
+	color: #236389;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -405,8 +403,6 @@ ul.nav__links  > *:nth-child(6) {
    text-align: center;
 }
 
-
-
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /*     FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER   */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -416,8 +412,8 @@ ul.nav__links  > *:nth-child(6) {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .s1 footer {
+
 	display: flex;
-	/* position: relative; */
 	position: absolute;
 	width: 100%;
 	max-width: 1440px;
@@ -432,7 +428,8 @@ ul.nav__links  > *:nth-child(6) {
 
 .footer-distributed  {
 
-	display: inline-block;
+	/* display: inline-block; */
+    display: none;
 	vertical-align: top;
     border: 1px solid rgba(77, 77, 78, 0.2);
 
@@ -497,10 +494,10 @@ a {
 /* ======================================================== */
 
 .hamburger {
+
 	position: absolute;
 	width: 35px;
 	height: 30px;
-    /* top: 14px; */
     top: 35px;
 	right: 10%;
 	z-index: 5;
@@ -512,6 +509,7 @@ a {
 /* ======================================================== */
 
 .hamburger div {
+
 	position: relative;
 	width: 35px;
 	height: 3px;
@@ -572,6 +570,7 @@ a {
 /* ======================================================== */
 
 .hamburger__nav .hamburger__nav--wrapper {
+
 	position: relative;
 	overflow-y: auto;
 	height: 100%;
@@ -583,6 +582,7 @@ a {
 /* ======================================================== */
 
 .hamburger__nav--items {
+
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -595,6 +595,7 @@ a {
 /* ======================================================== */
 
 .hamburger__nav--items a {
+
 	margin-top: 40px;
 	color: #0c7e9b;
 	opacity: 0;
@@ -660,10 +661,7 @@ a.melynas {
 
 .button .placiau {
 
-    /* position: relative; */
-   
 	background: #0a667e;
-    /* display: flex; */
     display: inline-block;
     display: block;
 	padding: 0.49em 0.8em;
@@ -675,8 +673,6 @@ a.melynas {
     bottom: 5em;
     cursor: pointer;
     outline: none;
-
-    /* box-shadow: 0 0 0 7px var(--accent-clr) inset; */
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -721,19 +717,8 @@ a.melynas {
     padding: 0 2em;
     padding: 0 4.3em;
     margin-left: 2.8em;
-
-    /* background-color: rgb(241, 10, 10); */
     max-height: 4.5em;
-
 }
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*       FOOTERį, bandau "ištempti" į apačią          ( "0" )   */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-/* .footer-distributed {
-    margin-top: -0.5em;
-} */
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /*             FOOTERio GRID - ISH dalis              ( "0" )   */
@@ -749,14 +734,6 @@ a.melynas {
 /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
 @media screen and (min-width: 376px) { 
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*                       HEADER               ( 376 px )  */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* header {
-        position: fixed;
-    } */
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*                       BODY                 ( 376 px )  */
@@ -783,7 +760,6 @@ a.melynas {
 
     .s1 {
 
-        /* background-color: rgb(247, 236, 87); */
         height: 100vh;
         margin-top: -4.3em;
     }
@@ -858,9 +834,6 @@ a.melynas {
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .s1 {
-        /* background-color: rgb(187, 243, 97); */
-        /* height: 100vh; */
-        height: calc(100vh - 7.8em);
         height: calc(100vh - -7em);
     }
 
@@ -906,6 +879,14 @@ a.melynas {
     .button .placiau {
 
         font-weight: normal;
+    }
+
+      /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*         Paslepiu FOOTER , kad pradingtų prie   ( 376 px ) dydžio   */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+     .footer-distributed {
+        display: none;
     }
 }
 
