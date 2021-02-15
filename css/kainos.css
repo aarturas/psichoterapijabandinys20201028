@@ -141,22 +141,26 @@ header nav {
 
 .melynas {
 
-    padding: 0.5em 0.8em;
     border-radius: 27px;
     background-color: #236389;
+}
+
+ul.nav__links .melynas {
+    
+    padding: 0.4em 1.1em;
+    margin-right: -0.4em;
 }
 
 a.melynas {
 
     color: #fff !important;
-    z-index: 999;
 }
 
 .melynas:hover {
 
-    background-color: #465252;
+    background-color: #0d5a5a;
     color: #fff;
-    transition: all 0.4s ease-in-out 0.2s;
+    transition: 0.3s;
 }
 
 /*  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
@@ -252,19 +256,18 @@ a.melynas {
 /*    NAV __ LINKS   LI  A: ( Paciu nuorodu aprasymas  )    */
 /* ======================================================== */
 
+/* .nav__links li a {
+
+    transition: all 0.3s ease 0.1s;
+} */
+
 .nav__links li a {
-
-    transition: all 0.4s ease 1s;
-}
-
-.nav__links li a {
-
-   /* margin: 0 1.7rem; */
 
    font-size: 1.6rem;
    font-weight: 100;
    text-decoration: none;
-   color: rgba(77, 77, 78, 1);
+   /* color: rgba(77, 77, 78, 1); */
+   color: rgb(61, 61, 61);
 }
 
 /* ======================================================== */
@@ -273,8 +276,8 @@ a.melynas {
 
 .nav__links li a:hover {
 
-  color: #bec0be;
-  transition: all 0.3s ease-in-out 0.1s;
+  color: #265191;
+  transition: 0.3s;
 }
 
 /* ======================================================== */
