@@ -98,7 +98,7 @@ nav li {
 .s3 h1 {
 
     position: relative;
-    margin-left: 2.1em;
+    /* margin-left: 2.1em; */
     color: #034958;
     text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
     font-weight: 600;
@@ -184,11 +184,6 @@ ul.nav__links li a:hover {
 
     color: red;
     transition: 0.3s;
-}
-
-.mobile__menu {
-
-  display: none;
 }
 
 .nav__links {
@@ -394,6 +389,10 @@ p.adresas {
 
 @media screen and (min-width: 320px) { 
 
+      .s3 {
+        width: 100%;
+    }
+
     div  h1::after {
         
         content: "320: Puslapis ruošiamas";
@@ -473,6 +472,17 @@ p.adresas {
          position: fixed;
     }
 }
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+
+@media screen and (min-width: 370px)  {
+
+    .s3 h1 {
+        margin-left: 0.5em;
+    }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
 /* ======================================================================== */
 /*   /  PAGRINDINIS /  Small devices    ( landscape phones, 576px and up )  */
@@ -770,13 +780,11 @@ p.adresas {
 
     .s3 h1 {
 
-        margin-left: 3em;
         margin-left: 0.5em;
         top: -2.5em;
     }
 
     .straipsniai {
-        margin-top: -6em;
         margin-top: -10em;
     }
 
