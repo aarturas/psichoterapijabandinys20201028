@@ -555,7 +555,6 @@ p.adresas {
 
         height: calc(100vh - 10em); 
         padding: 0 5em;
-
     }
 
     img.logo {
@@ -582,9 +581,9 @@ p.adresas {
         color: rgb(82, 236, 198);
     }
 
-    .button .placiau {
+    /* .button .placiau {
         margin-top: 8em;
-    }
+    } */
 
     .straipsniai {
         margin-top: 5em;

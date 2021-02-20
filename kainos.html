@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,22 +9,16 @@
         <script src="https://kit.fontawesome.com/b60ca28898.js" crossorigin="anonymous"></script>
 
         <!-- ------------------------------------------------------------------ -->
-        <!--                               Fontai                               -->
+        <!--            FONT   /   ROBOTO + SLAB , variables  FONTS             -->
         <!-- ------------------------------------------------------------------ -->
-        
-        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- ------------------------------------------------------------------ -->
-        <!--    Įsidėsime iš interneto: "https://alvarotrigo.com/fullPage/"     -->
-        <!--       fullpage.min.css ir fullpage.min.js nemokamus failus         -->
-        <!-- ------------------------------------------------------------------ -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="fullpage.min.css" />
-        <!-- <link rel="stylesheet" href="kainos2.css" /> -->
         <link rel="stylesheet" href="css/kainos.css" />
 
-
-        <title>Kainos, antras bandymas</title>
+        <title>Kainos, "Mobile First"</title>
 
     </head>
 
@@ -39,9 +32,9 @@
 
             <header>
 
-                <a href="index.html">
-                    <img src="img/UPC5 antra.png" alt="logotipas" class="logo"/>
-                </a>
+                    <a href="index.html">
+                        <img src="img/UPC5 antra.png" alt="logotipas" class="logo"/>
+                    </a>
 
                 <!-- --------------------------------------------------- -->
                 <!--                    NAV LINKS                        -->
@@ -58,13 +51,10 @@
                         <li><a href="blogas.html">Blog</a></li>
                         <li><a href="psichoterapeutas.html" class="melynas">E-psichoterapeutas</a></li>
 
-                    </ul>  <!--  ul .nav__links :  -- pabaiga.  -->
+                    </ul>  <!-- ul .nav__links  -->
 
-                </nav>  <!--  NAV : -- pabaiga.   -->
+                </nav>
 
-                <!-- ------------------------------------------- -->
-                <!--  MOBILE NAV  ( "hamburgerio" brūkšneliai )  -->
-                <!-- ------------------------------------------- -->
 
                 <div class="mobile__menu">
 
@@ -81,11 +71,10 @@
                     <!-- ------------------------------------------- -->
 
                     <div class="hamburger__nav">
-                        <!--       įdėsime   WRAPPERi        -->
                         <div class="hamburger__nav--wrapper">
                             <nav class="hamburger__nav--items">
 
-                                <a href="apiemus.html" >Apie mus</a>
+                                <a href="apie_mus.html" >Apie mus</a>
                                 <a href="paslaugos.html">Paslaugos</a>
                                 <a href="kainos.html">Kainos</a>
                                 <a href="kontaktai.html">Kontaktai</a>
@@ -98,163 +87,129 @@
                 </div>   <!--   .mobile__menu    -->
 
             </header>
-
-            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+            
 
             <main>
 
                 <div id="fullpage">
 
-                    <!-- =============================================================== -->
-                    <!--       ( KAINOS )          Trečia dalis      ( S - 3 )           -->
-                    <!-- =============================================================== -->
+                        <div class="kalbacontainer">
+                            <div class="kalba">
 
-                    <section class="section s3">
-
-                            <div class="kalbacontainer">
-
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                                <!--            Kalbos pasirinkimo NUORODOS:             -->
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-                                <div class="kalba">
-
-                                    <!--  /////////////  Lietuvių kalba  \\\\\\\\\\\\\   -->
-
-                                    <a href="#">
-                                        <img src="img/LTveliava 2-m.png" alt="lietuviu">
-                                    </a>
-                                    
-                                    <!--  /////////////  Anglų kalba  \\\\\\\\\\\\\\\\   -->
-
-                                    <a href="#">
-                                        <img src="img/ENGveliava3.png" alt="anglu">
-                                    </a>
-                                    
-                                </div>   <!-- .kalba: ( kalbų langelio ) -- pabaiga.   -->
+                                <a href="#">
+                                    <img src="img/LTveliava 2-m.png" alt="lietuviu">
+                                </a>
+                                
+                                <a href="#">
+                                    <img src="img/ENGveliava3.png" alt="anglu">
+                                </a>
+                                
+                            </div>   <!-- .kalba -->
+                        </div>   <!--   .kalbacontainer  -->   
 
 
-                            </div>   <!--   .kalbacontainer : -- pabaiga.    -->         
-
-                            <!-- ------------------------------------------------------------- -->
-                            <!--             Teksto, "Kaina" skyriuje, aprašymas               -->
-                            <!-- ------------------------------------------------------------- -->
+                        <section class="section s4">
 
                             <h1>Kainos</h1>
 
-                            <div class="tekstas">
+                            <div class="description">
 
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-                                <section class="features">
-
-                                    <ol>
-
-                                        <li>
-                                            <div>Pirminė psichoterapeuto konsultacija</div>
-                                            <div>40 EUR</div>
-                                        </li>
-
-                                        <li>
-                                            <div>Psichoterapijos sesija</div>
-                                            <div>30 EUR</div>
-                                        </li>
-
-                                        <li>
-                                            <div>Poros / šeimos psichoterapijos sesija</div>
-                                            <div>50 EUR</div>
-                                        </li>
-
-                                        <li>
-                                            <div>Grupinė terapija (1 asmeniui)</div>
-                                            <div>20 EUR</div>
-                                        </li>
-
-                                        <li class="paskutinis">
-                                            <div>1 sesija trunka 50 min.</div>
-                                        </li>
-
-                                    </ol>
-
-                                </section>
-
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-                                <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                                <!--     Nuotrauka dešinėje pusėje : "Pokalbis prie stalo"    -->
-                                <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-                                <div class="nuotrauka">
-                                    <img src="img/atvira_erdve 4.jpg" class="pagalbinis" alt="pokalbis ofise">
+                                <div class="clearfix">
+                                    <div class="nuotrauka">
+                                        <img src="img/atvira_erdve 4.jpg" class="pagalbinis" alt="atvira erdve">
+                                    </div>  
                                 </div>
 
-                                <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+                                <div class="tekstas">
 
-                            </div>  <!--  .tekstas : === pabaiga. -->
+                                    <ol class="pivotal">
 
-                            <!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+                                        <li class="first">
+                                            <div>
+                                                Pirminė psichoterapeuto konsultacija
+                                            </div>
 
-                            <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                                            <div class="price-1">
+                                                40 EUR
+                                            </div>  <!--   .price-1  --> 
+                                        </li>  <!--   .first  -->  
 
-                            <!-- ================================================== -->
-                            <!--   FOOTER-is su bendra klase: "footer-distributed"  -->
-                            <!-- ================================================== -->
 
-                            <footer class="footer-distributed">
+                                        <li class="second">
+                                            <div>
+                                                Psichoterapijos sesija
+                                            </div>
 
-                                <!-- ----------------------------------------------- -->
-                                <!--                 FOOTER - PIRMAS                 -->
-                                <!-- ----------------------------------------------- -->
-                            
-                                <div class="footer-pirmas">
+                                            <div class="price-2">
+                                                30 EUR
+                                            </div>  <!--   .price-2  --> 
+                                        </li>  <!--   .second  --> 
 
+
+                                        <li class="third">
+                                            <div>
+                                                Poros / šeimos psichoterapijos sesija
+                                            </div>  
+
+                                            <div class="price-3">
+                                                50 EUR
+                                            </div>  <!--   .price-3  --> 
+                                        </li>  <!--   .third  --> 
+
+
+                                        <li class="fourth">
+                                            <div>
+                                                Grupinė terapija (1 asmeniui)
+                                            </div>
+
+                                            <div class="price-4">
+                                                20 EUR
+                                            </div>  <!--   .price-4  --> 
+                                        </li>  <!--   .fourth  --> 
+
+
+                                        <li class="paskutinis">
+                                            <div>
+                                                1 sesija trunka 50 min.
+                                            </div>
+                                        </li>   <!-- .paskutinis  -->
+
+
+                                    </ol>     <!-- .pivotal  -->
+
+                                </div>     <!--  .tekstas  -->
+                            </div>      <!-- .description  -->
+                        </section>   <!--   .section s4  -->
+                
+
+                    <footer class="footer-distributed">
+
+                        <div class="content flow">
+
+                            <div class="grid-ish">
+
+                                <div class="col1">
                                     <div class="footer-icons">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
                                         <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>  <!--  .footer-icons  -->
-                        
-                                </div>  <!--  .footer-pirmas  -->
+                                    </div>  
+                                </div>  <!-- .col 1  -->
 
-                                <!-- ----------------------------------------------- -->
-                                <!--               FOOTER - ANTRAS                   -->
-                                <!-- ----------------------------------------------- -->
+                                <div class="col2">
+                                    VšĮ Ulonų psichoterapijos centras
+                                </div>  <!-- .col 2  -->
 
-                                <div class="footer-antras">
-
-                                    <div>
-                                        <p>VšĮ Ulonų psichoterapijos centras</p>
-                                    </div>
-                                    
-                                </div>  <!--  .footer-antras  -->
-
-                                <!-- ----------------------------------------------- -->
-                                <!--              FOOTER - TRECIAS                   -->
-                                <!-- ----------------------------------------------- -->
-
-                                <div class="footer-trecias">
-
+                                <div class="col3">
                                     <p>
                                         Darbo laikas:  I - V    9:00 - 20:00
                                     </p>
-
                                     <p>
-                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;VI   9:00 - 16:00
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI   9:00 - 16:00
                                     </p>
+                                </div>
 
-                                </div>  <!--  .footer-trecias  -->
-
-                                <!-- ----------------------------------------------- -->
-                                <!--              FOOTER - KETVIRTAS                 -->
-                                <!-- ----------------------------------------------- -->
-
-                                <div class="footer-ketvirtas">
-
+                                <div class="col4">
                                     <p class="adresas">
                                         info@ulonupc.lt
                                     </p>
@@ -262,46 +217,27 @@
                                     <p class="telefonas">
                                         +370 620 84494
                                     </p>
+                                </div>   <!-- .col 3  -->
 
-                                </div>   <!--  .footer-ketvirtas  -->
+                            </div>  <!-- .grid-ish  -->
+                        </div>    <!-- .content flow  -->
+                    </footer>   <!-- footer-distributed  -->
 
-                            </footer>   <!-- footer-distributed   -->
+                </div>  <!--  # fullpage   -->
+            </main>  
 
-                        </section>   <!--   .section s6   -->
-
-                        <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-                        <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-
-                        <!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
-
-                        <!-- </div>   -->  <!--  .description : === pabaiga. -->
-                      
-                    </section>
-
-                </div>  <!--  # fullpage  -->
-            </main>
-
-            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
 
             <script src="fullpage.min.js"></script>
             <script src="main.js"></script>
 
-            <!-- ĮkeLiame iš "https://cdnjs.com/libraries/gsap/2.1.3" ( TimelineMax.min.js ) -->
-
             <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js">
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js">
             </script>
 
-            <!-- Įkekiame iš "https://cdnjs.com/libraries/gsap/2.1.3" ( TweenMax.min.js ) -->
-
             <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
             </script>
-
-            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
             
-        </div>  <!--  .container  --  pabaiga    -->
+        </div>  <!--  .container   -->
     </body>
 </html>
