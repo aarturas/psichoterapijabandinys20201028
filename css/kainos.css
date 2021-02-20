@@ -1,5 +1,5 @@
 /* ======================================================================= */
-/*      ( KAINOS )                   HTML                                  */
+/*               ( KAINOS )               /    HTML    /                   */
 /* ======================================================================= */
 
 html {
@@ -8,22 +8,12 @@ html {
   overflow-x: hidden;
 }
 
-
 body {
 
     font-family: 'Roboto Slab', serif;
     max-width: 1440px;
     margin: auto;
 }
-
-/* _______________________________________________________________________ */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*    Kalbos pasirinkimo langelis su dviem vėliavėlėmis  / LT ir ENG /   */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*   1.  "KALBA" pasirinkimas - DIV'as /  Nustatome langelio dydį ir vietą:  */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
 
 .kalba {
 
@@ -32,15 +22,10 @@ body {
     justify-content: space-between;
     flex-direction: row;
     padding: 0.2rem 0.55rem;
-    /* width: 4.4rem; */
     border: 1px solid rgba(77, 77, 78, 0.4);
     cursor: pointer;
     width: 3.4rem;
 }
-
-/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
-/*        Nuotrauka   /    Nustatome "kalba" nuotraukos dydį:      */
-/* -  -  -  -  -  -  -  -  -  -    -  -  -  -  -  -  -  -  -  -  - */
 
 .kalba img {
 
@@ -49,21 +34,10 @@ body {
     object-fit: cover;
 }
 
-/* _______________________________________________________________________ */
-
-/* ======================================================== */
-/*      ( KAINOS )       Idesime HEADERiui stiliu           */
-/* ======================================================== */
-
 header {
 
     display: flex;
-    /* position: relative; */
-    /* height: 7.7em; */
-    /* height: 5em; */
-    /* pastumsime logo i kaire puse */
     justify-content: space-between;
-    /* sucentruosime NAV vertikaliai i centra */
     align-items: center;
     left: 0;
     right: 0;
@@ -76,10 +50,6 @@ header {
     box-shadow: 1px 2px 5px 0px rgb(0 0 0 / 10%);
 }
 
-/* ======================================================== */
-/*      ( KAINOS )          LOGO                   ( "0" )  */
-/* ======================================================== */
-
 .logo {
 
 	cursor: pointer;
@@ -90,30 +60,16 @@ header {
     align-items: center;
 }
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/*   ( KAINOS )  Viršutinė NAV juosta padarome nejudančia  */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
 header nav {
    
    position: sticky;
    top: 0;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*      HEADER'io NAV nuorodų pavadinimų spalva :    ( "0" ) */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 header nav a {
     
-    /* color: #0c7e9b; */
-	/* color: #76777e; */
 	color: #67686d;
 }
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*      Virsutinės  NAV Navigacijos nuorodų "linkai" ir jų aprašymai     */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
 nav {
 
@@ -126,33 +82,19 @@ nav {
     max-width: 1436px;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*    Kažkodėl čia yra kitos keturios "galinės" nuorodos  ( "0" )  */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 nav li {
 
     list-style: none;
     align-items: center;
 }
 
-/* ================================================================= */
-/*       ( KAINOS )          Bandau padaryti FLEX'a       ( "0" )    */
-/* ================================================================= */
-
 .s4 {
 
     display: inline-block;
-    /* display: block; */
-    /* background-color: rgb(255,255,255,1); */
     height: calc(100vh - 8rem);
     width: 100%;
     height: 100vh;
 }
-
-/* ---------------------------------------------------- */
-/*   ( KAINOS ) Pagrindinis: " PASLAUGOS " h1 uzrasas   */
-/* ---------------------------------------------------- */
 
 .s4 h1 {
 
@@ -164,27 +106,11 @@ nav li {
     letter-spacing: 1px;
 }
 
-/* ---------------------------------------------------- */
-/*  Fono nuotrauka "dvi moterys kalbasi prie staliuko"  */
-/* ---------------------------------------------------- */
-
 img.pagalbinis {
 
     display: block;
     object-fit: cover;
 }
-
-/* .clearfix {
-  overflow: auto;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*    HEADER  / NAV /  Viršutinės navigacijos nuorodos   ( "0" )   */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*      O čia yra pirmi du nuorodų linkai:  "Apie mus" ir "Paslaugos"     */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 ul.nav__links {
 
@@ -193,42 +119,21 @@ ul.nav__links {
     width: 100%;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*       NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    ( "0" )   */
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .s2 .nav__links li {
 
   display: inline-block;
   padding: 0;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*    ( KAINOS )  Pačių nuorodų linkų pavadinimai  ( "0" )  */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 ul.nav__links a {
     text-decoration: none;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*     /   HEADER  /   NAV nuorodų linkų HOVER    ( "0" )   */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 ul.nav__links li a:hover { 
 
-    /* color: red; */
-    /* color: #034958; */
     color: #0a667e;
     transition: 0.3s;
 }
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ======================================================== */
-/*      NAV __ LINKS ( visu nuorodu blokas )    ( "0" )     */
-/* ======================================================== */
 
 .nav__links {
 
@@ -240,29 +145,16 @@ ul.nav__links li a:hover {
     padding-inline-start: 0px;
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*    ( KAINOS )    HAMBURGER MENU     mobilus    ( "0" )   */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================== */
-/*    HAMBURGER menu  /   nustatysime pozicija    ( "0" )   */
-/* ======================================================== */
-
 .hamburger {
     
 	position: absolute;
 	width: 35px;
 	height: 30px;
-    /* top: 35px; */
     top: 15px;
 	right: 10%;
 	z-index: 5;
 	cursor: pointer;
 }
-
-/* ======================================================== */
-/*  /  HAMBURGER menu DIV  /  Bus tris bruksneliai  ( "0" ) */
-/* ======================================================== */
 
 .hamburger div {
 
@@ -274,10 +166,6 @@ ul.nav__links li a:hover {
 	margin-top: 10px;
 	transition: all 0.3s ease-in-out;
 }
-
-/* ======================================================== */
-/*   /  TOGGLE  /  Paprastai nesimato, tik mazinant ekrana  */
-/* ======================================================== */
 
 #toggle {
 	display: none;
@@ -301,10 +189,6 @@ ul.nav__links li a:hover {
 	top: 0;
 }
 
-/* ======================================================== */
-/*   HAMBURGER __ NAV  /  Visas hamburgerio langas  ( "0" ) */
-/* ======================================================== */
-
 .hamburger__nav {
 
 	position: fixed;
@@ -312,7 +196,6 @@ ul.nav__links li a:hover {
 	width: 100%;
 	height: 100%;
 	background-color: #050620;
-	/*  Paspaudus "hamburgeri", nustumsime fona i virsu */
 	top: -100%;
 	left: 0;
 	right: 0;
@@ -321,21 +204,12 @@ ul.nav__links li a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-/* ======================================================== */
-/*    ( KAINOS ) / HAMBURGER __ NAV  WRAPPER  /   ( "0" )   */
-/* ======================================================== */
-
 .hamburger__nav .hamburger__nav--wrapper {
 
 	position: relative;
 	overflow-y: auto;
 	height: 100%;
 }
-
-/* ======================================================== */
-/*   /  HAMBURGER __ NAV  ITEMS  /  Tvarkysime vidines      */
-/*  "hamburgerio" tekstus ir nuorodas             ( "0" )   */
-/* ======================================================== */
 
 .hamburger__nav--items {
 	height: 100vh;
@@ -344,10 +218,6 @@ ul.nav__links li a:hover {
 	align-items: center;
 	justify-content: center;
 }
-
-/* ======================================================== */
-/*      /  HAMBURGER __ NAV  ITEMS nuorodos  /    ( "0" )   */
-/* ======================================================== */
 
 .hamburger__nav--items a {
 	margin-top: 40px;
@@ -358,36 +228,18 @@ ul.nav__links li a:hover {
 	transition: all 0.3s ease 0s;
 }
 
-/* ======================================================== */
-/*   ( KAINOS )   /  HAMBURGER __ NAV  ITEMS   /  ( "0" )   */
-/* ======================================================== */
-
 .hamburger__nav--items a:first-child {
 	margin-top: 0;
 }
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS   /       ( "0" )   */
-/*     Su OPACITY, matysime MOB skyriuje nuorodas           */
-/* ======================================================== */
 
 .hamburger__nav--wrapper nav a {
 	opacity: 1;
 }
 
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS   /        ( "0" )  */
-/*    viduje MOB menu, nuorodos keis spalva uzvedus pele    */
-/* ======================================================== */
-
 .hamburger__nav--wrapper nav a:hover {
 	opacity: 1;
 	color: #e74d71;
 }
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*   ( KAINOS )  ( "PSICHOTERAPEUTAS" )  Mygtukas: ( "0" )   */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
 .melynas {
 
@@ -398,7 +250,6 @@ ul.nav__links li a:hover {
     font-size: 1.4em;
     font-weight: 300;
     letter-spacing: 1px;
-    /* margin-right: -5px; */
     margin-right: 0;
 }
 
@@ -414,14 +265,6 @@ a.melynas {
     transition: 0.3s;
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*       ( KAINOS )           FOOTER                  ( "0" )   */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*   Visas skyrius, t.y., bandau FOOTER'į perdaryti   ( "0" )   */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .content.flow {
 
     margin: 3em;
@@ -432,33 +275,19 @@ a.melynas {
     max-height: 4.5em;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*       ( KAINOS )     FOOTERio GRID - ISH dalis     ( "0" )   */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .grid-ish {
 
     display: flex;
     border: 1px solid rgba(0,0,0,0.2);
     flex-wrap: wrap;
-    /*  ---  Dirbtinai mažinu aukštį: ( KAINOS )  ---  */
     max-height: 5em;
 }
-
-
-/* ======================================================== */
-/*   .footer- ICONS /  Pirmo langelio SOC.iconos   ( "0" )  */
-/* ======================================================== */
 
 .footer-icons {
 
     margin: 0.7em 0;
 	align-items: center;
 }
-
-/* ======================================================== */
-/*   .footer-icons A /  Aprašymas SOC. įkonėlių:   ( "0" )  */
-/* ======================================================== */
 
 .footer-icons a {
 
@@ -476,51 +305,28 @@ a.melynas {
 	margin: 0 0.3em;
 }
 
-/* ========================================================== */
-/*                      footer P                     ( "0" )  */
-/* ========================================================== */
-
 footer p {
 
 	color: #76777e;
     font-size: 1.12em;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*     Išskiriu adresą kas būtų matomas, mėlyna spalva:      ( "0" )  */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 p.adresas {
     color: rgb(41, 108, 146);
 }
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/*         Paslepiu FOOTER , kad nesimatytų prie:            ( "0" )  */
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .footer-distributed {
     
     display: none;
 }
 
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
 @media screen and (min-width: 320px) { 
 
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*     Visa "PASLAUGOS" skyriaus fono spava   ( 320 px )  */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .s4 {
-        /* background-color: rgb(247, 236, 87); */
         width: 100%;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    Laikinai įdedu tekstą "Puslapis ruošiamas"   ( 320 px )    */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     div  h1::after {
         
@@ -528,152 +334,47 @@ p.adresas {
         color:rgb(247, 236, 87);
     }
 
-     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*          įdedu tekstą   "PASLAUGOS"             ( 320 px )    */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .kalba {
 
         margin-left: 77%;
-        /* margin-top: 9em; */
         top: 7em;
     }
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*       Paslepiu NAV nuorodas, kad pradingtų prie 320 px dydžio      */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     nav {
         display: none;
     }
 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    Tuo pačiu parodau HAMBURGER'io langelį su trimis brūkšneliais   */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .mobile__menu {
         display: inherit;
     }
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*       LOGOtipą "atitraukiu" nuo kairiojo krašto       ( 320 PX )   */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     img.logo {
         margin-left: 1.2em;
     }
 
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*          įdedu tekstą   "PASLAUGOS"             ( 320 px )    */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .s4 h1 {
 
         font-size: 2.9rem;
         text-decoration: none;
-        /*  --- "KAINOS' pastumiame į apačią: ---  */
-        /* top: 9em; */
         top: 7.5em;
         text-align: center;
     }
 
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*       Nuotrauka / IMG / "Ofiso patalpa"          ( 320 px )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     img.pagalbinis {
 
-        /* margin-top: -4em; */
-        /*  -----  Apribojame aukštį: -----  */
-        /* height: 350px; */
         height: 300px;
         width: 100%;
         margin-top: -5em;
     }
 
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   Teksto dalis, pagrindinis DIV visų kainų aprašymo:   ( 320 px )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .features {
-
-        margin-top: 6em;
-        margin-right: 1em;
-        margin-left: -1.5em;
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*        Teksto dalies, raidžių dydis                    ( 320 px )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .features p {
-
-        font-size: 1.3rem;
-        margin: 0;
-    } */
-
-    /* .features div:last-child {
-
-        padding-left: 1em;
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*     TEKSTO dalies sąrašo numeracijos panaikinimas:      ( 320 px )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .features li {
-
-        list-style: none;
-
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   Teksto dalies DIV'o, arba "KAINOS" skaičių eilutės:   ( 320 px )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* .features div {
-
-        padding: 0.6rem 0;
-        width: 100%;
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*     Teksto dalies DIV'o, kainų langelio paryškinimas    ( 320 px )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-     /* div:nth-child(even) {
-
-        background-color: rgb(252, 250, 245);
-        border: 1px solid rgb(223, 221, 221);
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   Paskutinė KAINOS teksto eilutė: "1 sesija trunka 50 min."   ( 320 px )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    /* li:nth-child(5) {
-
-        margin-top:  2rem;
-    } */
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*         Bendri PIVOTAL skyriaus nustatymai     ( 320 px )   */
-    /*         Padding'as padaro eilutę per visą ekraną            */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .pivotal {
 
-        /* background-color: rgb(230, 237, 252); */
         background-color: rgba(0, 170, 233, 0.1);
 
         margin-top: 8em;
         list-style: none;
         padding: 0;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*        Tarpai tarp eilučių, raidžių aukštis    ( 320 px )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .pivotal div {
 
@@ -682,41 +383,21 @@ p.adresas {
         font-weight: 400;
     }
 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*      "Pirminė psichoterapeuto konsultacija", t.y., kas antra eilutė    */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .pivotal div:nth-child(odd) {
 
         background-color: rgba(5, 104, 56, 0.1);
         padding-left: 0.5em;
-
     }
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*  "40 EUR, 30 EUR,50 EUR ir 20 EUR", t.y., likusios eilutės ( 320 px )  */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .pivotal div:nth-child(even) {
 
         padding-left: 1em;
-        /* background-color: #fff; */
     }
-
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*            "1 sesija trunka 50 min."                      ( 320 px )   */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .pivotal .paskutinis {
 
         margin-top: 2em;
-        /* background-color: rgb(221, 241, 41); */
-        /* text-align: center; */
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   "Pavertus" telefona 90 laipsniu kampu ( mėlyname fone )   ( 576 PX )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .hamburger__nav--items {
 
@@ -726,27 +407,12 @@ p.adresas {
 
 }
 
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-
-/* ======================================================================== */
-/*   /  PAGRINDINIS /  Small devices    ( landscape phones, 576px and up )  */
-/* ======================================================================== */
-
 @media screen and (min-width: 576px)  {
 
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*        Visa "KONTAKTAI" skyriaus fono spava     ( 576 PX  )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .s4 {
-        /* background-color: rgb(187, 243, 97); */
         height: calc(100vh - 8em);
         padding: 0 1em;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    Laikinai įdedu tekstą "Puslapis ruošiamas"   ( 576 px )    */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     div h1::after {
 
@@ -754,19 +420,11 @@ p.adresas {
         color:rgb(187, 243, 97);
     }
 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*       Kalbos langelį pastumiu žemyn:                  ( 576 PX )   */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .kalba {
 
         margin-left: 80%;
         top: 9em;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   "Pavertus" telefona 90 laipsniu kampu ( mėlyname fone )   ( 576 PX )  */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .hamburger__nav--items {
 
@@ -774,33 +432,17 @@ p.adresas {
         background-color: rgb(38, 77, 26);
     }
 
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   NAV header'io juostą "atstatome" į pagrindinį matmenį:   ( 576 PX )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     header {
         height: 7.7em;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*      Psichoterapijos LOGO irgi padidiname:                 ( 576 PX )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .logo {
         height: 6em;
     }
 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   HAMBURGER'io brūkšnelius, prie 320 px, sucentruojame į vidurį:   ( 576 px )  */
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
     .hamburger {
         top: 35px;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*          IMG nuotrauka: "ofiso tuščia patalpa" :           ( 576 PX )   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     img.pagalbinis {
 
@@ -808,10 +450,6 @@ p.adresas {
         margin: auto;
         margin-top: 5em;
     }
-
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*    Bandau nustatyti H - 1 ( "KAINOS" ) aukštį, nes atsiranda tuščia erdvė viršuje   */
-    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .s4 h1 {
         top: 55%;;
@@ -824,70 +462,36 @@ p.adresas {
         width: 80%;
     }
 
-    /* ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
-
-    /* ----------------------------------------------------------------- */
-    /*   "Pirminė psichoterapeuto konsultacija"  -- "40 EUR"  ( 576 px )  */
-    /* ----------------------------------------------------------------- */
-
    .pivotal .first {
 
-       /* background-color: rgb(159, 173, 253); */
        display: flex;
        justify-content: space-between;
        padding: 0;
-       /* margin: 0.1em; */
-
        background-color: #fff;
    }
-
-    /* ------------------------------------------------------------ */
-    /*               "Psichoterapijos sesija"        ( 576 px )     */
-    /* ------------------------------------------------------------ */
 
    .pivotal .second  {
 
-       /* background-color: rgb(161, 221, 83); */
        display: flex;
        justify-content: space-between;
-
        padding: 0;
-       /* margin: 0.1em; */
        background-color: #fff;
-
    }
-
-    /* ------------------------------------------------------------ */
-    /*      "Poros / šeimos psichoterapijos sesija"    ( 576 px )   */
-    /* ------------------------------------------------------------ */
 
     .pivotal .third  {
 
-       /* background-color: rgb(83, 221, 180); */
        display: flex;
        justify-content: space-between;
-
        padding: 0;
-       /* margin: 0.1em; */
        background-color: #fff;
-
    }
-
-    /* ------------------------------------------------------------ */
-    /*       "Grupinė terapija ( 1 asmeniui )"        ( 576 px )    */
-    /* ------------------------------------------------------------ */
-
 
     .pivotal .fourth  {
 
-       /* background-color: rgb(245, 166, 228); */
        display: flex;
        justify-content: space-between;
-
        padding: 0;
-       /* margin: 0.1em; */
        background-color: #fff;
-
    }
 
    .paskutinis {
