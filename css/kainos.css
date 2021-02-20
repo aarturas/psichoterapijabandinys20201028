@@ -330,8 +330,9 @@ p.adresas {
 
     div  h1::after {
         
-        content: "320";
+        content: "320: Puslapis ruošiamas";
         color:rgb(247, 236, 87);
+        font-size: 1rem;
     }
 
     .kalba {
@@ -416,7 +417,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "576";
+        content: "576320: Puslapis ruošiamas";
         color:rgb(187, 243, 97);
     }
 
@@ -524,7 +525,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "768";
+        content: "768: Puslapis ruošiamas";
         color: rgb(82, 236, 198);
     }
 
@@ -566,7 +567,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "992";
+        content: "992: Puslapis ruošiamas";
         color: rgb(100, 176, 226);
     }
 
@@ -792,7 +793,6 @@ p.adresas {
     .paskutinis div {
 
         text-align: start;
-        /* margin-top: 5em; */
         margin-top: 3em;
     }
 }
@@ -801,7 +801,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "1200";
+        content: "1200: Puslapis ruošiamas";
         color: rgb(221, 138, 238);
     }
 
@@ -825,8 +825,9 @@ p.adresas {
 
      div h1::after {
 
-        content: "1400";
+        content: "1400: Puslapis ruošiamas";
         color: rgb(248, 101, 56);
+        
     }
 
     .content.flow {
