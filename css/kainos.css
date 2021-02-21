@@ -13,6 +13,8 @@ body {
     font-family: 'Roboto Slab', serif;
     max-width: 1440px;
     margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .kalba {
@@ -91,7 +93,7 @@ nav li {
 .s4 {
 
     display: inline-block;
-    height: calc(100vh - 8rem);
+    /* height: calc(100vh - 8rem); */
     width: 100%;
     height: 100vh;
 }
@@ -371,10 +373,11 @@ p.adresas {
     .pivotal {
 
         background-color: rgba(0, 170, 233, 0.1);
-
         margin-top: 8em;
         list-style: none;
         padding: 0;
+        color: #034958;
+        
     }
 
     .pivotal div {
