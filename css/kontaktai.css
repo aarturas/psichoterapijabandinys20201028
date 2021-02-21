@@ -106,7 +106,7 @@ body {
     /* sucentruosime NAV vertikaliai i centra */
     align-items: center; 
     /* atitrauksime nuo virsaus truputi */
-    margin-top: 10px; 
+    /* margin-top: 10px;  */
     left: 0;
     right: 0;
     max-height: 7.7em;
