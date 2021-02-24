@@ -826,15 +826,18 @@ p.adresas {
 
         padding: 0 0.5rem;
         margin-bottom: 0.9rem;
+        
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /*   2.  Noriu išskirti "Narystė: Lietuvos psichologų .."  ( 376 px )   */
+    /*   2. "Narystė: Lietuvos psichologų .."                  ( 376 px )   */
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
     .s2 .tekstas-1 p:nth-child(2) {
 
         padding: 0 0.5rem;
+        background-color: rgb(235, 232, 232);
+
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -854,8 +857,10 @@ p.adresas {
 
      .s2 .tekstas-3 p:nth-child(1) {
 
-        border: 1px solid rgb(206, 203, 203);
-        background-color: rgb(248, 246, 246);
+        /* border: 1px solid rgb(206, 203, 203); */
+        /* background-color: rgb(248, 246, 246); */
+        background-color: rgb(235, 232, 232);
+
         padding: 0 0.5rem;
     }
 
@@ -876,8 +881,10 @@ p.adresas {
 
         padding: 0 0.5rem;
 
-        border: 1px solid rgb(206, 203, 203);
-        background-color: rgb(248, 246, 246);
+        /* border: 1px solid rgb(206, 203, 203); */
+        /* background-color: rgb(248, 246, 246); */
+        background-color: rgb(235, 232, 232);
+
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
