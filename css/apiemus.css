@@ -943,9 +943,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 376 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
+    .s2 h1::after {
         
-        content: "320 px -- Puslapis ruošiamas ";
+        content: " 320: Puslapis ruošiamas ";
         color:rgb(247, 236, 87);
     }
 
@@ -1065,10 +1065,9 @@ p.adresas {
         font-size: 1.9rem;
         width: 82%;
         transition: 0.3s;
-        margin-left: 4em;
-        margin-top: 12.6em;
+        /* margin-left: 4em; */
+        /* margin-top: 12.6em; */
     }
-    
 
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*     I.             Visaas pirmo teksto DIV                 ( 576 PX )   */
@@ -1105,6 +1104,12 @@ p.adresas {
 
         margin-top: 26em;
         margin-right: 1em;
+    }
+
+    .s2 .tekstas-1 p:nth-child(2) {
+
+        background-color: #fff;
+
     }
 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -1179,9 +1184,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 576 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
+    .s2 h1::after {
 
-        content: "576 px -- Puslapis ruošiamas";
+        content: "576: Puslapis ruošiamas";
         color:rgb(187, 243, 97);
     }
 }
@@ -1300,9 +1305,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 768 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
+    .s2 h1::after {
 
-        content: "768 px -- Puslapis ruošiamas ";
+        content: "768: Puslapis ruošiamas";
         color: rgb(82, 236, 198);
     }
 
@@ -1535,9 +1540,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )    ( 992 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
+    .s2 h1::after {
 
-        content: "992 px -- Puslapis ruošiamas";
+        content: "992: Puslapis ruošiamas";
         color: rgb(100, 176, 226);
     }
 }
@@ -1621,9 +1626,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )   ( 1200 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
+    .s2 h1::after {
 
-        content: "1200 px -- Puslapis ruošiamas ";
+        content: "1200: Puslapis ruošiamas";
         color: rgb(82, 236, 198);
     }
 }  
@@ -1840,8 +1845,9 @@ p.adresas {
     /*           "Puslapis Ruošiamas"   ( įterptas tekstas )   ( 1400 PX )    */
     /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-    div .tekstas-2 p::after {
-        content: "1400 px -- Puslapis ruošiamas";
+    .s2 h1::after {
+
+        content: "1400: Puslapis ruošiamas";
         color: rgb(248, 101, 56);
     }
 
