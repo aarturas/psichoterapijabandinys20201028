@@ -391,7 +391,7 @@ p.adresas {
 
     div  h1::after {
         
-        content: "320";
+        content: "320: Puslapis ruošiamas";
         color:rgb(247, 236, 87);
     }
 
@@ -516,13 +516,13 @@ p.adresas {
 @media screen and (min-width: 576px)  {
 
     .s5 {
-        height: calc(100vh - 8em);
+    
         height: calc(100vh - 0em);
     }
 
     div h1::after {
 
-        content: "576";
+        content: "576: Puslapis ruošiamas";
         color:rgb(187, 243, 97);
     }
 
@@ -601,7 +601,6 @@ p.adresas {
 
     .s5 {
 
-        height: calc(100vh - 10em); 
         height: calc(100vh - 0em);
     }
 
@@ -616,7 +615,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "768";
+        content: "768: Puslapis ruošiamas";
         color: rgb(82, 236, 198);
     }
 
@@ -695,7 +694,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "992";
+        content: "992: Puslapis ruošiamas";
         color: rgb(100, 176, 226);
     }
 
@@ -852,11 +851,11 @@ p.adresas {
         margin-top: 1em;
     }
 
-     .s5 .tekstas .antras {
+    .s5 .tekstas .antras {
         margin-top: 1em;
     }
 
-     .s5 .tekstas .trecias {
+    .s5 .tekstas .trecias {
         margin-top: 1em;
     }
 
@@ -871,7 +870,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "1200";
+        content: "1200: Puslapis ruošiamas";
         color: rgb(221, 138, 238);
     }
 
@@ -899,7 +898,7 @@ p.adresas {
 
      div h1::after {
 
-        content: "1400";
+        content: "1400: Puslapis ruošiamas";
         color: rgb(248, 101, 56);
     }
 
