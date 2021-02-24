@@ -770,7 +770,9 @@ p.adresas {
 
 /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
 
-@media screen and (min-width: 376px) { 
+/* @media screen and (min-width: 376px) {  */
+@media screen and (min-width: 320px) { 
+
   
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /*    "Tel. +370 620 84494" telefono numeris  ( 376 px )  */
@@ -936,8 +938,14 @@ p.adresas {
 
     div .tekstas-2 p::after {
         
-        content: "376 px -- Puslapis ruošiamas ";
+        content: "320 px -- Puslapis ruošiamas ";
         color:rgb(247, 236, 87);
+    }
+
+     img.laima {
+
+        border-radius: 50%;
+        width: 100vw;
     }
 }
 
