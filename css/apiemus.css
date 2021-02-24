@@ -1307,6 +1307,11 @@ p.adresas {
 
         margin-top: 40em;
     }
+
+    .nuotrauka img {
+
+        border-radius: unset;
+    }
 }
 
 /* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
