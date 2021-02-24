@@ -969,6 +969,8 @@ ul.nav__links  > *:nth-child(6) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*   Kadangi netelpa pavertus telefona */
+    line-height: 0.4;
 }
 
 /* ======================================================== */
