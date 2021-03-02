@@ -997,8 +997,9 @@ p.adresas {
         font-size: 2.7rem;
         float: right;
         transition: 0.3s;
-        margin-right: auto;
+        /* margin-right: auto; */
         margin-top: 5em;
+        margin-right: -8em;
     }
 
     /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
