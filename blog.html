@@ -1,297 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://kit.fontawesome.com/b60ca28898.js" crossorigin="anonymous"></script>
+        <!--  FONT AWESOME -->
 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b60ca28898.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="fullpage.min.css" />
-    <link rel="stylesheet" href="css/blog.css" />
+        <!--          Fonts    /  ROBOTO + SLAB , variables  FONTS             -->
 
-    <title> Pirmasis - Blog skyrius</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  </head>
+        <link rel="stylesheet" href="fullpage.min.css" />
+        <link rel="stylesheet" href="css/blog.css" />
 
-  <!-- ............................................................................. -->
+        <title>BLOG: "Mobile First" MF - 6</title>
 
-  <body>
+    </head>
 
-      <div class="container">
+    <body>
 
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+        <div class="container">
 
-         <!-- ----------------------------------------------------- -->
-         <!--                       HEADER                          -->
-         <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!--                       HEADER                          -->
+            <!-- ----------------------------------------------------- -->
 
-         <header>
+            <header>
 
-            <a href="index.html">
-               <img src="img/UPC5 antra.png" alt="logotipas" class="logo"/>
-            </a>
+                    <a href="index.html">
+                        <img src="img/UPC5 antra.png" alt="logotipas" class="logo"/>
+                    </a>
 
-            <!-- --------------------------------------------------- -->
-            <!--                    NAV LINKS                        -->
-            <!-- --------------------------------------------------- -->
+                <!-- --------------------------------------------------- -->
+                <!--                    NAV LINKS                        -->
+                <!-- --------------------------------------------------- -->
 
-            <nav>
-               <ul class="nav__links">
+                <nav>
 
-                  <li><a href="apiemus.html">Apie mus</a></li>
-                  <li><a href="paslaugos.html">Paslaugos</a></li>
-                  <li><a href="kainos.html">Kainos</a></li>
-                  <li><a href="kontaktai.html">Kontaktai</a></li>
-                  <li><a href="blog.html" class="active">Blog</a></li>
-                  <li><a href="psichoterapeutas.html" class="melynas">E-psichoterapeutas</a></li>
+                    <ul class="nav__links">
 
-               </ul>  <!-- ul .nav__links  -->
-            </nav>
+                        <li><a href="apiemus.html" class="active">Apie mus</a></li>
+                        <li><a href="paslaugos.html">Paslaugos</a></li>
+                        <li><a href="kainos.html">Kainos</a></li>
+                        <li><a href="kontaktai.html">Kontaktai</a></li>
+                        <li><a href="blogas.html">Blog</a></li>
+                        <li><a href="psichoterapeutas.html" class="melynas">E-psichoterapeutas</a></li>
 
-            <!-- ------------------------------------------- -->
-            <!--  MOBILE NAV  ( "hamburgerio" brūkšneliai )  -->
-            <!-- ------------------------------------------- -->
+                    </ul>  <!-- ul .nav__links -->
 
-            <div class="mobile__menu">
+                </nav>
 
-               <input id="toggle" type="checkbox" />
+                <div class="mobile__menu">
 
-               <label class="hamburger" for="toggle">
-                  <div class="hamburger__top"></div>
-                  <div class="hamburger__meat"></div>
-                  <div class="hamburger__bottom"></div>
-               </label>
+                    <input id="toggle" type="checkbox" />
 
-               <!-- ------------------------------------------- -->
-               <!--             HAMBURGER   NAV                 -->
-               <!-- ------------------------------------------- -->
+                    <label class="hamburger" for="toggle">
+                        <div class="hamburger__top"></div>
+                        <div class="hamburger__meat"></div>
+                        <div class="hamburger__bottom"></div>
+                    </label>
 
-               <div class="hamburger__nav">
-                  <div class="hamburger__nav--wrapper">
-                     <nav class="hamburger__nav--items">
+                    <!-- ------------------------------------------- -->
+                    <!--             HAMBURGER   NAV                 -->
+                    <!-- ------------------------------------------- -->
 
-                        <a href="apiemus.html" >Apie mus</a>
-                        <a href="paslaugos.html">Paslaugos</a>
-                        <a href="kainos.html">Kainos</a>
-                        <a href="kontaktai.html">Kontaktai</a>
-                        <a href="psichoterapeutas.html">E-psichoterapeutas</a>
-                        <a href="blog.html">Blog</a>
+                    <div class="hamburger__nav">
+                        <div class="hamburger__nav--wrapper">
+                            <nav class="hamburger__nav--items">
 
-                     </nav>    <!--   .hamburger__nav--items    -->
-                  </div>    <!--   .hamburger__nav--wrapper    -->
-               </div>    <!--   .hamburger__nav    -->
+                                <a href="apie_mus.html" >Apie mus</a>
+                                <a href="paslaugos.html">Paslaugos</a>
+                                <a href="kainos.html">Kainos</a>
+                                <a href="kontaktai.html">Kontaktai</a>
+                                <a href="psichoterapeutas.html">E-psichoterapeutas</a>
+                                <a href="blogas.html">Blog</a>
 
-            </div>   <!--   .mobile__menu    -->
+                            </nav>    <!--   .hamburger__nav--items    -->
+                        </div>    <!--   .hamburger__nav--wrapper    -->
+                    </div>    <!--   .hamburger__nav    -->
+                </div>   <!--   .mobile__menu    -->
 
-         </header>
+            </header>
 
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
 
-         <main>
+            <main>
 
-            <div id="fullpage">
+                <div id="fullpage">
 
-               <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-               <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+                    <section class="section s6">
 
-               <!-- ----------------------------------------------------- -->
-               <!-- (Ulonų psichoterapijos centras) Pirma dalis  ( S - 1 ) -->
-               <!-- ----------------------------------------------------- -->
+                        <div class="kalbacontainer">
+                            <div class="kalba">
 
-               <section class="section s6">
+                                <a href="#">
+                                    <img src="img/LTveliava 2-m.png" alt="lietuviu">
+                                </a>
+                                
+                                <a href="#">
+                                    <img src="img/ENGveliava3.png" alt="anglu">
+                                </a>
+                                
+                            </div>   <!-- .kalba  -->
+                        </div>   <!--   .kalbacontainer  -->   
 
-                  <h1>Blog</h1>
+                        <h1>Blog</h1>
 
-                  <div class="tekstas1">
+                        <div class="description">
+                            <div class="tekstas-1">
 
-                     <h3>E-psichoterapija COVID'19 sąlygomis</h3>
+                                <h2>E-psichoterapija COVID'19 sąlygomis</h2>
 
-                     <h5>
-                       Gyvendami pasaulinės pandemijos sąlygomis, išgyvename padidėjusio nerimo, netikrumo dėl ateities, planų keitimosi aplinkybes. Paaštrėja porų santykių dinamika, išryškėja buvę nežymūs simptomai, su kuriais visai neblogai tvarkėmės, kasdien turime ištverti nerimo dozę, išmokti toleruoti aplinkos suirzimą. Šis nelengvas laikotarpis reikalauja papildomų mūsų psichikos jėgų, taigi sumažėja mūsų resursai tvarkytis su iškylančiomis kasdienėmis problemomis, kyla jausmas, kad nėra išeities. Nelikite vienas su šiuo nerimu, sunkumu ir katastrofos nuojauta, skirkite laiko sau psichoterapijos forma. Yra galimybė pradėti ir tęsti psichoterapiją saugiu nuotoliniu būdu. Skambinkite +370 620 84494.
-                     </h5>
+                                <h3>
+                                    Gyvendami pasaulinės pandemijos sąlygomis, išgyvename padidėjusio nerimo, netikrumo dėl ateities, planų keitimosi aplinkybes. Paaštrėja porų santykių dinamika, išryškėja buvę nežymūs simptomai, su kuriais visai neblogai tvarkėmės, kasdien turime ištverti nerimo dozę, išmokti toleruoti aplinkos suirzimą. Šis nelengvas laikotarpis reikalauja papildomų mūsų psichikos jėgų, taigi sumažėja mūsų resursai tvarkytis su iškylančiomis kasdienėmis problemomis, kyla jausmas, kad nėra išeities. Nelikite vienas su šiuo nerimu, sunkumu ir katastrofos nuojauta, skirkite laiko sau psichoterapijos forma. Yra galimybė pradėti ir tęsti psichoterapiją saugiu nuotoliniu būdu. Skambinkite +370 620 84494.
+                                </h3>
 
-                     <div class="button">
-                        <a href="#"><button class="placiau">Plačiau</button></a>
-                     </div>   <!--  .button : -- pabaiga.   -->
+                                <div class="button">
+                                    <a href="#"><button class="placiau">Plačiau</button></a>
+                                </div>   <!--  .button  -->
 
-                  </div>   <!--  .tekstas-1 : -- pabaiga.   -->
+                            </div>   <!--  .tekstas-1  -->
 
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--          Antras tekstas arba antras langelis             -->
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                            <div class="tekstas-2">
 
-                  <div class="tekstas2">
+                                <h2>Jūsų klausimai </h2>
 
-                     <h3>Jūsų klausimai </h3>
 
-                     <h5>
-                        <span> Psichoterapija – kas tai?</span>
-                      
-                        LM: Psichoterapija – tai gydymas pokalbiu,
-                        <span>Kuo skiriasi psichologas, psichoterapeutas ir psichiatras?</span>
+                                <h3> Psichoterapija – kas tai?</h3>
+                            
+                                <p>LM: Psichoterapija – tai gydymas pokalbiu,</p>
+
+                                <h3>Kuo skiriasi psichologas, psichoterapeutas ir psichiatras?</h3>
+                                
+                                <p>LM:  Pagal įgytą specialybę išskiriami psichologas, psichiatras, psichoterapeutas,  tai klinikinė psichologija, sveikatos psichologija, edukacinė psichologija, organizacinė psichologija, teisės psichologija ir kt.</p>
+
+                                <h3>Kiek trunka psichoterapija?</h3>
+                                
+                                <p>LM: Psichoterapinės sesijos vyksta 1-2 kartus per savaitę ir trunka 50 min. Tai ilgalaikis individualus gydymas, kuris matuojamas paciento pasiektais gyvenimo pokyčiais, dėl to nėra konkretaus apibrėžto gydymo laikotarpio.</p>
+
+                                <h3>Ar man padės?</h3> 
+                                
+                                <p>LM:   Sezoninė depresija prasideda tuoj po rudens lygiadienio – imant trumpėti dienai, intensyvumo pikas sutampa su tamsiausiu metų laiku (pas mus – gruodžio ... )</p>
+
+
+                                <div class="button">
+                                    <a href="#"><button class="placiau">Plačiau</button></a>
+                                </div>  <!--  .button  -->
+
+                            </div>  <!--  .tekstas-2  -->
+
+
+                            <div class="skyriausIMG">
+                                <img src="img/mergaite_ir_suo 4.jpg" alt="mergaitė ir šuo">
+                            </div>
+
+
+                            <div class="tekstas-3">
+
+                                <h2>Grupinė terapija</h2>
+
+                                <p>
+                                    Ulonų psichoterapijos centre kiekvieną pirmadienį 19 val. renkasi tęstinė grupinės terapijos grupė. Grupės vietų skaičius – 10 asmenų. Grupė mišri, atvira (tai reiškia, kad nėra fiksuoto pradžios ir pabaigos termino, galite prisijungti ir dabar). Sesijos trukmė – 1 val. 30 min. Jei norite spręsti bendravimo sunkumus, išmokti empatiškai teikti emocinę paramą kitam ir sulaukti paramos pats, spręsti įvairias gyvenimo problemas grupinės terapijos pagalba, ši grupė skirta būtent jums. Daugiau informacijos suteiksime +370 620 84494.
+                                </p>
+
+                                <div class="button">
+                                    <a href="#"><button class="placiau">Plačiau</button></a>
+                                </div>  <!--  .button  -->
+
+                            </div>   <!--  .tekstas-3  -->
+                        </div>     <!--  .description  -->
                         
-                        LM:  Pagal įgytą specialybę išskiriami psichologas, psichiatras, psichoterapeutas,  tai klinikinė psichologija, sveikatos psichologija, edukacinė psichologija, organizacinė psichologija, teisės psichologija ir kt.
-                        <span>Kiek trunka psichoterapija?</span>
-                        
-                        LM: Psichoterapinės sesijos vyksta 1-2 kartus per savaitę ir trunka 50 min. Tai ilgalaikis individualus gydymas, kuris matuojamas paciento pasiektais gyvenimo pokyčiais, dėl to nėra konkretaus apibrėžto gydymo laikotarpio.
-                        <span>Ar man padės?</span> 
-                        
-                        LM:   Sezoninė depresija prasideda tuoj po rudens lygiadienio – imant trumpėti dienai, intensyvumo pikas sutampa su tamsiausiu metų laiku (pas mus – gruodžio ... )
-                     </h5>
+                    </section>   <!--  .section s5  -->
+                            
+                 
 
-                     <div class="button">
-                        <a href="#"><button class="placiau">Plačiau</button></a>
-                     </div>  <!--  .button : -- pabaiga.   -->
+                        <footer class="footer-distributed">
+                            <div class="content flow">
+                                <div class="grid-ish">
 
-                  </div>  <!--  .tekstas-2 : -- pabaiga.   -->
+                                    <div class="col1">
+                                        <div class="footer-icons">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </div>  
+                                    </div>  <!-- .col 1.  -->
 
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--        Skyrius su nuotrauka "Mergaite ir suo"            -->
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                                    <div class="col2">
+                                        VšĮ Ulonų psichoterapijos centras
+                                    </div>  <!-- .col 2.  -->
 
-                  <div class="skyriausIMG">
-                     <img src="img/mergaite_ir_suo 4.jpg" alt="mergaitė ir šuo">
-                  </div>
+                                    <div class="col3">
+                                        <p>
+                                            Darbo laikas:  I - V    9:00 - 20:00
+                                        </p>
+                                        <p>
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI   9:00 - 16:00
+                                        </p>
+                                    </div>   <!-- .col 3. -->
 
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--          Trečiasis tekstas / trečias langelis            -->
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                                    <div class="col4">
+                                        <p class="adresas">
+                                            info@ulonupc.lt
+                                        </p>
 
-                  <div class="tekstas3">
+                                        <p class="telefonas">
+                                            +370 620 84494
+                                        </p>
+                                    </div>  <!-- .col 4 -->
 
-                     <h3>Grupinė terapija</h3>
+                                </div>  <!-- .grid-ish -->
+                            </div>  <!-- .content flow -->
+                        </footer>   <!-- footer-distributed  -->
 
-                     <h5>Ulonų psichoterapijos centre kiekvieną pirmadienį 19 val. renkasi tęstinė grupinės terapijos grupė. Grupės vietų skaičius – 10 asmenų. Grupė mišri, atvira (tai reiškia, kad nėra fiksuoto pradžios ir pabaigos termino, galite prisijungti ir dabar). Sesijos trukmė – 1 val. 30 min. Jei norite spręsti bendravimo sunkumus, išmokti empatiškai teikti emocinę paramą kitam ir sulaukti paramos pats, spręsti įvairias gyvenimo problemas grupinės terapijos pagalba, ši grupė skirta būtent jums. Daugiau informacijos suteiksime +370 620 84494.
-                     </h5>
+                </div>  <!--  # fullpage  -->
+            </main>  <!--  -- pabaiga. -->
 
-                     <div class="button">
-                        <a href="#"><button class="placiau">Plačiau</button></a>
-                     </div>  <!--  .button : -- pabaiga.   -->
+            <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
 
-                  </div>  <!--  .tekstas-3 : -- pabaiga.   -->
+            <script src="fullpage.min.js"></script>
+            <script src="main.js"></script>
 
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--            Kalbos pasirinkimo NUORODOS:                  -->
-                  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js">
+            </script>
 
-                  <div class="kalba">
-
-                     <!--                Lietuvių kalba                 -->
-                     <a href="#">
-                         <img src="img/LTveliava 2-m.png" alt="lietuviu">
-                     </a>
-                    
-                     <!--                 Anglų kalba                   -->
-                     <a href="#">
-                         <img src="img/ENGveliava3.png" alt="anglu">
-                     </a>
-                    
-                  </div>
-
-                  <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                  <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-                  <!-- ================================================== -->
-                  <!--   FOOTER-is su bendra klase: "footer-distributed"  -->
-                  <!-- ================================================== -->
-
-                  <footer class="footer-distributed">
-
-                     <!-- ----------------------------------------------- -->
-                     <!--                 FOOTER - PIRMAS                 -->
-                     <!-- ----------------------------------------------- -->
-                  
-                     <div class="footer-pirmas">
-
-                        <div class="footer-icons">
-                           <a href="#"><i class="fa fa-facebook"></i></a>
-                           <a href="#"><i class="fa fa-twitter"></i></a>
-                           <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>  <!--  .footer-icons  -->
-               
-                     </div>  <!--  .footer-pirmas  -->
-
-                     <!-- ----------------------------------------------- -->
-                     <!--               FOOTER - ANTRAS                   -->
-                     <!-- ----------------------------------------------- -->
-
-                     <div class="footer-antras">
-
-                        <div>
-                           <p>VšĮ Ulonų psichoterapijos centras</p>
-                        </div>
-                        
-                     </div>  <!--  .footer-antras  -->
-
-                     <!-- ----------------------------------------------- -->
-                     <!--              FOOTER - TRECIAS                   -->
-                     <!-- ----------------------------------------------- -->
-
-                     <div class="footer-trecias">
-
-                        <p>
-                           Darbo laikas:  I - V    9:00 - 20:00
-                        </p>
-                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;VI   9:00 - 16:00</p>
-
-                     </div>  <!--  .footer-trecias  -->
-
-                     <!-- ----------------------------------------------- -->
-                     <!--              FOOTER - KETVIRTAS                 -->
-                     <!-- ----------------------------------------------- -->
-
-                     <div class="footer-ketvirtas">
-
-                        <p class="adresas">
-                           info@ulonupc.lt
-                        </p>
-
-                        <p class="telefonas">
-                           +370 620 84494
-                        </p>
-
-                     </div>   <!--  .footer-ketvirtas  -->
-
-                  </footer>   <!-- footer-distributed   -->
-
-               </section>   <!--   .section s6   -->
-
-               <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-               <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
+            </script>
             
-            </div>  <!--  # fullpage  -->
-         </main>
-
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-
-         <script src="fullpage.min.js"></script>
-         <script src="main.js"></script>
-
-         <!-- ĮkeLiame iš "https://cdnjs.com/libraries/gsap/2.1.3" ( TimelineMax.min.js ) -->
-
-         <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js">
-         </script>
-
-         <!-- Įkekiame iš "https://cdnjs.com/libraries/gsap/2.1.3" ( TweenMax.min.js ) -->
-
-         <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
-         </script>
-
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-         <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
-         
-      </div>  <!--  .container  --  pabaiga    -->
-
-   </body>
+        </div>  <!--  .container    -->
+    </body>
 </html>

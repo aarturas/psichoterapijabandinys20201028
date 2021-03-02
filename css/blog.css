@@ -1,464 +1,103 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+:root {
+
+    /* ----------------  FONTS  ---------------- */
+
+     --ff:'font-family: 'Roboto Slab', serif';
+
+     --fw-2: 200;
+     --fw-3: 300;
+     --fw-4: 400;
+     --fw-5: 500;
+     --fw-6: 600;
+     --fw-7: 700;
+     --fw-8: 800;
+     --fw-9: 900;
+
+    --ff-h1-s6-0: 2.35rem;                
+    --ff-h1-s6-3: 1.7rem;                       
+    --ff-h1-s6-7: 2rem;                         
+    --ff-h1-s6-14: 3rem;                         
+
+    --fs-a: 1.22rem;                         
+    --fs-m: 1.4em;                          
+    --fs-h: 2rem;                            
+    --fs-f-a: 1.563rem;                       
+    --fs-f-p: 1.2185em;                               
+    --fs-n-a-14: 1.4rem;                                
+    --fs-h5:  1.125rem;
+    --fs-h5-mob: 1rem;             
+    --fs-btn-pd: 1.15rem;                     
+
+    /*  ---------------  COLOR  -------------------  */
+
+    --primary-clr: #fff;                              
+    --clr-bgc: rgba(44, 23, 23, 0.1);               
+
+    --border-b-clr: 1px solid rgba(77, 77, 78, 0.4);   
+    --header-bb-clr: 1px solid rgb(223, 219, 219);    
+    --header-bgc-clr:  rgba(255,255,255,1);           
+    --clr-header-nav-a: #4D4D4E;                  
+    --clr-ul-nav-links-a: rgba(77, 77, 78, 0.902);    
+    --clr-ul-nav-links-a-hover: #0a667e;          
+  
+    --clr-tekstas-p:  #0a667e;                    
+    --clr-h1:  #292d2e;                            
+    --clr-h2: #025b6e;
+    --clr-h3: #236389;                                
+    --clr-h3-2: #034958;                           
+    --clr-h5: #034958;                             
+    --clr-melynas-bgc:  #236389;                  
+    --clr-melynas-hover: #465252;                 
+    
+    --clr-adresas: rgb(41, 108, 146);             
+    --clr-gridish: #515e61;                      
+
+    --clr-footer-p: #4D4D4E;                           
+    --clr-hamburger-nav-items:  rgb(38, 77, 26);
+    --clr-footer-a:  #515e61;                      
+
+    /*  ----------  SHADOW  ----------------  */
+
+    --shadow: 0 0 1em rgba(0,0,0,0.25);
+    --shadow-box: 1px 2px 5px 0px rgb(0 0 0 / 10%);   
 }
 
-/* ======================================================== */
+*, *:after, *:before {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ======================================================================= */
+/*       1.               ( BLOG )        /    HTML    /                   */
+/* ======================================================================= */
 
 html {
+    
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
-/* ======================================================== */
 
 body {
 
-    /* font-family: 'PT Sans', sans-serif; */
-    background-color: #ffffff;
-    /* font-family: 'Commissioner', sans-serif; */
-    font-family: 'Signika', sans-serif;
-    padding-bottom: 1rem;
-}
-
-/* ============================================================ */
-/*                         CONTAINER                            */
-/* ============================================================ */
-
-.container  {
-
-    /* position: relative; */
+    font-family: 'Roboto Slab', serif;
     max-width: 1440px;
     margin: auto;
-    border: 1px solid  rgb(177, 175, 175, 0.5);
-    /* border: 1px solid red; */
-    /* height: 100vh; */
-    /* background-color: #e0ac1c; */
 }
-
-/* ============================================================ */
-/*                            MAIN                              */
-/* ============================================================ */
-
-main {
-  background-color: #e0ac1c;
-}
-
-/* ============================================================ */
-/*                      .FULL - PAGE                            */
-/* ============================================================ */
-
-.full-page {
-  background-color: #e0ac1c;
-}
-
-/* ======================================================== */
-/*                 Idesime HEADER'iui stiliu                */
-/* ======================================================== */
-
-header {
-   
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 100;
-  background-color: rgb(255,255,255,1);
-  border-bottom: 1px solid rgba(77, 77, 78, 0.2);
-  box-shadow: 3px 1px 2px 1px  rgb(177, 175, 175, 0.2);
-  height: 7.7em;
-
-  position: fixed;
-  width: 100%;
-  max-width: 1439px;
-}
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/*          Viršutinė NAV juosta padarome nejudančia       */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-header nav {
-   
-   position: sticky;
-   top: 0;
-}
-
-.nav__links li a {
-   margin: 0 1.7rem;
-   font-size: 1.6rem;
-   font-weight: 100;
-}
-
-/* ======================================================== */
-/*                          LOGO                            */
-/* ======================================================== */
-
-.logo {
-
-  cursor: pointer;
-  margin-left: 3.8em;
-  /* height: 5.2em; */
-  height: 4.7em;
-  top: 18.89px;
-}
-
-/* ======================================================================= */
-/*                    Nuotrauku klase:   CHAIR                             */
-/* ======================================================================= */
-
-.chair {
-  /*   Nuotraukų rinkinys su klase "chair */
-  height: 80%;
-  position: absolute;
-  top: 70%;
-  left: 70%;
-  transform: translate(-70%, -70%);
-  padding-bottom: 10%;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*                      Bandau padaryti FLEX'a                             */
-/* ======================================================================= */
-
-.section {
-  display: flex;
-  flex-direction: column;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*        Pirma sekcija :   " Ulonų psichoterapijos centras "              */
-/* ======================================================================= */
-
-.s6 {
-
-    /* position: relative; */
-    /* position: absolute; */
-    background-color: rgb(255,255,255,1);
-    /* height: calc(100vh - 8rem); */
-    height: calc(100vh - 4rem);
-    /* height: calc(100vh - 7.7rem - 6.01875rem); */
-
-    /* width: 100%; */
-    /* height: 100vh; */
-}
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                             S-1  H-1                           */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.s6 h1 {
-
-    /* font-family: 'Commissioner', sans-serif; */
-    margin-left: 6rem;
-    color: rgb(255, 255, 255);
-    /* text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5); */
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: 3.8rem;
-    margin-bottom: 3rem;
-
-    color: #034958;
-}
-
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*                          Pirmo teksto DIV                                 */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-.tekstas1 {
-
-    /* display: flex; */
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: left;
-    /* height: 620px; */
-    height: 38rem;
-    /* width: 390px; */
-    width: 24.375rem;
-    /* border: 1px solid salmon; */
-    border: 1px solid  rgb(177, 175, 175, 0.5);
-
-    margin-left: 4.3rem;
-    /*  Teksto DIV virsus */
-    margin-top: -1rem;
-
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-/*                   Pirmo teksto H - 3 /  Pavadinimas                          */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-
-.tekstas1 h3 {
-
-    font-size: 1.6rem;
-    color: #034958;
-    margin: 1.5rem 1.5rem 0rem 1.5rem;
-    font-weight: 600;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-/*                     Pirmo teksto H - 5 /   Tekstas                           */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-
-.tekstas1 h5 {
-
-    font-size: 1.14rem;
-    color: #034958;
-    font-weight: 100;
-    margin: 0.8rem 1.5rem;
-    line-height: 1.3;
-    text-align: justify;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ====================================================== */
-/*        Mygtukas-Button: "Plačiau"   ( BENDRAS: )       */
-/* ====================================================== */
-
-.button .placiau {
-
-    position: relative;
-    background: #0a667e;
-    display: flex;
-    padding: 0.53rem 1.684rem;
-    border: none;
-    color: #fff;
-    font-size: 0.8em;
-    font-weight: 500;
-
-    cursor: pointer;
-}
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-/*                     Pirmo teksto BUTTON - mygtukas                           */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-
-.tekstas1 button {
-
-    margin: -5rem;
-    top: 5.5rem;
-    transform: translate(-5.5rem,5rem);
-    padding: 0;
-    font-size: 0.8rem;
-
-    right: -67%;
-    transform: translate(67%);
-}
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*                          Antro teksto DIV                                 */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-.tekstas2 {
-
-    /* display: flex; */
-    /* position: absolute; */
-    /* height: 620px; */
-    height: 44.8rem;
-
-    /* width: 392px; */
-    width: 24.5rem;
-
-    /* border: 1px solid salmon; */
-    border: 1px solid  rgb(177, 175, 175, 0.5);
-
-
-    margin-left: 30.8rem;
-    margin-top: -44.8rem;
-
-    justify-content: space-between;
-    flex-direction: column;
-
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-/*                   Antro teksto H - 3 /  Pavadinimas                        */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-
-.tekstas2 h3 {
-
-    font-size: 1.6rem;
-    color: #034958;
-    margin: 1.5rem 1.5rem 0rem 1.5rem;
-    font-weight: 600;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-/*                     Antro teksto H - 5 /   Tekstas                         */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-
-.tekstas2 h5 {
-
-    font-size: 1.14rem;
-    color: #034958;
-    font-weight: 100;
-    margin: 0.8rem 1.5rem;
-    line-height: 1.3;
-    text-align: justify;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-/*                     Antro teksto BUTTON - mygtukas                           */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-
-.tekstas2 button {
-
-    margin: -5rem;
-    top: 12.8rem;
-    transform: translate(-5.5rem,5rem);
-    padding: 0;
-    font-size: 0.8rem;
-
-    right: -67.1%;
-    transform: translate(67%);
-}
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*                            Nuotraukos DIV                                 */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-.skyriausIMG  {
-
-    margin-left: 57.2rem;
-    margin-top: -44.7rem;
-}
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*                               Nuotrauka                                   */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-.skyriausIMG img {
-
-    height: 225px;
-    width: 457px;
- 
-    object-fit: cover;
-}
-
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*                         Trečio teksto DIV                                 */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-.tekstas3 {
-
-    /* display: flex; */
-    height: 27.3rem;
-    /* width: 456px; */
-    width: 28.5rem;
-
-    /* border: 1px solid salmon; */
-    border: 1px solid  rgb(177, 175, 175, 0.5);
-
-
-    margin-left: 57.3rem;
-    margin-top: 3rem;
-
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-/*                   Trečio teksto H - 3 /  Pavadinimas                       */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-
-.tekstas3 h3 {
-
-    font-size: 1.6rem;
-    color: #034958;
-    margin: 1.5rem 1.5rem 0rem 1.5rem;
-    font-weight: 600;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-/*                    Trečio teksto H - 5 /   Tekstas                         */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  */
-
-.tekstas3 h5 {
-
-   font-size: 1.14rem;
-    color: #034958;
-    font-weight: 100;
-    margin: 0.8rem 1.5rem;
-    line-height: 1.3;
-    text-align: justify;
-}
-
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-/*                    Trecio teksto BUTTON - mygtukas                           */
-/* .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    */
-
-.tekstas3 button {
-
-    margin: -5rem;
-    /* atstumas nuo virsaus */
-    top: 6.85rem;
-    transform: translate(-5.5rem,5rem);
-    padding: 0;
-    font-size: 0.8rem;
-
-    right: -71%;
-    transform: translate(71%);
-}
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*       "KALBA" pasirinkimas - DIV'as /  Nustatome rėmelio dydį ir vietą:   */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
 
 .kalba {
 
     display: flex;
     justify-content: space-between;
-    /* flex-direction: column; */
     flex-direction: row;
-    /* margin: 0.3rem; */
-    padding: 0.1rem 0.55rem ;
+    padding: 0.3rem 0.55rem;
     width: 4.4rem;
-    border: 1px solid red;
-
-    margin-top: -45.9rem;
-    margin-left: 81.9rem;
-
+    border: 1px solid rgba(77, 77, 78, 0.2);
     cursor: pointer;
+    margin-top: 5.5em;
 }
-
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/*        Nuotrauka   /    Nustatome pačios nuotraukos dydį:                 */
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
 
 .kalba img {
 
@@ -467,1803 +106,1149 @@ header nav {
     object-fit: cover;
 }
 
-
-
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                         S-1 FOOTER                            */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* .s6 footer { */
-
-.s6 footer  {
+header {
 
     display: flex;
-    /* position: relative; */
-    position: absolute;
-    width: 100%;
-    max-width: 1440px;
-    
-    /* bottom: -8em; */
-    /* bottom: -4.8em; */
-    /* bottom: -5.6rem; */
-    /* bottom: -1.3em; */
-    bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*                        FOOTER                        */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ------------------------------------------- */
-/*        HEADER'i bandau reguliuoti:          */
-/* ------------------------------------------- */
-
-footer {
-    display: flex;
-    /* position: absolute; */
-    /*  Padarau, kad FOOTER apacia butu nejudama:  */
-    position: fixed;
-    bottom: 0;
-}
-
-footer {
-  background-color: rgb(255,255,255,1);
-}
-
-/* ----------------------------------------------------- */
-/*                     SOC ikoneles                      */
-/* ----------------------------------------------------- */
-
-footer .footer-pirmas {
-
-  /* display: block; */
-  /* border: 1px solid red; */
-  border: 1px solid rgba(77, 77, 78, 0.2);
-
-  text-align: center;
-  /* max-height: 5em; */
-  width: 17%;
-  height: 4em;
-  margin-left: 4em;
-
-  /* border: 1px solid rgba(77, 77, 78, 0.2); */
-
-}
-
-footer .footer-pirmas a { 
-    margin: 0.5rem;
-}
-
-
-
-/* ----------------------------------------------------- */
-/*          Ulonu psichoterapijos centras                */
-/* ----------------------------------------------------- */
-
-footer .footer-antras {
-
-  /* border: 1px solid red; */
-  text-align: center;
-  max-height: 5em;
-  width: 26%;
-  /* height: 3.6em; */
-  height: 3.65em;
-
-  /*  Atskirsime nuo virsaus truputi:   */
-  /* padding-top: 1em; */
-
-  border: 1px solid rgba(77, 77, 78, 0.2);
-  border-left: none;
-
-  font-size: 1.1em;
-
-}
-
-footer .footer-antras p {
-  padding-top: 0.8em;
-}
-
-
-
-/* ----------------------------------------------------- */
-/*                     Darbo Laikas                      */
-/* ----------------------------------------------------- */
-
-footer .footer-trecias {
-
-    text-align: center;
-    max-height: 5em;
-    width: 22%;
-    height: 4em;
-    padding-left: 0;
-    padding-top: 0.5em;
-    border: 1px solid rgba(77, 77, 78, 0.2);
-    border-left: none;
-
-}
-
-/* ----------------------------------------------------- */
-/*                 INFO + Telefonas                      */
-/* ----------------------------------------------------- */
-
-footer .footer-ketvirtas {
-
-   /* border: 1px solid red; */
-   text-align: center;
-   max-height: 5em;
-   width: 26%;
-   height: 4em;
-   padding-top: 0.5em;
-   border: 1px solid rgba(77, 77, 78, 0.2);
-   border-left: none;
-
-}
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .s6   .s6   .s6   .s6  .s6   .s6   .s6   .s6  .s6   .s6   .s6   .s6    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*       ( "BLOG" )                    Šešta sekcija                       */
-/* ======================================================================= */
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                             S-1  H-2                           */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.s6 h2:nth-of-type(2) {
-    margin-top: 3.35rem;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S2   .S2   .S2   .S2  .S2   .S2   .S2   .S2  .S2   .S2   .S2   .S2    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                             S-2  H-1                           */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.s2 h1 {
-
-  color: #034958;
-  /*  Panaikinsime stačiakampį foną aplink užrašą: */
-  /* -webkit-background-clip: text; */
-  font-size: 1em;
-  font-weight: lighter;
-}
-
-/* ====================================================== */
-/*              Uzrasas:   "LAIMA MATULIONIENE"           */
-/* ====================================================== */
-
-.s2 h4 {
-
-  font-size: 1.5em;
-  position: absolute;
-  margin-top: 2.7em;
-  margin-left: 0.7em;
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #236389;
-}
-
-/* ====================================================== */
-/*             Antros dalies   Tekstas                    */
-/* ====================================================== */
-
-.s2 h5 {
-
-  display: inline-block;
-  position: relative;
-  font-weight: lighter;
-  font-size: 1.7em;
-  color: #236389;
-  top: 13em;
-  margin: 0.5em 0.8em;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S3   .S3   .S3   .S3  .S3   .S3   .S3   .S3  .S3   .S3   .S3   .S3    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*         ( "PASLAUGOS" )           Trecia sekcija                        */
-/* ======================================================================= */
-
-.s3 h1 {
-
-  font-size: 3.5em;
-  color: #034958;
-  /* -webkit-background-clip: text; */
-  padding-left: 2em;
-  left: 86px;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S4   .S4   .S4   .S4  .S4   .S4   .S4   .S4  .S4   .S4   .S4   .S4    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*        ( "KAINOS" )                  Ketvirta sekcija                   */
-/* ======================================================================= */
-
-.s4 h1 {
-
-  font-size: 3.5em;
-  /* -webkit-background-clip: text; */
-  color: #034958;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S5   .S5   .S5   .S5  .S5   .S5   .S5   .S5  .S5   .S5   .S5   .S5    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*       ( "KONTAKTAI" )                     Penkta sekcija                */
-/* ======================================================================= */
-
-.s5 h1 {
-
-  font-size: 3.5em;
-  color: #034958;
-  /* -webkit-background-clip: text; */
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S6   .S6   .S6   .S5  .S6   .S6   .S6   .S6  .S6   .S6   .S6   .S6    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .S7   .S7   .S7   .S7  .S7   .S7   .S7   .S7  .S7   .S7   .S7   .S7    */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*      ( "PSICHOTERAPEUTAS" )                   Septinta sekcija          */
-/* ======================================================================= */
-
-.s7 h1 {
-  font-size: 3.8em;
-  color: #034958;
-  /* -webkit-background-clip: text; */
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     .DESCRIPTION     .DESCRIPTION     .DESCRIPTION    .DESCRIPTION      */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================================= */
-/*                            Aprašymas teksto                             */
-/* ======================================================================= */
-
-.description {
-  margin: 20%;
-  margin-left: 5%;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*     FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER     */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ================================================== */
-/*   .FOOTER - PAGRINDINIS / left, center-1, ...      */
-/* ================================================== */
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center-1,
-.footer-distributed .footer-center-2,
-.footer-distributed .footer-right {
-
-	display: inline-block;
-   vertical-align: top;
-   border: 1px solid rgba(77, 77, 78, 0.2);
-}
-
-/* ================================================== */
-/*    1.  Pirmasis footerio langas   /    IKONOS      */
-/* ================================================== */
-
-.footer-left {
-  width: 20%;
-  height: 73px;
-  margin-left: -20px;
-}
-
-
-/* ================================================== */
-/*                  Footer links                      */
-/* ================================================== */
-
-.footer-links {
-
-  color: #2c292f;
-  margin: 20px 0 12px;
-}
-
-/* ================================================== */
-/*                    .footer-links  A                */
-/* ================================================== */
-
-.footer-links a {
-
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
-
-/* ================================================== */
-/*                 .FOOTER - DISTRIBUTED              */
-/* ================================================== */
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right,
-.footer-side {
-
-	display: inline-block;
-   vertical-align: top;
-   border: 1px solid rgba(77, 77, 78, 0.2);
-}
-
-/* ================================================== */
-/*    1.  Pirmasis footerio langas   /    IKONOS      */
-/* ================================================== */
-
-.footer-left {
-  width: 20%;
-  height: 73px;
-  margin-left: -20px;
-}
-
-/* ================================================== */
-/*                  Footer links                      */
-/* ================================================== */
-
- .footer-links {
-
-   color: #2c292f;
-   margin: 20px 0 12px;
-}
-
-/* ================================================== */
-/*                    .footer-links  A                */
-/* ================================================== */
-
- .footer-links a {
-
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
-
-/* ================================================== */
-/*   2.   Footer Center /  Antras langelis footerio   */
-/* ================================================== */
-
- .footer-center{
-  width: 31%;
-  height: 73px;
-}
-
-/* ================================================== */
-/*                  .footer-center i                  */
-/* ================================================== */
-
- .footer-center i {
-
-  color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-/* ================================================== */
-/*     2.           .footer-center P                  */
-/* ================================================== */
-
-.footer-center p {
-
-	display: inline-block;
-   color: #2c292f;
-   font-family: 'Encode Sans', sans-serif;
-   font-weight: 700;
-}
-
-/* ================================================== */
-/*      2.         .footer-center p SPAN              */
-/* ================================================== */
-
-.footer-center p span {
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-/* ================================================== */
-/*     2.          .footer-center p A                 */
-/* ================================================== */
-
-.footer-center p a {
-	color:  #e0ac1c;
-	text-decoration: none;
-}
-
-/* ================================================== */
-/*   3.  Footer Right  /  Trečiasis langas-blokas     */
-/* ================================================== */
-
-.footer-right {
-  width: 27%;
-  height: 73px;
-}
-
-.footer-right p {
-  justify-content: center;
-}
-
-/* ================================================== */
-/*             .footer-company- ABOUT                 */
-/* ================================================== */
-
-.footer-company-about {
-
-	line-height: 5px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-   margin-top: 20px;
-}
-
-/* ================================================== */
-/*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
-/* ================================================== */
-
- .footer-icons {
-
-  /* margin: 0.5em 0; */
-  /* align-items: center; */
-  /* margin-top: 20px; */
-  margin: 0.8rem auto;
-}
-
-/* ================================================== */
-/*   .footer-icons A /  Aprašymas SOC. įkonėlių:      */
-/* ================================================== */
-
- .footer-icons a {
-
-   display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #236389;
-	border-radius: 3px;
-	font-size: 20px;
-   color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-   margin: 0 0.5em;
-}
-
-/* ================================================== */
-/*  4. FOOTER - SIDE  /  Paskutinis langas FOOTERyje  */
-/* ================================================== */
-
- .footer-side {
-  width: 23%;
-  height: 73px;
-}
-
-/* ================================================== */
-/*           FOOTER - SIDE  /      P                  */
-/* ================================================== */
-
-.footer-side p {
-  justify-content: center;
-}
-
-/* ================================================== */
-/*           FOOTER - SIDE  /   Adresas               */
-/* ================================================== */
-
-.footer-side .adresas {
-  font-size: 0.8em;
-  color: rgba(77,77,78,0.97);
-}
-
-/* ================================================== */
-/*            FOOTER - SIDE  /   Telefonas            */
-/* ================================================== */
-
-.footer-side .telefonas {
-
-  font-size: 0.8em;
-  color: rgba(77,77,78,0.97);
-  margin: 0;
-}
-
-/* ================================================== */
-/*                      footer P                      */
-/* ================================================== */
-
-footer p {
-  color: #050620;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*                          /  P  /  LI  /  A  /                           */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-p,
-li,
-a  {
-
-  font-size: 1.3em;
-  color: rgba(77, 77, 78, 1);
-  text-decoration: none;
-}
-
-
-/* ======================================================== */
-/*                      HAMBURGERIO MENU                    */
-/* ======================================================== */
-
-.mobile__menu {
-  display: none;
-}
-
-/* ======================================================== */
-/*    NAV __ LINKS   LI   ( Paslaugos, Patarimai, ...  )    */
-/* ======================================================== */
-
-.nav__links li {
-
-  /* inline-block bus vienoje eiluteje, vienas salia kito */
-  display: inline-block;
-  /* padding: 0 25px; */
-}
-
-/* ======================================================== */
-/*    NAV __ LINKS   LI  A:HOVER   ( parinksime spalva )    */
-/* ======================================================== */
-
-.nav__links li a:hover {
-  /* color: #bec0be; */
-  color: #9ea09e;
-
-  /* transition: all 0.1s ease-in-out 0.1s; */
-  transition: all 0.2s ease;
-}
-
-/*  Sumaziname tarpus tarp NAV nuorodu:   */
-
-/* .nav__links li a {
-  margin: 0 0.35em;
-} */
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*                      HAMBURGER MENU     mobilus                         */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* .mobile__menu {
-  display: none;
-} */
-
-/* ======================================================== */
-/*      HAMBURGER menu  /     nustatysime pozicija          */
-/* ======================================================== */
-
-.hamburger {
-  position: absolute;
-  width: 35px;
-  height: 30px;
-  top: 14px;
-  right: 10%;
-  z-index: 5;
-  cursor: pointer;
-}
-
-/* ======================================================== */
-/*   /  HAMBURGER menu DIV  /    Bus tris bruksneliai       */
-/* ======================================================== */
-
-.hamburger div {
-  position: relative;
-  width: 35px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #0a667e;
-  margin-top: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* ======================================================== */
-/*   /  TOGGLE  /  Paprastai nesimato, tik mazinant ekrana  */
-/* ======================================================== */
-
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .hamburger .hamburger__top {
-  transform: rotate(-45deg);
-  margin-top: 17.5px; /* Half the size of hamburger height */
-}
-
-#toggle:checked + .hamburger .hamburger__meat {
-  transform: rotate(45deg);
-  margin-top: -3px; /* Negative value of hamburger div height */
-}
-
-/* kad pranyktu bruksnelis, nustatome nuli */
-#toggle:checked + .hamburger .hamburger__bottom {
-  transform: scale(0);
-}
-
-#toggle:checked + .hamburger + .hamburger__nav {
-  top: 0;
-}
-
-/* ======================================================== */
-/*   /  HAMBURGER __ NAV  /    Visas hamburgerio langas     */
-/* ======================================================== */
-
-.hamburger__nav {
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  height: 100%;
-  background-color: #050620;
-  /*  Paspaudus "hamburgeri", nustumsime fona i virsu */
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  WRAPPER  /                */
-/* ======================================================== */
-
-.hamburger__nav .hamburger__nav--wrapper {
-  position: relative;
-  overflow-y: auto;
-  height: 100%;
-}
-
-/* ======================================================== */
-/*   /  HAMBURGER __ NAV  ITEMS  /  Tvarkysime vidines      */
-/*  "hamburgerio" tekstus ir nuorodas                       */
-/* ======================================================== */
-
-.hamburger__nav--items {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS nuorodos  /         */
-/* ======================================================== */
-
-.hamburger__nav--items a {
-  margin-top: 40px;
-  color: #0c7e9b;
-  opacity: 0;
-  text-decoration: none;
-  font-size: 2em;
-  transition: all 0.3s ease 0s;
-}
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS   /                 */
-/* ======================================================== */
-
-.hamburger__nav--items a:first-child {
-  margin-top: 0;
-}
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS   /                 */
-/*     Su OPACITY, matysime MOB skyriuje nuorodas           */
-/* ======================================================== */
-
-.hamburger__nav--wrapper nav a {
-  opacity: 1;
-}
-
-/* ======================================================== */
-/*           /  HAMBURGER __ NAV  ITEMS   /                 */
-/*    viduje MOB menu, nuorodos keis spalva uzvedus pele    */
-/* ======================================================== */
-
-.hamburger__nav--wrapper nav a:hover {
-  opacity: 1;
-  color: #e74d71;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*    @ MEDIA QUERIES   @ MEDIA QUERIES   @ MEDIA QUERIES   @ MEDIA QUERIES   */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* ======================================================== */
-/*      MEDIA QUERIES :       iki 860 px                    */
-/* ======================================================== */
-
-@media screen and (max-width: 860px) {
-
-  .mobile__menu {
-    display: inherit;
-  }
-
-  .nav__links {
-    display: none;
-  }
-}
-
-/* ======================================================== */
-/*      MEDIA QUERIES :       iki 400 px                    */
-/* ======================================================== */
-
-@media screen and (max-width: 400px) {
-
-
-  /* ******************************************* */
-  /*        BACKGROUND - IMAGE   ( 400 px  )     */
-  /* ******************************************* */
-
-  background-image {
-    width: 30%;
-  }
-
-  /* ******************************************* */
-  /*                    HEADER      ( 400 px  )  */
-  /*       Bus per visa MOB ekrano ploti         */
-  /* ******************************************* */
-
-  header {
-    /* position: relative; */
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
     top: 0;
+    max-height: 7.7em;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--header-bgc-clr);
+    border-bottom: var( --header-bb-clr);
+    box-shadow: var(--shadow-box);
+}
+
+.logo {
+
+	cursor: pointer;
+	margin-left: 3.8em;
+    height: 4em;
+    top: 18.89px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+header nav {
+   
+   position: sticky;
+   top: 0;
+}
+
+nav {
+
+    width: 100%;
     right: 0;
     left: 0;
-  }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 1436px;
+}
 
-  /* ******************************************* */
-  /*      Gerai neprisimenu kas ka cia daro?     */
-  /* ******************************************* */
+nav li {
 
-  .fp-tableCell {
+    list-style: none;
     align-items: center;
-    justify-content: center;
-  }
-
-  /* ******************************************* */
-  /*    IMG arba nuotrauku klase    ( 400 px  )  */
-  /* ******************************************* */
-
-  .chair {
-    display: none;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 2 arba antra dalis   ( 400 px  ) */
-  /* ******************************************* */
-
-  .s2 h1 {
-    font-size: 2.8em;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 3 arba trecia dalis  ( 400 px  ) */
-  /* ******************************************* */
-
-  .s3 h1 {
-    font-size: 0.5em;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 4 arba ketvirta dalis  ( 400 px  ) */
-  /* ******************************************* */
-
-  .s4 h1 {
-    justify-content: center;
-    font-size: 3.5em;
-    text-align: center;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 5 arba penkta dalis  ( 400 px  ) */
-  /* ******************************************* */
-
-  .s5 h1 {
-    justify-content: center;
-    font-size: 3.5em;
-    text-align: center;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 6 arba sesta dalis  ( 400 px  )  */
-  /* ******************************************* */
-
-  .s6 h1 {
-    justify-content: center;
-    font-size: 3.5em;
-    text-align: center;
-  }
-
-   /* ******************************************* */
-  /*  SECTION - 7 arba septinta dalis  ( 400 px  )  */
-  /* ******************************************* */
-
-  .s7 h1 {
-    justify-content: center;
-    font-size: 3.5em;
-    text-align: center;
-  }
-  
-  /* ******************************************* */
-  /*       SECTION - 3 su H-1       ( 400 px  )  */
-  /* ******************************************* */
-
-  .s3 h1 {
-    top: 10%;
-    justify-content: center;
-    font-size: 3.5em;
-    margin: 15px;
-    text-align: center;
-  }
-
-   /* ******************************************* */
-   /*  SECTION - S-3 Description:    ( 400 px  )  */
-   /* ******************************************* */
-
-  .s3 .description {
-    padding: 1em 0 0 0;
-  }
-
-   /* ******************************************* */
-   /*  SECTION - 3 arba trecia dalis  ( 400 px  ) */
-   /* ******************************************* */
-
-  .s3 .description p:nth-child(2) {
-    background: #c5fac0;
-    margin: 4em 0 0 1em;
-  }
-
-    /* ******************************************* */
-  /*  SECTION - 3 arba trecia dalis  ( 400 px  ) */
-  /* ******************************************* */
-
-  .s3 .description p:nth-child(3) {
-    background: #dbf7e2;
-    margin: 1.3em 0 0 1em;
-  }
-
-    /* ******************************************* */
-  /*  SECTION - 3 arba trecia dalis  ( 400 px  ) */
-  /* ******************************************* */
-
-  .s3 .description p:nth-child(4) {
-    background: #f3f5da;
-    margin: 1.3em 0 0 1em;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 4 arba ketvirta dalis ( 400 px  )*/
-  /* ******************************************* */
-
-  .s4 h1 {
-    top: 1%;
-    justify-content: center;
-    font-size: 3.5em;
-    margin: 15px;
-    text-align: center;
-  }
-
-  /* ******************************************* */
-  /*     SECTION - 4 description    ( 400 px  )  */
-  /* ******************************************* */
-
-  .s4 .description {
-    padding: 1em 0 0 0;
-  }
-
-   /* ******************************************* */
-   /*    SECTION - 4 description ... ( 400 px  )  */
-   /* ******************************************* */
-
-  .s4 .description p:nth-child(2) {
-    background: #c5fac0;
-    margin: 4em 0 0 1em;
-  }
-
-   /* ******************************************* */
-   /*    SECTION - 4 description ... ( 400 px  )  */
-   /* ******************************************* */
-
-  .s4 .description p:nth-child(3) {
-    background: #dbf7e2;
-    margin: 1.3em 0 0 1em;
-  }
-
-   /* ******************************************* */
-   /*    SECTION - 4 description ... ( 400 px  )  */
-   /* ******************************************* */
-
-  .s4 .description p:nth-child(4) {
-    background: #f3f5da;
-    margin: 1.3em 0 0 1em;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 5 arba penkta dalis ( 400 px  )  */
-  /* ******************************************* */
-
-  .s5 h1 {
-    top: 1%;
-    justify-content: center;
-    font-size: 3.5em;
-    margin: 15px;
-    text-align: center;
-  }
-
-  /* ******************************************* */
-  /*    SECTION - 5 description   ( 400 px  )    */
-  /* ******************************************* */
-
-  .s5 .description {
-    padding: 1em 0 0 0;
-  }
-
-  /* ******************************************* */
-  /*    SECTION - 5 description   ( 400 px  )    */
-  /* ******************************************* */
-
-  .s5 .description p:nth-child(2) {
-    background: #c5fac0;
-    margin: 4em 0 0 1em;
-  }
-
-  /* ******************************************* */
-  /*    SECTION - 5 description   ( 400 px  )    */
-  /* ******************************************* */
-
-  .s5 .description p:nth-child(3) {
-    background: #dbf7e2;
-    margin: 1.3em 0 0 1em;
-  }
-
-  /* ******************************************* */
-  /*    SECTION - 5 description   ( 400 px  )    */
-  /* ******************************************* */
-
-  .s5 .description p:nth-child(4) {
-    background: #f3f5da;
-    margin: 1.3em 0 0 1em;
-  }
-
-  /* ******************************************* */
-  /*  SECTION - 6 arba šešta dalis ( 400 px  )   */
-  /* ******************************************* */
-
-  .s6 h1 {
-    top: 1%;
-    justify-content: center;
-    font-size: 3.5em;
-    margin: 15px;
-    text-align: center;
-  }
-  
-  .s6 .description {
-    padding: 1em 0 0 0;
-  }
-
-  /* ******************************************* */
-
-  .s6 .description p:nth-child(2) {
-    background: #c5fac0;
-    margin: 4em 0 0 1em;
-  }
-
-  .s5 .description p:nth-child(3) {
-    background: #dbf7e2;
-    margin: 1.3em 0 0 1em;
-  }
-
-  .s6 .description p:nth-child(4) {
-    background: #f3f5da;
-    margin: 1.3em 0 0 1em;
-  }
-
-   /* ******************************************* */
-   /*  SECTION - 7 arba septinta dalis ( 400 px  ) */
-   /* ******************************************* */
-
-  .s7 h1 {
-    top: 1%;
-    justify-content: center;
-    font-size: 3.5em;
-    margin: 15px;
-    text-align: center;
-  }
-  
-  .s7 .description {
-    padding: 1em 0 0 0;
-  }
-
-  /* ------------------------------------ */
-
-  .s7 .description p:nth-child(2) {
-    /* padding: 1em 0 0 0; */
-    background: #c5fac0;
-    margin: 4em 0 0 1em;
-  }
-
-  .s7 .description p:nth-child(3) {
-    /* padding: 1em 0 0 0; */
-    background: #dbf7e2;
-    margin: 1.3em 0 0 1em;
-  }
-
-  .s7 .description p:nth-child(4) {
-    /* padding: 1em 0 0 0; */
-    background: #f3f5da;
-    margin: 1.3em 0 0 1em;
-  }
-
-  /* ******************************************* */
-
-  span {
-    display: none;
-  }
-
-  /* ******************************************* */
-  .footer-distributed {
-    display: none;
-  }
 }
 
-/* *************************************************************** */
-/*                     ACTIVE klases aprasymas                     */
-/* *************************************************************** */
+.s6 {
 
-.active {
-  /* color: #081a7e; */
-  color: #c06363;
+    background-color: var(--s6-clr-bgc);
+    height: 100vh;
 }
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+img.pokalbis {
 
-/* ================================================== */
-/*   2. Footer Center - 1 / Antras langelis footerio  */
-/* ================================================== */
-
-/* .footer-center-1 {
-  width: 31%;
-  height: 73px;
-} */
-
-/* ================================================== */
-/*                  .footer-center i                  */
-/* ================================================== */
-
-/* .footer-center-1 i {
-
-  color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-} */
-
-/* ================================================== */
-/*     2.           .footer-center P                  */
-/* ================================================== */
-/* 
-.footer-center-1 p {
-
-   display: inline-block;
-   color: #2c292f;
-   font-family: 'Encode Sans', sans-serif;
-   font-weight: 700;
-} */
-
-/* ================================================== */
-/*      2.         .footer-center p SPAN              */
-/* ================================================== */
-
-/* .footer-center-1 p span {
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-} */
-
-/* ================================================== */
-/*     2.          .footer-center p A                 */
-/* ================================================== */
-
-/* .footer-center-1 p a {
-	color:  #e0ac1c;
-	text-decoration: none;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ================================================== */
-/*   3. Footer Center - 2 / Antras langelis footerio  */
-/* ================================================== */
-
- /* .footer-center-2 {
-  width: 31%;
-  height: 73px;
-} */
-
-/* ================================================== */
-/*    3.             .footer-center i                 */
-/* ================================================== */
-
- /* .footer-center-2 i {
-
-  color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-} */
-
-/* ================================================== */
-/*     3.           .footer-center P                  */
-/* ================================================== */
-
-/* .footer-center-2 p {
-
-	display: inline-block;
-   color: #2c292f;
-   font-family: 'Encode Sans', sans-serif;
-   font-weight: 700;
-} */
-
-/* ================================================== */
-/*      3.         .footer-center p SPAN              */
-/* ================================================== */
-
-/* .footer-center-2 p span {
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-} */
-
-/* ================================================== */
-/*     3.          .footer-center p A                 */
-/* ================================================== */
-
-/* .footer-center-2 p a {
-	color:  #e0ac1c;
-	text-decoration: none;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ================================================== */
-/*   4.  Footer Right  /  Trečiasis langas-blokas     */
-/* ================================================== */
-
-/* .footer-right {
-    width: 27%;
-    height: 73px;
-} */
-
-/* .footer-right p {
-    justify-content: center;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ================================================== */
-/*  4. FOOTER - SIDE  /  Paskutinis langas FOOTERyje  */
-/* ================================================== */
-
- /* .footer-side {
-    width: 23%;
-    height: 73px;
-} */
-
-/* .footer-side p {
-    justify-content: center;
-} */
-
-/* ================================================== */
-/*    4.       FOOTER - SIDE  /   Adresas             */
-/* ================================================== */
-
-/* .footer-side .adresas {
-  font-size: 0.8em;
-  color: rgba(77,77,78,0.97);
-} */
-
-/* ================================================== */
-/*     4.       FOOTER - SIDE  /   Telefonas          */
-/* ================================================== */
-
-/* .footer-side .telefonas {
-
-    font-size: 0.8em;
-    color: rgba(77,77,78,0.97);
-    margin: 0;
-} */
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ================================================== */
-/*             .footer-company- ABOUT                 */
-/* ================================================== */
-
-/* .footer-company-about {
-
-	line-height: 5px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-    margin-top: 20px;
-} */
-
-/* ================================================== */
-/*   .footer- ICONS /  Pirmo langelio SOC.iconos      */
-/* ================================================== */
-
- .footer-icons {
-
-  margin: 0.5em 0;
-  align-items: center;
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
 }
 
-/* ================================================== */
-/*   .footer-icons A /  Aprašymas SOC. įkonėlių:      */
-/* ================================================== */
+.s6 h1 {
 
- .footer-icons a {
-
-    display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #236389;
-	border-radius: 3px;
-	font-size: 20px;
-    color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-    margin: 0 0.5em;
-}
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* ================================================== */
-/*                      footer P                      */
-/* ================================================== */
-
-footer p {
-  color: #050620;
-}
-
-
-
-/* ---------------------------------------------------------------------------- */
-/*     /  Cia nesuprantu ka darome ...  /  Atrodo bus linija po uzrasu  /       */
-/* ---------------------------------------------------------------------------- */
-
-body > p:first-of-type::after {
-
-   content: '';
-   display: block;
-   position: absolute;
-   margin: 1em 0;
-   height: 2px;
-   width: 100%;
-   background: red;
-}
-
-/* ================================================== */
-/*                       H - 2                        */
-/* ================================================== */
-
-h2 {
-
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.5);
+    position: relative;
     font-weight: 400;
-    font-weight: normal;
-    font-size: 2.2em;
-    margin: 1rem 19.5rem 1rem 19.5rem;
+    font-size: 2.35rem;
+    letter-spacing: 1px;
+    color: var(--clr-h1);
 }
 
-/* ================================================== */
-/*                    /    P   /                      */
-/* ================================================== */
+.s6 h3 {
 
-/* p {
-  color: #236389;
-} */
+    color: var(--clr-h3);
+}
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/*                 ( "PSICHOTERAPEUTAS" ) Mygtukas:                     */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+.s6 h5 {
+
+    color: var(--clr-h3);
+}
+
+.s6 .tekstas-3 p {
+
+    /* color: var(--clr-tekstas-p); */
+    color: var(--clr-h5);
+}
+
+ul.nav__links {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.s6 .nav__links li {
+
+  display: inline-block;
+  padding: 0;
+}
+
+ul.nav__links a {
+
+    text-decoration: none;
+    font-size: 1.22rem;
+    color: var( --clr-ul-nav-links-a);
+}
+
+ul.nav__links li a:hover { 
+
+    color: var( --clr-ul-nav-links-a-hover);
+    transition: 0.3s;
+}
+
+.nav__links {
+
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.hamburger {
+    
+	position: absolute;
+	width: 35px;
+	height: 30px;
+    top: 15px;
+	right: 10%;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.hamburger div {
+
+	position: relative;
+	width: 35px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #0a667e;
+	margin-top: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked+.hamburger .hamburger__top {
+	transform: rotate(-45deg);
+	margin-top: 17.5px;
+}
+
+#toggle:checked+.hamburger .hamburger__meat {
+	transform: rotate(45deg);
+	margin-top: -3px;
+}
+
+#toggle:checked+.hamburger .hamburger__bottom {
+	transform: scale(0);
+}
+
+#toggle:checked+.hamburger+.hamburger__nav {
+	top: 0;
+}
+
+.hamburger__nav {
+
+	position: fixed;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: #050620;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger__nav .hamburger__nav--wrapper {
+
+	position: relative;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.hamburger__nav--items {
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hamburger__nav--items a {
+
+	margin-top: 40px;
+	color: #0c7e9b;
+	opacity: 0;
+	text-decoration: none;
+	font-size: 2rem;
+	transition: all 0.3s ease 0s;
+}
+
+.hamburger__nav--items a:first-child {
+	margin-top: 0;
+}
+
+.hamburger__nav--wrapper nav a {
+	opacity: 1;
+}
+
+.hamburger__nav--wrapper nav a:hover {
+    
+	color: #e74d71;
+}
+
+.s6 .button .placiau {
+
+    background-color: var(--clr-h3);
+}
 
 .melynas {
-  padding: 0.5em 0.8em;
-  border-radius: 27px;
-  background-color: #236389;
-  color: #fff;
-  /* font-size: 0.6rem; */
-  /* font-weight: 200; */
-  /* letter-spacing: 1px; */
+
+    padding: 0.4em 0.7em;
+    border-radius: 27px;
+    background-color: var(--clr-melynas-bgc);
+    color: var(--primary-clr);
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-right: 0;
+}
+
+a.melynas {
+
+    color: #fff !important;
 }
 
 .melynas:hover {
-  /* background-color: #405257; */
-  background-color: #465252;
-  color: #fff;
-  transition: all 0.4s ease-in-out 0.2s;
+
+    background-color: var(  --clr-melynas-hover);
+    color: var(--primary-clr);
+    transition: 0.3s;
 }
 
-/* ====================================================== */
-/*                 Laimos nuotrauka                       */
-/* ====================================================== */
+.content.flow {
 
-.laima {
-  height: 303px;
-  width: 310px;
-  position: absolute;
-  object-fit: cover;
-  margin-left: 2em;
-  margin-top: -12em;
+    margin: 3em;
+    text-align: center;
+    max-width: 1436px;
+    padding: 0;
+    margin-left: 2.8em;
+    max-height: 4.5em;
+}
+
+.grid-ish {
+
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+    max-height: 4.3em;
+}
+
+.footer-icons {
+
+	align-items: center;
+    margin: 1.1em 0;
+}
+
+.footer-icons a {
+
+	display: inline-block;
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+    background-color: var(--clr-melynas-bgc);
+	border-radius: 3px;
+    font-size: 1.563rem;
+    padding: 0 0.1rem 0  0;
+    color: var(--primary-clr);
+	text-align: center;
+	line-height: 35px;
+	margin: 0 0.3em;
+}
+
+footer p {
+
+    color: var( --clr-footer-p);
+    font-size: 1.2185em;
+}
+
+p.adresas {
+    color: var(--clr-adresas);
+}
+
+.footer-distributed {
+    
+    display: none;
 }
 
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*   Bandau @MEDIA QUERIES  :  1400 PX ,nes netelpa "psichoterapija:     */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-@media screen and (max-width: 1440px) {
-
-   /* .nav__links li {
-      padding: 0 0.5em;
-   } */
-
-    /* ---------------------------------------------------------------- */
-    /*       Tarpai tarp NAV nuorodų , reikalingi mažinant ekraną       */
-    /* ---------------------------------------------------------------- */
-
-   .nav__links li a {
-       margin: 0 1rem;
-   }
-
-   /* .s6 {
-       height: calc(100vh - 10rem);
-   } */
-} 
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*                      @MEDIA QUERIES  :  1338 PX                       */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-@media screen and (max-width: 1338px) {
-
-    .nav__links li a {
-       margin: 0 0.4rem;
-   }
-
-   /* ---------------------------------------------------- */
-   /*   Bandau nustatyti "Plačiau" mygtuką, kad "nedingtų" */
-   /* ---------------------------------------------------- */
-
-   .placiau {
-       position: relative;
-       bottom: 1rem;
-       /* font-weight: lighter; */
-   }
-}
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*                      @MEDIA QUERIES  :  1240 PX                       */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-@media screen and (max-width: 1240px) and (min-width: 1000px)  {
-
+@media screen and (min-width: 320px) { 
+    
     .s6 {
-        position: absolute;
-        /* display: block; */
-        /* height: calc(100vh - 6em); */
-        height: calc(100vh - 10em);
-        /* width: 100%; */
-    }
 
-    /* ---------------------------------------------------------------- */
-    /*       Tarpai tarp NAV nuorodų , reikalingi mažinant ekraną       */
-    /* ---------------------------------------------------------------- */
-
-    .nav__links li {
-        padding: 0 0.1em;
-    }
-
-    /* ---------------------------------------------------------------- */
-    /*   Reikia palikti, nes mažinant ekraną "peršoka" mėlynas button   */
-    /* ---------------------------------------------------------------- */
-
-    .logo {
-        margin-left: -1em;
-    }
-
-   
-
-     /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-     /*    Padarau tarpus tarp DIV'u/langeliu us nuorodom FOOTER'io:   */
-     /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-    .s6 footer  {
-
-        /* display: flex; */
-        /* position: relative; */
-        position: absolute;
-        /*  Sumazinu RAIDZIU dydi prie ( 1240 px ) */
-        font-size: 0.8rem;
         width: 100%;
-        max-width: 1440px;
-        padding-top: 1rem;
-        /* bottom: -8em; */
-        /* bottom: -4.8em; */
-        /* bottom: 0rem; */
-        /* padding-bottom: 1rem; */
-        bottom: -1.2rem;
+        overflow-x: hidden;
     }
 
-    /* -------------------------------------------------------------- */
-    /*   Pirmas FOOTER'io langelis su SOC. ikonelemis    ( 1240 px )  */
-    /* -------------------------------------------------------------- */
-
-    .s6 .footer-distributed .footer-pirmas {
-
-        display: inline-block;
-     }
-
-    /* -------------------------------------------------------------- */
-    /*              Soc. ikoneles:                     ( 1240 px )    */
-    /* -------------------------------------------------------------- */
-
-    .footer-icons {
-        justify-content: center;
-        margin: 0.1rem 0;
+    div  h1::after {
+        
+        content: "320: puslapis ruošiamas.";
+        color:rgb(247, 236, 87);
     }
 
-    /* -------------------------------------------------------------- */
-    /*              Soc. ikoneles:  PIRMAS LANGELIS    ( 1240 px )    */
-    /* -------------------------------------------------------------- */
+    .kalba {
 
-    .footer-icons .footer-pirmas {
-        margin: 0.1rem 0;
+        margin-left: 77%;
+        top: 5.5em;
     }
 
-    /* -------------------------------------------------------------- */
-     /*     Antras langelis / "VsI Ulonu psichoterapijos centras"     */
-    /* -------------------------------------------------------------- */
-
-    .s6 .footer-distributed .footer-antras {
-        display: inline-block;
-    }
-
-    /* -------------------------------------------------------------- */
-    /*  Antro langelio DIV  / "VsI Ulonu psichoterapijos centras"     */
-    /* -------------------------------------------------------------- */
-
-    .footer-antras div {
-
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-        max-height: 7em;
-        padding-top: 0em;
-    }
-
-    /* -------------------------------------------------------------- */
-    /*            Soc. ikoneles:  TREČIAS LANGELIS     ( 1240 px )    */
-    /* -------------------------------------------------------------- */
-
-    footer .footer-trecias {
-
-        display: flex;
-        flex-direction: column;
-        font-size: 1em;
-        padding-top: 0.4em;
-    }
-
-    /* -------------------------------------------------------------- */
-    /*                    Tekstas:                     ( 1240 px )    */
-    /* -------------------------------------------------------------- */
-
-    .s6 h2 {
-
-        margin: 0.5rem 6rem 3rem 5rem;
-        font-size: 2.2em;
-    }
-}
-
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*               @ MEDIA QUERIES : 1130 PX           */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-@media screen and (max-width: 1130px) {
-
-    /* --------------------------------------------- */
-    /*   H - 1: "VšĮ Ulonų psichoterapijos centras"  */
-    /* --------------------------------------------- */
-
-   .s6 h1 {
-      text-align: center;
-      margin: 4rem 34rem 3rem 1rem;
-   }
-
-    /* --------------------------------------------- */
-    /*      H - 2  tekstas po H - 1 pavadinimo       */
-    /* --------------------------------------------- */
-
-   .s6 h2 {
-
-        display: flex;
-        margin-right: 5em;
-        margin: 0.5rem 0rem 0rem 5rem;
-   }
-
-    .nav__links li a {
-       margin: 0 0.1rem;
-       font-size: 1.5rem;
-   }
-
-   /* ------------------------------------------- */
-   /*  Pastumiu LOGO i kaire puse, kad sulygiuoti */
-   /* ------------------------------------------- */
-
-   .logo {
-       margin-left: auto;
-   }
-
-   /* ------------------------------------------- */
-   /*     Paslepiu NAV nuorodas prie 1130 px      */
-   /* ------------------------------------------- */
-
-    .nav__links {
+    nav {
         display: none;
     }
-
-    /* ------------------------------------------- */
-    /*    Hamburberio MENU bruksneliai: 1130 px    */
-    /* ------------------------------------------- */
 
     .mobile__menu {
         display: inherit;
     }
 
-    /* ------------------------------------------------ */
-    /*    Bandau priderinti "Placiau" mygtuka */
-    /* ------------------------------------------------ */
-
-    .placiau {
-        /* bottom: -5rem; */
-        margin: -10%;
-        transform: translateY(10%);
-        bottom: -10rem;
+    img.logo {
+        margin-left: 1.2em;
     }
 
-    /* ---------------------------------------------------- */
-    /*  FOOTER'io juostos nuorodu teksto dydis (  1130 px ) */
-    /* ---------------------------------------------------- */
+    .hamburger__nav--items {
 
-    .s6 footer  {
-        font-size: 0.7rem;
+        line-height: 0.2;
+        background-color: var(--clr-hamburger-nav-items);
     }
 
-    /* ---------------------------------------------------- */
-    /*        FOOTER'io Ketvirtas langelis   (  1130 px )   */
-    /* ---------------------------------------------------- */
+    .description {
 
-    footer .footer-ketvirtas { 
-        width: 20%;
+        line-height: 1.5;
     }
 
-    footer .footer-pirmas { 
-        width: 20%;
+    img.pokalbis {
+
+        margin-top: -1em;
+        height: 15em;
     }
 
-    footer .footer-pirmas .footer-icons {
-        margin-top: -0.2rem;
+    .s6 .tekstas {
+        line-height: 1.5;
     }
-}
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+    .s6 h1 {
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/*               @ MEDIA QUERIES:  980 PX             */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: var(--fw-7);
+        letter-spacing: 0.01rem;
+        text-shadow: none;
+        top: -1.5em;
+        text-align: start;
+        margin-left: 1em;
+    }
 
-@media (max-width: 980px) {
+    .s6 h2 {
 
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right,
-    .footer-side {
- 
-        display: none;
+        margin-top: -2em;
+        padding: 0.3em 1em;
+        color: var(--clr-h1);
+        text-align: center;
+    }
+
+    .s6 .tekstas-1 h3 {
+
+        font-size: var(--fs-h5-mob);
+        color: var(--clr-h1);
+        font-weight: 400;
+        margin: 1em;
+    }
+
+    .s6 .button .placiau {
+
         width: 100%;
-        margin-bottom: 20px;
+        color: var(--primary-clr);
+        font-size: var( --fs-btn-pd);
+        padding: 0.4em 0;
+        border: none;
+        margin-top: 1em;
     }
 
-    .footer-center i {
+    .s6 .tekstas-2 h2 {
 
-        margin-left: 0;
-        padding: 0;
-    }
-    
-    .section .s6 h2 {
-
-        display: inline;
-        margin: 0 0.5em ;
+        margin-top: 1em;
+        text-align: center;
     }
 
-     .s6 footer {
-        display: none;
+    .s6 .tekstas-2 h3 {
+
+        margin: 1em;
     }
 
-     .s6 {
-       height: calc(100vh - 8rem);
-   }
-}
+    .s6 .tekstas-2 p {
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*               @ MEDIA QUERIES : 850 PX            */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-@media screen and (max-width: 850px) {
-
-    /* --------------------------------------------- */
-    /*   H - 1: "VšĮ Ulonų psichoterapijos centras"  */
-    /* --------------------------------------------- */
-
-    .s6 h1 {
-        line-height: 60px;
-        font-size: 3rem;
-        margin: 2rem 15rem 2rem 1rem;
+        margin: 1em;
     }
 
-    /* --------------------------------------------- */
-    /*      H - 2  tekstas po H - 1 pavadinimo       */
-    /* --------------------------------------------- */
+    .skyriausIMG img {
 
-    .s6 h2 {
-        padding: 0 0.7em;
+        width: 100%;
+        margin-top: 1em;
     }
 
-    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    /*        .s6 - H2     tekstas:       ( 850 px )    */
-    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .s6 .tekstas-3 h2 {
 
-    .s6 h2 {
-        margin: 2.5rem 2rem 1rem 1rem;
-        font-size: 2em;
-        /* font-size: 1.7em; */
+        margin-top: 1em;
     }
 
-    /* ------------------------------------------------ */
-    /*     Paslepiame prie 850 px FOOTER'io juosta      */
-    /* ------------------------------------------------ */
+    .s6 .tekstas-3 p {
 
-    footer .footer-distributed {
-        display: none;
+        margin: 1em;
+    }
+
+    .kalba {
+        margin-left: 75%;
     }
 }
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/*               @ MEDIA QUERIES:  800 PX             */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media screen and (min-width: 576px)  {
 
-@media (max-width:800px){
-    
+    .s6 {
+            padding: 0 2em;
+    }
+
+    div h1::after {
+
+        content: "576: puslapis ruošiamas.";
+        color:rgb(187, 243, 97);
+    }
+
+    .kalba {
+
+        margin-left: 80%;
+        margin-top: 9em;
+    }
+
+    .hamburger__nav--items {
+
+        line-height: 0.8;
+        background-color: rgb(38, 77, 26);
+    }
+
     header {
-        padding-top:40px;
+        height: 7.7em;
+    }
+
+    .logo {
+        height: 6em;
+    }
+
+    .hamburger {
+        top: 35px;
+    }
+
+    .button .placiau {
+
+        font-weight: normal;
+    }
+
+    .s6 .description {
+        margin: 0 2em;
     }
 
     .s6 h1 {
-        line-height: 60px;
-        font-size: 3.2rem;
-        margin: 2rem 1rem 0rem 1rem;
+
+        margin-left: 2em;
     }
 
-     .s6 h2 {
-        margin: 2.5rem 2rem 1rem 1rem;
-        font-size: 1.7em;
+    .s6 .tekstas-1 h3 {
+
+        margin-top: -0.5em;
+    }
+
+    .s6 .tekstas-2 h2 {
+
+        margin-top: 1em;
+    }
+
+    .s6 .tekstas-2 h3 {
+
+        margin-top: -0.3em;
+    }
+
+    .s6 .tekstas-2 p {
+
+        margin-top: -1em;
     }
 }
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/*               @ MEDIA QUERIES : 370 PX            */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+@media screen and (min-width: 768px) {
 
-@media screen and (min-height: 370px) {
+    img.logo {
+        margin-left: 3em;
+    }
 
-  header ul {
-    top: 0;
-  }
+    .kalba {
+        
+        margin-left: 80%;
+    }
 
-  header {
-    padding-top: 0;
-  }
+    div h1::after {
 
-  .container {
-    height: auto;
-  }
+        content: "768: puslapis ruošiamas.";
+        color: rgb(82, 236, 198);
+    }
+
+    .s6 .button .placiau {
+       
+        width: 6em;
+        float: right;
+        margin-top: 0.5em;
+    }
+
+    .s6 h1 {
+
+        margin-left: 1.45em;
+        font-size: 2rem;
+    }
+
+   .skyriausIMG img {
+
+        height: 17em;
+        object-fit: cover;
+        margin: 2em 2em auto auto;
+   }
+
+    .s6 .tekstas-2 h2 {
+
+        margin-top: 2.3em;
+    }
 }
 
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-/* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+
+@media screen and (min-width: 992px) {
+
+    div h1::after {
+
+        content: "992: puslapis ruošiamas.";
+        color: rgb(100, 176, 226);
+    }
+
+    .kalba {
+        margin-left: 89%;
+    }
+
+    .s6 .nav__links {
+        display: inherit;
+    }
+
+    nav {
+        display: inherit;
+    }
+
+    header nav a {
+
+        font-size: 1.35rem;
+    }
+    
+    .mobile__menu {
+        display: none;
+    }
+
+    .footer-distributed {
+
+        display: inherit;
+        margin-top: -9em;
+    }
+
+    img.logo {
+        margin-left: 1em;
+    }
+
+    ul.nav__links  > *:nth-child(1) {
+
+        flex: 1 1 9%;
+        min-width: 12ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(2) {
+
+        flex: 1 1 9%;
+        min-width: 8ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(3) {
+
+        flex: 1 1 7%;
+        min-width: 8ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(4) {
+
+        flex: 1 1 9%;
+        min-width: 7ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(5) {
+
+        flex: 1 1 3%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(6) {
+
+        flex: 1 1 25%;
+        min-width: 27ch;
+
+        text-align: center;
+    }
+
+
+    .content.flow {
+
+        margin: 2em 0;
+        margin: 4em 0 0 0;
+    }
+
+    .grid-ish > *:nth-child(1) {
+
+        flex: 1 1 12%;
+        min-width: 18ch;
+
+        border-right: 1px solid rgba(0,0,0,0.2);
+        height: 4.3em;
+    }
+
+    .grid-ish > *:nth-child(2) {
+
+        flex: 1 1 22.5%;
+        min-width: 29ch;
+
+        padding: 1.1em 0;
+        font-weight: bolder; 
+        color: var(--clr-footer-a);
+        border-right: 1px solid rgba(0,0,0,0.2);
+        height: 4.2em;
+    }
+
+    .grid-ish > *:nth-child(3) {
+
+        flex: 1 1 18.5%;
+        min-width: 30ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        height: 4.7em;
+    }
+
+    .grid-ish > *:nth-child(4) {
+
+        flex: 1 1 22%;
+        min-width: 7ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+    }
+
+    .grid-ish div p:nth-child(1) {
+
+        margin: 0;
+        padding-top: 0.5em;
+    }
+
+    .grid-ish div p:nth-child(2) {
+
+        margin-top: 0.1em;
+        margin: 0;
+    }
+
+    .skyriausIMG img {
+
+        height: 12em;
+        object-fit: cover;
+        width: 100%;
+        margin-top: -0.5em;
+        padding-top: 1em;
+        height: 17em;
+        display: none;
+    }
+
+    .description {
+
+        display: grid;
+
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 60% 40%;
+
+        overflow: hidden;
+        line-height: 1.4;
+    }
+
+    .s6 h1 {
+        
+        font-size: 1.9rem;
+        margin-left: 1.7em;
+        margin-top: 0.5em;
+        position: absolute;
+        margin-top: 6.5em;
+    }
+
+    .s6 .tekstas-1 {
+
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    .s6 .tekstas-2 {
+
+        grid-column: 2 / 3;
+        grid-row: auto;
+    }
+
+    .tekstas-3 {
+
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .s6 .tekstas-2 h2 { 
+
+        margin: 0;
+        color: var(  --clr-h2);
+        margin-top: -0.5em;
+    }
+    
+    .s6 .tekstas-1 h2 {
+
+        font-size: 1.5rem;
+        color: var(--clr-h2);
+        margin-top: 1em;
+        line-height: 1.3;
+    }
+
+    .s6 .tekstas-1 h3 {
+
+        color: var( --clr-h3-2);
+    }
+
+    ul.nav__links a {
+
+        font-size: 1.15rem;
+    }
+
+    .s6 .button .placiau {
+
+        padding: 0.3em 0em;
+        margin-right: 2em;
+    }
+
+    .s6 .tekstas-3 h2 {
+
+        text-align: start;
+        font-size: 1.5rem;
+        color: var( --clr-melynas-bgc);
+    }
+
+    .s6 .tekstas-2 p {
+
+        color: var( --clr-h3-2);
+        margin-top: -1.3em;
+    }
+
+    .s6 .tekstas-1 .button .placiau {
+        margin-top: -0.5em;
+    }
+
+    .s6 .tekstas-2 .button .placiau {
+        margin-top: 0em;
+    }
+
+    .s6 .tekstas-3 .button .placiau {
+        margin-top: 0em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) { 
+
+    div h1::after {
+
+        content: "1200: puslapis ruošiamas.";
+        color: rgb(221, 138, 238);
+    }
+
+    .content.flow {
+
+        padding: 0 4.1em;
+    }
+
+    .description {
+
+        display: grid;
+
+        grid-template-columns: 42% 58%;
+        grid-template-rows: 60% 40%;
+
+        margin-bottom: 0;
+        bottom: 0;
+        line-height: 1.6;
+
+        grid-template-areas: 
+
+            "first second"
+            "third fourth";
+    }
+
+    .tekstas-1 {
+
+        grid-area: first;
+    }
+
+     .tekstas-2 {
+
+        grid-area: second;
+    }
+
+    .skyriausIMG {
+
+        grid-area: third;
+    }
+
+    .tekstas-3 {
+
+        grid-area: fourth;
+    }
+
+    .skyriausIMG img {
+
+        height: 15em;
+        display: inherit;
+        margin-top: 0.5em;
+    }
+
+    .s6 .tekstas-3 h2 {
+
+        margin-top: -0.1em;
+    }
+
+    .s6 .button .placiau {
+
+        margin-top: -1em;
+    }
+
+    ul.nav__links a {
+
+    font-size: 1.25rem;
+    }
+
+    .col2 {
+
+        font-size: 1.17rem;
+    }
+
+    footer p {
+
+        font-size: 1.15rem;
+    }
+
+    .s6 .tekstas-1 h3 {
+
+        margin-top: -1.5em;
+    }
+
+    .s6 .tekstas-3 p {
+
+        margin-top: -1em;
+    }
+
+    .s6 .tekstas-2 .button .placiau {
+        margin-top: -1.4em
+    }
+
+    .grid-ish > *:nth-child(2) {
+
+        height: 3.6em;
+    }
+}
+
+
+@media screen and (min-width: 1400px) { 
+
+    .s6 {
+
+        background-color: var(--primary-clr);
+        margin: 0;
+        padding: 0;
+        height: calc(100vh - 7em);
+        overflow: visible;
+    }
+
+    header {
+
+        max-width: 1436px;
+        margin: auto;
+    }
+
+     div h1::after {
+
+        content: "1400: puslapis ruošiamas.";
+        color: rgb(248, 101, 56);
+    }
+
+    .content.flow {
+        margin-top: 1.5em;
+    }
+
+    img.logo {
+
+        margin-left: 5em;
+    }
+
+    .kalba {
+
+        margin-left: 81.7em;
+    }
+
+    .s6 .description {
+
+        display: grid;
+        height: calc(100vh - 10em);
+        margin: 0;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas: 
+
+            "first second third"
+            "first second fourth";
+    }
+
+    .s6 h1 {
+
+        font-size: 3rem;
+        margin-left: 2.1em;
+        color: var( --clr-h3-2);
+        margin-top: 5.3em;
+    }
+
+    .tekstas-1 {
+
+        grid-area: first;
+
+        border: 1px solid rgba(0,0,0,0.2);
+        z-index: 999;
+        margin: 12.8em 2.3em;
+        width: 81.3%;
+        margin-left: 4.2em;
+        height: 37.8em;
+        margin-top: 6em;
+    }
+
+    .tekstas-2 {
+
+        grid-area: second;
+
+        border: 1px solid rgba(0,0,0,0.2);
+        margin: 6.8em 0.6em;
+        width: 82%;
+        height: 43.8em;
+        margin-top: 0em;
+    }
+
+    .skyriausIMG {
+
+        grid-area: third;
+        margin: 4.7em -1.3em 0 -3em;
+        width: 28.7em;
+        height: 20em;
+    }
+
+    .skyriausIMG img {
+
+        height: 15rem;
+        margin-top: -6em;
+    }
+
+    .tekstas-3 {
+
+        grid-area: fourth;
+
+        border: 1px solid rgba(0,0,0,0.2);
+        margin: -2.7em -1.4em;
+        width: 28.7em;
+        margin-bottom: 7.7em;
+        height: 27.2em;
+        margin-left: -3em;
+    }
+
+    .s6 .tekstas-1 h2 {
+
+        margin-top: 0.9em;
+        padding: 0 1em;
+        text-align: start;
+        font-size: 1.4rem;
+        color: var( --clr-melynas-bgc);
+        line-height: 1.3;
+    }
+
+    .s6 .tekstas-1 h3 {
+
+        margin-top: -0.4em;
+        font-size: 1.088rem;
+        color: var( --clr-h3-2);
+        padding-left: 0.7em;
+        line-height: 1.3;
+    }
+
+    .s6 .tekstas-1 .button .placiau {
+
+        margin-right: 1.5em;
+        margin-top: 1.1em;
+    }
+
+    .s6 .tekstas-2 .button .placiau {
+
+        margin-right: 1.5em;
+        margin-top: 1.3em;
+    }
+
+    .s6 .tekstas-3 .button .placiau {
+
+        margin-top: 2.4em;
+        margin-right: 1.5em;
+        margin-top: 2.55em;
+    }
+
+    .s6 .tekstas-2 h2 {
+
+        text-align: start;
+        margin-top: 0.6em;
+        font-size: 1.5rem;
+        color: var( --clr-melynas-bgc);
+        margin-left: -0.2em;
+    }
+
+    .s6 .tekstas-2 h3 {
+
+        margin-top: 0em;
+        font-size: 1.125rem;
+        color: var( --clr-h3-2);
+        line-height: 1.5;
+    }
+
+    .s6 .tekstas-2 p:nth-child(3) {
+
+        margin-top: -1em;
+    }
+
+    .s6 .tekstas-2 h3:nth-child(4) {
+        
+        margin-top: -0.8em;
+    }
+
+    .s6 .tekstas-2 h3:nth-child(6) {
+        
+        margin-top: -0.8em;
+    }
+
+    .s6 .tekstas-2 h3:nth-child(8) {
+        
+        margin-top: -0.8em;
+    }
+
+    .s6 .tekstas-2 p {
+
+        margin-top: 0.1em;
+        font-size: 1.07rem;
+         color: var( --clr-melynas-bgc);
+        line-height: 1.4;
+    }
+
+    .s6 .tekstas-2 p:nth-child(5) {
+
+        margin-top: -1.2em;
+
+    }
+
+    .s6 .tekstas-2 p:nth-child(7) {
+
+        margin-top: -1em;
+    }
+
+      .s6 .tekstas-2 p:nth-child(9) {
+
+        margin-top: -1em;
+    }
+
+    .s6 .tekstas-3 h2 {
+
+        text-align: start;
+        font-size: 1.5rem;
+        color: var( --clr-melynas-bgc);
+        margin-top: 0.33em;
+    }
+
+    .s6 .tekstas-3 p {
+
+        font-size: 1.07rem;
+        color: var( --clr-melynas-bgc);
+        margin-top: -0.7em;
+
+    }
+
+    .tekstas-3 {
+
+        line-height: 1.4;
+        margin-top: -14.63em;
+    }
+
+     ul.nav__links a {
+
+        font-size: 1.4rem;
+    }
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
