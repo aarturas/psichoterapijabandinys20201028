@@ -423,7 +423,7 @@ p.adresas {
 
     div  h1::after {
         
-        content: "320";
+        content: "320: puslapis ruošiamas.";
         color:rgb(247, 236, 87);
     }
 
@@ -536,7 +536,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "576";
+        content: "576: puslapis ruošiamas.";
         color:rgb(187, 243, 97);
     }
 
@@ -608,7 +608,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "768";
+        content: "768: puslapis ruošiamas.";
         color: rgb(82, 236, 198);
     }
 
@@ -649,7 +649,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "992";
+        content: "992: puslapis ruošiamas.";
         color: rgb(100, 176, 226);
     }
 
@@ -892,7 +892,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "1200";
+        content: "1200: puslapis ruošiamas.";
         color: rgb(221, 138, 238);
     }
 
@@ -993,7 +993,7 @@ p.adresas {
 
     div h1::after {
 
-        content: "1400";
+        content: "1400: puslapis ruošiamas.";
         color: rgb(248, 101, 56);
     }
 
