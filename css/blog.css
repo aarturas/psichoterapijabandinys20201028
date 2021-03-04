@@ -496,12 +496,16 @@ p.adresas {
 
     .s6 .button .placiau {
 
-        width: 100%;
+        /* width: 100%; */
         color: var(--primary-clr);
         font-size: var( --fs-btn-pd);
         padding: 0.4em 0;
         border: none;
         margin-top: 1em;
+        /* --------------------------------- */
+        width: 21%;
+        margin-left: 38%;
+        /* --------------------------------- */
     }
 
     .s6 .tekstas-2 h2 {
@@ -580,7 +584,9 @@ p.adresas {
 
     .button .placiau {
 
-        font-weight: normal;
+        letter-spacing: 1px;
+        width: 19%;
+        margin-left: 70%;
     }
 
     .s6 .description {
