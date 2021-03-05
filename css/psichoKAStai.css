@@ -1,0 +1,1135 @@
+
+:root {
+
+    /* -------- psicho COVID-19 -------  FONTS  ---------- */
+
+     --ff:'font-family: 'Roboto Slab', serif';
+
+     --fw-2: 200;
+     --fw-3: 300;
+     --fw-4: 400;
+     --fw-5: 500;
+     --fw-6: 600;
+     --fw-7: 700;
+     --fw-8: 800;
+     --fw-9: 900;
+
+    --ff-h1-s8-0: 2.35rem;                              
+    --ff-h1-s8-3: 1.7rem;                            
+    --ff-h1-s8-7: 2rem;                                
+    --ff-h1-s8-14: 3rem;                              
+
+    --fs-a: 1.22rem;                                  
+    --fs-m: 1.4em;                                     
+    --fs-h: 2rem;                                       
+    --fs-f-a: 1.563rem;                                
+    --fs-f-p: 1.2185em;                               
+    --fs-n-a-14: 1.4rem;                               
+    --fs-h5:  1.125rem;
+    --fs-sm-1: 0.85rem;                               
+    --fs-h5-mob: 1rem;                                
+    --fs-btn-pd: 1.15rem;                             
+
+    /*  ---------------  COLOR  -------------------  */
+
+    --primary-clr: #fff;                            
+    --clr-bgc: rgba(44, 23, 23, 0.1);                
+
+    --border-b-clr: 1px solid rgba(77, 77, 78, 0.4);  
+    --header-bb-clr: 1px solid rgb(223, 219, 219);    
+    --header-bgc-clr:  rgba(255,255,255,1);           
+    --clr-header-nav-a: #4D4D4E;                      
+    --clr-ul-nav-links-a: rgba(77, 77, 78, 0.902);     
+    --clr-ul-nav-links-a-hover: #0a667e;             
+  
+    --clr-tekstas-p:  #0a667e;                        
+    --clr-h1:  #292d2e;                             
+    --clr-h2: #025b6e;
+    --clr-p: #236389;                              
+    --clr-p-2: #034958;                           
+    --clr-h5: #034958;                              
+    --clr-melynas-bgc:  #236389;                     
+    --clr-melynas-hover: #465252;                   
+    
+    --clr-adresas: rgb(41, 108, 146);               
+    --clr-gridish: #515e61;                         
+
+    --clr-footer-p: #4D4D4E;                            
+    --clr-hamburger-nav-items:  rgb(38, 77, 26);
+    --clr-footer-a:  #515e61;                       
+
+    /*  --------  SHADOW  ----------------------  */
+
+    --shadow: 0 0 1em rgba(0,0,0,0.25);
+    --shadow-box: 1px 2px 5px 0px rgb(0 0 0 / 10%);    
+}
+
+
+*, *:after, *:before {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+
+    font-family: 'Roboto Slab', serif;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.kalba {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.3rem 0.55rem;
+    width: 4.4rem;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    cursor: pointer;
+    margin-top: 5.5em;
+}
+
+.kalba img {
+
+    width: 20px;
+    height: 13px;
+    object-fit: cover;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 7.7em;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--header-bgc-clr);
+    border-bottom: var( --header-bb-clr);
+    box-shadow: var(--shadow-box);
+}
+
+.logo {
+
+	cursor: pointer;
+	margin-left: 3.8em;
+    height: 4em;
+    top: 18.89px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+header nav {
+   
+   position: sticky;
+   top: 0;
+}
+
+nav {
+
+    width: 100%;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 1436px;
+}
+
+nav li {
+
+    list-style: none;
+    align-items: center;
+}
+
+.s9 {
+
+    background-color: var(--s8-clr-bgc);
+    height: 100vh;
+}
+
+img.suolas {
+
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.s9 h1 {
+
+    position: relative;
+    font-weight: 400;
+    font-size: 2.35rem;
+    letter-spacing: 1px;
+    color: var(--clr-h1);
+}
+
+.s9 p {
+
+    color: var(--clr-p);
+}
+
+.s9 h5 {
+
+    color: var(--clr-p);
+}
+
+.s9 .tekstas-3 p {
+
+    color: var(--clr-h5);
+}
+
+ul.nav__links {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ .nav__links li {
+
+  display: inline-block;
+  padding: 0;
+}
+
+ul.nav__links a {
+
+    text-decoration: none;
+    font-size: 1.22rem;
+    color: var( --clr-ul-nav-links-a);
+}
+
+ul.nav__links li a:hover { 
+
+    color: var( --clr-ul-nav-links-a-hover);
+    transition: 0.3s;
+}
+
+.nav__links {
+
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.hamburger {
+    
+	position: absolute;
+	width: 35px;
+	height: 30px;
+    top: 15px;
+	right: 10%;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.hamburger div {
+
+	position: relative;
+	width: 35px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #0a667e;
+	margin-top: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked+.hamburger .hamburger__top {
+	transform: rotate(-45deg);
+	margin-top: 17.5px;
+}
+
+#toggle:checked+.hamburger .hamburger__meat {
+	transform: rotate(45deg);
+	margin-top: -3px;
+}
+
+#toggle:checked+.hamburger .hamburger__bottom {
+	transform: scale(0);
+}
+
+#toggle:checked+.hamburger+.hamburger__nav {
+	top: 0;
+}
+
+.hamburger__nav {
+
+	position: fixed;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: #050620;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger__nav .hamburger__nav--wrapper {
+
+	position: relative;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.hamburger__nav--items {
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hamburger__nav--items a {
+
+	margin-top: 40px;
+	color: #0c7e9b;
+	opacity: 0;
+	text-decoration: none;
+	font-size: 2rem;
+	transition: all 0.3s ease 0s;
+}
+
+.hamburger__nav--items a:first-child {
+	margin-top: 0;
+}
+
+.hamburger__nav--wrapper nav a {
+	opacity: 1;
+}
+
+.hamburger__nav--wrapper nav a:hover {
+    
+	color: #e74d71;
+}
+
+.s9 .button {
+    text-align: center;
+}
+
+.s9 .button .placiau {
+
+    background-color: var(--clr-p);
+    background-color: var(--clr-h2);
+    background-color: var(--clr-melynas-bgc);
+    cursor: pointer;
+}
+
+.melynas {
+
+    padding: 0.4em 0.7em;
+    border-radius: 27px;
+    background-color: var(--clr-melynas-bgc);
+    color: var(--primary-clr);
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-right: 0;
+}
+
+a.melynas {
+
+    color: #fff !important;
+}
+
+.melynas:hover {
+
+    background-color: var(  --clr-melynas-hover);
+    color: var(--primary-clr);
+    transition: 0.3s;
+}
+
+.content.flow {
+
+    margin: 3em;
+    text-align: center;
+    max-width: 1436px;
+    padding: 0;
+    margin-left: 2.8em;
+    max-height: 4.5em;
+}
+
+.grid-ish {
+
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+    max-height: 4.3em;
+}
+
+.footer-icons {
+
+	align-items: center;
+    margin: 1.1em 0;
+}
+
+.footer-icons a {
+
+	display: inline-block;
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+    background-color: var(--clr-melynas-bgc);
+	border-radius: 3px;
+    font-size: 1.563rem;
+    padding: 0 0.1rem 0  0;
+    color: var(--primary-clr);
+	text-align: center;
+	line-height: 35px;
+	margin: 0 0.3em;
+}
+
+footer p {
+
+    color: var( --clr-footer-p);
+    font-size: 1.2185em;
+}
+
+p.adresas {
+    color: var(--clr-adresas);
+}
+
+.footer-distributed {
+    
+    display: none;
+}
+
+
+@media screen and (min-width: 280px) {
+
+    div  h1::after {
+        
+        content: "280: Puslapis ruošiamas: Jūsų klausimai";
+        color:rgb(119, 247, 87);
+        font-size: 1.5rem;
+    }
+
+    ul.nav__links {
+
+        display: none;
+    }
+
+    .kalba {
+
+        top: 5.5em;
+        margin-left: 75%;
+    }
+
+      img.logo {
+        margin-left: 1.2em;
+    }
+
+    .hamburger__nav--items {
+
+        background-color: var(--clr-hamburger-nav-items);
+    }
+
+    .s9 h2 {
+
+        padding: 0.3em 1em;
+        color: var(--clr-h2);
+        text-align: center;
+        margin-top: -1em;
+    }
+
+    .s9 .description {
+
+        margin: 1em;
+    }
+
+       .skyriausIMG img {
+
+        width: 100%;
+    }
+
+    .s9 .button .placiau {
+
+        color: var(--primary-clr);
+        font-size: var( --fs-btn-pd);
+        border: none;
+        padding: 0.2em 0.9em;
+        margin-bottom: 1em;
+    }
+ }
+
+
+@media screen and (min-width: 320px) { 
+    
+    .s9 {
+
+        width: 100%;
+        overflow-x: hidden;
+
+            background-color: rgb(195, 241, 241);
+            background-image: radial-gradient(
+
+            circle at top right,
+            rgb(184, 246, 250),
+            #fff 50%
+        );
+    }
+
+    div  h1::after {
+        
+        content: "320: Puslapis ruošiamas: Jūsų klausimai";
+        color:rgb(247, 236, 87);
+    }
+
+    .kalba {
+
+        top: 5.5em;
+        margin-left: 75%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+    img.logo {
+        margin-left: 1.2em;
+    }
+
+    .hamburger__nav--items {
+
+        line-height: 0.2;
+        background-color: var(--clr-hamburger-nav-items);
+    }
+
+
+    .description p {
+
+        line-height: 1.6;
+        color: var( --clr-p-2);
+    }
+
+    img.pokalbis {
+
+        margin-top: -1em;
+        height: 15em;
+    }
+
+    .s9 .tekstas {
+        line-height: 1.5;
+    }
+
+    .s9 h1 {
+
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: var(--fw-7);
+        letter-spacing: 0.01rem;
+        text-shadow: none;
+        top: -1.5em;
+        text-align: start;
+        margin-left: 1em;
+    }
+
+    .s9 h2 {
+
+        padding: 0.3em 1em;
+        color: var(--clr-h2);
+        text-align: center;
+        margin-top: -1em;
+    }
+
+    .s9 .tekstas-1 p {
+
+        font-weight: 400;
+    }
+
+    .skyriausIMG img {
+
+        width: 100%;
+    }
+
+    .s9 .button .placiau {
+
+        color: var(--primary-clr);
+        font-size: var( --fs-btn-pd);
+        padding: 0.4em 0;
+        border: none;
+        margin-top: 1em;
+        padding: 0.2em 0.9em;
+        margin-bottom: 1em;
+    }
+}
+
+
+@media screen and (min-width: 576px)  {
+
+    .s9 {
+            padding: 0 2em;
+    }
+
+    div h1::after {
+
+        content: "576: Puslapis ruošiamas: Jūsų klausimai";
+        color:rgb(187, 243, 97);
+    }
+
+    .kalba {
+
+        margin-left: 80%;
+        margin-top: 9em;
+    }
+
+    .hamburger__nav--items {
+
+        line-height: 0.8;
+        background-color: rgb(38, 77, 26);
+    }
+
+    header {
+        height: 7.7em;
+    }
+
+    .logo {
+        height: 6em;
+    }
+
+    .hamburger {
+        top: 35px;
+    }
+
+    .s9 .button .placiau {
+
+        font-size: 1rem;
+        padding: 0.4em 1em;
+        letter-spacing: 1px;
+    }
+
+    .s9 .description {
+        margin: 0 2em;
+    }
+
+    .s9 h1 {
+
+        margin-left: 2em;
+    }
+
+    .s9 .tekstas-1 p {
+
+        margin-top: -0.5em;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* .s9 {
+
+        height: calc(100vh - 0em);
+    } */
+
+    img.logo {
+        margin-left: 3em;
+    }
+
+    .kalba {
+        
+        margin-left: 80%;
+    }
+
+    div h1::after {
+
+        content: "768: Puslapis ruošiamas: Jūsų klausimai";
+        color: rgb(82, 236, 198);
+    }
+
+    .s9 h1 {
+
+        margin-left: 1.45em;
+        font-size: 2rem;
+    }
+
+   .skyriausIMG img {
+
+        object-fit: cover;
+        margin: 2.3em 2em auto auto;
+        height: 17em;
+   }
+
+    .s9 .button .placiau {
+
+        float: right;
+        padding: 0.4em 1.3em;
+    }
+
+    .description p {
+
+        font-size: var(--fs-h5-mob);
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* .s9 {
+
+        background-color: rgb(100, 176, 226);
+        height: calc(100vh - 20em);
+    } */
+
+    div h1::after {
+
+        content: "992: Puslapis ruošiamas: Jūsų klausimai";
+        color: rgb(100, 176, 226);
+    }
+
+    .kalba {
+        margin-left: 89%;
+    }
+
+    .nav__links {
+        display: inherit;
+    }
+
+    nav {
+        display: inherit;
+    }
+
+    header nav a {
+
+        font-size: 1.35rem;
+    }
+    
+    .mobile__menu {
+        display: none;
+    }
+
+    .footer-distributed {
+
+        display: inherit;
+        margin-top: -9em;
+    }
+
+    img.logo {
+        margin-left: 1em;
+    }
+
+    ul.nav__links  > *:nth-child(1) {
+
+        flex: 1 1 9%;
+        min-width: 12ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(2) {
+
+        flex: 1 1 9%;
+        min-width: 8ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(3) {
+
+        flex: 1 1 7%;
+        min-width: 8ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(4) {
+
+        flex: 1 1 9%;
+        min-width: 7ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(5) {
+
+        flex: 1 1 3%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links  > *:nth-child(6) {
+
+        flex: 1 1 25%;
+        min-width: 27ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links a {
+
+        font-size: 1.15rem;
+    }
+
+    .content.flow {
+
+        /* margin: 2em 0; */
+        margin: 4em 0 0 0;
+    }
+
+    .grid-ish > *:nth-child(1) {
+
+        flex: 1 1 12%;
+        min-width: 18ch;
+
+        border-right: 1px solid rgba(0,0,0,0.2);
+        height: 4.2em;
+    }
+
+    .grid-ish > *:nth-child(2) {
+
+        flex: 1 1 22.5%;
+        min-width: 29ch;
+
+        padding: 1.1em 0;
+        font-weight: bolder; 
+        color: var(--clr-footer-a);
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .grid-ish > *:nth-child(3) {
+
+        flex: 1 1 18.5%;
+        min-width: 30ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        height: 4.7em;
+    }
+
+    .grid-ish > *:nth-child(4) {
+
+        flex: 1 1 22%;
+        min-width: 7ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+    }
+
+    .grid-ish div p:nth-child(1) {
+
+        margin: 0;
+        padding-top: 0.5em;
+    }
+
+    .grid-ish div p:nth-child(2) {
+
+        margin-top: 0.1em;
+        margin: 0;
+    }
+
+    /* .s9 .tekstas-1 .button .placiau {
+        margin-top: -0.5em;
+    } */
+
+    .s9 .description {
+
+        height: calc(100vh - 17em);
+
+        display: grid;
+
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50% 50%;
+
+        grid-template-areas: 
+
+            "first second"
+            "third third";
+
+        overflow: hidden;
+        line-height: 1.4;
+    }
+
+    .s9 .tekstas-1 {
+
+        grid-area: first;
+    }
+
+    .s9 .skyriausIMG {
+
+        grid-area: second;
+    }
+
+    .s9 .tekstas-2 {
+        
+        grid-area: third;
+    }
+
+    .s9 h1 {
+        
+        font-size: 1.9rem;
+        margin-left: 1.7em;
+        position: absolute;
+        margin-top: 6.5em;
+    }
+    
+    .s9 .tekstas-1 h2 {
+
+        font-size: 1.5rem;
+        color: var(--clr-h2);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        line-height: 1.3;
+        text-align: start;
+        margin-left: 1em;
+    }
+
+    .s9 .tekstas-1 p {
+
+        color: var( --clr-p-2);
+        padding: 0 2em;
+    }
+
+    .s9 .tekstas-2 p {
+
+        color: var( --clr-p-2);
+        margin: 4em 2em auto 3em;
+    }
+
+    .s9 .button .placiau {
+
+        padding: 0.5em 1.5em;
+        margin-top: 2em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) { 
+
+    /* .s9 {
+        background-color: rgb(221, 138, 238);
+        height: calc(100vh - 9em);
+    } */
+
+    ul.nav__links a {
+
+        font-size: 1.25rem;
+    }
+
+    div h1::after {
+
+        content: "1200: Puslapis ruošiamas: Jūsų klausimai";
+        color: rgb(221, 138, 238);
+    }
+
+    .content.flow {
+
+        padding: 0 4.1em;
+    }
+
+    .grid-ish > *:nth-child(2) {
+
+        height: 3.5em;
+        color: #4D4D4E;
+        font-size: 1.2rem;
+        padding-top: 0.9em;
+    }
+
+    .col2 {
+
+        font-size: 1.17rem;
+    }
+
+    footer p {
+
+        font-size: 1.15rem;
+    }
+
+    .s9 .description {
+
+        display: grid;
+
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 60% 40%;
+
+        grid-template-areas: 
+
+            "first second"
+            "third third";
+
+        margin: 0 5em;
+    }
+
+    .s9 .description p {
+
+        font-size: 1.1rem;
+    }
+
+    .skyriausIMG img {
+
+        height: 15em;
+        margin-top: 0.5em;
+        margin-top: 6em;
+        height: 20em;
+    }
+
+    .s9 .tekstas-1 p {
+
+        margin-top: -1.5em;
+    }
+
+    .s9 .tekstas-1 h2 {
+
+        margin-bottom: 2em;
+        margin-left: 1.2em;
+    }
+
+    .s9 .tekstas-2 p {
+
+        margin-top: 2em;
+    }
+
+    .s9 .button .placiau {
+
+        margin-top: 0em;
+        font-size: 1.1em;
+        padding: 0.4em 1.3em;
+    }
+}
+
+
+@media screen and (min-width: 1400px) { 
+
+    .s9 {
+
+        background-color: var(--primary-clr);
+        margin: 0;
+        padding: 0;
+        height: calc(100vh - 9em);
+        overflow: visible;
+    }
+
+    header {
+
+        max-width: 1436px;
+        margin: auto;
+    }
+
+    div h1::after {
+
+        content: "1400: Puslapis ruošiamas: Jūsų klausimai";
+        color: rgb(248, 101, 56);
+    }
+
+    ul.nav__links a {
+
+        font-size: 1.4rem;
+    }
+
+    .content.flow {
+        margin-top: 1.5em;
+    }
+
+    img.logo {
+
+        margin-left: 5em;
+    }
+
+    .kalba {
+
+        margin-left: 81.7em;
+    }
+
+    .s9 .description {
+
+        display: grid;
+
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 68% 32%;
+
+        grid-template-areas: 
+
+            "first second"
+            "third third";
+
+        height: calc(100vh - 19em);
+    }
+
+    .s9 .tekstas-1 h2 {
+
+        margin-top: 0.9em;
+        margin-left: -0.6em;
+        padding: 0 1em;
+        text-align: start;
+        font-weight: 600;
+        font-size: 2rem;
+        color: var( --clr-melynas-bgc);
+        line-height: 1.3;
+        letter-spacing: -0.03em;
+    }
+
+    .s9 .tekstas-1 p {
+        
+        color: var( --clr-p-2);
+        padding-left: 0.9em;
+        line-height: 1.44;
+        margin-left: -0.2em;
+        width: 35em;
+        font-size: 1.3rem;
+        margin-top: -1.7em;
+    }
+
+    .s9 .tekstas-2 p {
+
+        font-size: 1.3rem;
+        margin-left: 0.7em;
+        line-height: 1.4;
+        margin: -1em 0.5em;
+    }
+
+    .s9 .button .placiau {
+
+        margin-top: 1.5em;
+        font-size: 1.2rem;
+        padding: 0.4em 1.3em;
+
+    }
+
+    .skyriausIMG img {
+
+        margin-left: 5.4em;
+        width: 30em;
+        height: 17.5em;
+        margin-top: 6.6em;
+    }
+
+    .grid-ish > *:nth-child(2) {
+
+        font-size: 1.345rem;
+        height: 3.1em;
+
+    }
+
+    .s9 {
+    
+        margin-top: -1.4em;
+    }
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
