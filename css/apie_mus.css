@@ -254,7 +254,7 @@ p {
    height: calc(100vh - 6rem);
    max-height: calc(100vh - 9rem);
    
-   background-color: #d9dbdd;
+   /* background-color: #d9dbdd; */
 
 }
 
