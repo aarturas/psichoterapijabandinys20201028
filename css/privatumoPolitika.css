@@ -1275,7 +1275,23 @@ hr {
 
         padding-left: 0;
     }
+
+    .article {
+
+        margin-top: -4em;
+    }
 }
+
+@media (min-width: 576px) {
+
+    .article {
+
+        margin-top: -1em;
+    }
+}
+
+
+
 
 @media (min-width: 992px) {
 
