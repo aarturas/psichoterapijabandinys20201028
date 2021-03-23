@@ -1,0 +1,1285 @@
+:root {
+
+    --ff-1: font-family: 'Roboto Slab', serif;
+    --ff-2: font-family: 'PT Sans', sans-serif;
+
+    --fw-2: 200;
+    --fw-3: 300;
+    --fw-4: 400;
+    --fw-5: 500;
+    --fw-6: 600;
+    --fw-7: 700;
+    --fw-8: 800;
+    --fw-9: 900;
+
+    --ff-h1-s8-0: 2.35rem;
+    --ff-h1-s8-3: 1.7rem;
+    --ff-h1-s8-7: 2rem;
+    --ff-h1-s8-14: 3rem;
+
+    --fs-a: 1.22rem;
+    --fs-m: 1.4em;
+    --fs-h: 2rem;
+    --fs-f-a: 1.563rem;
+    --fs-f-p: 1.2185em;
+    --fs-n-a-14: 1.4rem;
+    --fs-h5: 1.125rem;
+    --fs-sm-1: 0.85rem;
+    --fs-h5-mob: 1rem;
+    --fs-btn-pd: 1.15rem;
+
+    --primary-clr: #fff;
+    --clr-bgc: rgba(44, 23, 23, 0.1);
+
+    --border-b-clr: 1px solid rgba(77, 77, 78, 0.4);
+    --header-bb-clr: 1px solid rgb(223, 219, 219);
+    --header-bgc-clr: rgba(255, 255, 255, 1);
+    --clr-header-nav-a: #4D4D4E;
+    --clr-ul-nav-links-a: rgba(77, 77, 78, 0.902);
+    --clr-ul-nav-links-a-hover: #0a667e;
+
+    --clr-tekstas-1-p: #0a667e;
+    --clr-h1: #292d2e;
+    --clr-h2: #025b6e;
+    --clr-p: #236389;
+    --clr-p-2: #034958;
+    --clr-h5: #034958;
+    --clr-melynas-bgc: #236389;
+    --clr-melynas-hover: #465252;
+
+    --clr-adresas: rgb(41, 108, 146);
+    --clr-gridish: #515e61;
+
+    --clr-footer-p: #4D4D4E;
+    --clr-hamburger-nav-items: rgb(38, 77, 26);
+    --clr-footer-a: #515e61;
+
+    /*  ------------------  SHADOW  ------------------------  */
+
+    --shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+    --shadow-box: 1px 2px 5px 0px rgb(0 0 0 / 10%);
+    /*  Header'io viso skyriaus šešėlis  */
+}
+
+/*  ----------------------  FONTS  -------------------------  */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@font-face {
+
+    font-family: 'pt_sansregular';
+    src:
+        local('../pt sans'),
+        /* local("PT Sans-pirmas"), */
+        url('PTS55F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'pt_sansbold';
+    src: url('PTS55F-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'pt_sanscaptionbold';
+    src: url('PTS55F-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+
+    font-family: 'pt_sansnarrowregular';
+    src: url('PTS55F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'pt_sansnarrowbold';
+    src: url('PTS55F-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+@font-face {
+
+    font-family: 'roboto_slab';
+    src: url('./assets/fonts/RobotoSlab-Thin-webfont.woff') format('woff');
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'roboto_slab';
+    src: url('./assets/fonts/RobotoSlab-Light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+@font-face {
+
+    font-family: 'roboto_slab';
+
+    src:
+        url('./assets/fonts/RobotoSlab-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'roboto_slab';
+    src: url('./assets/fonts/RobotoSlab-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+*,
+*::after,
+*::before {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+
+    font-family: 'Roboto slab', serif;
+    /* font-family: var(--ff-2); */
+    font-weight: 300;
+    color: #232323;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.kalba {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.3rem 0.55rem;
+    width: 4.4rem;
+    border: 1px solid rgba(77, 77, 78, 0.2);
+    cursor: pointer;
+    position: relative;
+}
+
+.kalba img {
+
+    width: 20px;
+    height: 13px;
+    object-fit: cover;
+}
+
+.logo {
+
+    cursor: pointer;
+    height: 4em;
+    top: 18.89px;
+    transition: 0.3s;
+    align-items: center;
+    max-width: 14em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+    color: #025b6e;
+    font-family: var(--ff-2);
+}
+
+h2,
+h5,
+h6 {
+
+    font-size: 1.1rem;
+}
+
+.plant-hero h1.title {
+
+    font-size: clamp(1rem, 3vh, 8rem);
+    text-align: center;
+}
+
+.container {
+
+    padding: 0 2rem;
+    max-width: 90rem;
+}
+
+.TermsAgreement {
+
+    margin: auto;
+    padding-bottom: 8em;
+}
+
+.article {
+
+    display: flex;
+    background-color: rgb(244, 252, 252);
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+    margin: auto;
+    transition: 0.3s;
+}
+
+.title {
+
+    margin: 0 0 0.5em;
+    font-weight: 800;
+    color: #025b6e;
+    line-height: 0.8;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+.sidebar {
+
+    margin: 0 0 0 2em;
+}
+
+.widget {
+
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    text-align: center;
+    max-width: 20em;
+}
+
+.author__img {
+
+    border-radius: 50%;
+    max-width: 10em;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 7.7em;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--header-bgc-clr);
+    border-bottom: var(--header-bb-clr);
+    box-shadow: var(--shadow-box);
+}
+
+header nav {
+
+    position: sticky;
+    top: 0;
+}
+
+nav {
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__links {
+
+    color: var(--clr-footer-p);
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__links a {
+
+    text-decoration: none;
+    color: var(--clr-footer-p);
+}
+
+.nav__links a:hover,
+.nav__links a:focus {
+
+    transition: transform 1s ease, text-shadow 0.9s ease;
+    color: var(--clr-melynas-bgc);
+}
+
+nav ul li .melynas {
+
+
+    padding: 0.4em 0.7em;
+    border-radius: 27px;
+    background-color: var(--clr-melynas-bgc);
+    color: var(--primary-clr);
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+a.melynas {
+
+    color: #fff !important;
+}
+
+.melynas:hover {
+
+    background-color: var(--clr-melynas-hover);
+    color: var(--primary-clr);
+    transition: 0.3s;
+}
+
+ul.nav__links {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+
+.nav__links {
+
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+ul.nav__links a {
+
+    text-decoration: none;
+    font-size: 1.22rem;
+    color: var(--clr-ul-nav-links-a);
+    font-weight: 400;
+}
+
+.hamburger__nav {
+
+    display: inherit;
+}
+
+.hamburger {
+
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    right: 10%;
+    z-index: 5;
+    cursor: pointer;
+    top: 70px;
+}
+
+.hamburger div {
+
+    position: relative;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #0a667e;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked+.hamburger .hamburger__top {
+    transform: rotate(-45deg);
+    margin-top: 17.5px;
+}
+
+#toggle:checked+.hamburger .hamburger__meat {
+    transform: rotate(45deg);
+    margin-top: -3px;
+}
+
+#toggle:checked+.hamburger .hamburger__bottom {
+    transform: scale(0);
+}
+
+#toggle:checked+.hamburger+.hamburger__nav {
+    top: 0;
+}
+
+.hamburger__nav {
+
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: #050620;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger__nav .hamburger__nav--wrapper {
+
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.hamburger__nav--items {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger__nav--items a {
+
+    margin-top: 40px;
+    color: #0c7e9b;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s ease 0s;
+}
+
+.hamburger__nav--items a:first-child {
+    margin-top: 0;
+}
+
+.hamburger__nav--wrapper nav a {
+    opacity: 1;
+}
+
+.hamburger__nav--wrapper nav a:hover {
+
+    color: #e74d71;
+}
+
+.footer-distributed {
+
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-distributed {
+
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 7.7em;
+    max-width: 1440px;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--header-bgc-clr);
+    border-bottom: var(--header-bb-clr);
+    box-shadow: var(--shadow-box);
+}
+
+.footer-distributed {
+
+    margin-top: 2em;
+    position: fixed;
+    top: 88%;
+    width: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+.grid-ish {
+
+    box-shadow: 2px 5px 15px 1px rgba(128, 128, 128, 0.2);
+}
+
+.footer-distributed .footer-icons {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.footer-distributed .col1 .footer-icons a {
+
+    justify-content: center;
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+
+    opacity: 0.8;
+}
+
+.content.flow {
+
+    text-align: center;
+    padding: 0;
+}
+
+.grid-ish {
+
+    display: flex;
+
+    flex-wrap: wrap;
+    max-height: 4.3em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--clr-ul-nav-links-a);
+    font-weight: 400;
+}
+
+.footer-icons {
+
+    margin: 1.1em 2em;
+}
+
+.footer-icons a {
+
+    display: inline-block;
+    width: 35px;
+    height: 33px;
+    cursor: pointer;
+    background-color: var(--clr-melynas-bgc);
+    border-radius: 3px;
+    font-size: 1.563rem;
+    padding: 0 0.1rem 0 0;
+    color: var(--primary-clr);
+    text-align: center;
+    line-height: 35px;
+    margin: 0 0.3em;
+}
+
+footer p {
+
+    color: var(--clr-footer-p);
+    font-size: 1.2185em;
+}
+
+p.adresas {
+
+    color: var(--clr-adresas);
+}
+
+
+@media screen and (min-width: 280px) {
+
+    body {
+
+        overflow-x: hidden;
+    }
+
+    div h1::after {
+
+        content: " * 280 * /  CIRCLE /  Puslapis ruošiamas ";
+        color: rgb(247, 138, 87);
+        font-size: 1.3rem;
+    }
+
+    section.plant-hero {
+
+        padding: 0.5em 1em;
+    }
+
+    .container {
+
+        padding: 0;
+    }
+
+    article.soup {
+
+        padding: 0 0.5em;
+    }
+
+    img.logo {
+
+        object-fit: cover;
+        height: 50px;
+        width: 120px;
+    }
+
+    .mobile__menu {
+
+        display: inherit;
+        top: -30%;
+    }
+
+    .hamburger__nav--items {
+
+        background-color: var(--clr-hamburger-nav-items);
+    }
+
+    .hamburger__nav--items {
+
+        background-color: rgb(204, 243, 64);
+        line-height: 1px;
+        width: 100vw;
+    }
+
+    .hamburger__nav--items a {
+
+        font-size: 1.4rem;
+    }
+
+    header {
+
+        max-height: 5em;
+    }
+
+    .footer-distributed {
+
+        display: none;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    main {
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(1em, 1fr) repeat(3, minmax(10rem, 30rem))
+            minmax(1em, 1fr);
+        position: relative;
+    }
+
+    header {
+
+        grid-column: 2 / 5;
+
+        display: grid;
+        grid-template-columns: subgrid;
+    }
+
+    nav {
+
+        grid-column: 2 / 5;
+    }
+
+    #fullpage {
+
+        grid-column: 2 / -1;
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+    }
+
+    main::after {
+
+        content: "";
+        position: absolute;
+        background-color: var(--primary-clr);
+        top: 0;
+        bottom: 0;
+        left: -2;
+        right: -2;
+        grid-column: 3 / 6;
+        z-index: -10;
+    }
+
+    .footer-distributed {
+
+        grid-column: 2 / 5;
+    }
+
+    .content.flow {
+
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main::after {
+
+        grid-column: 3 / 4;
+    }
+
+    .s15 img {
+
+        grid-column: 2 / 3;
+    }
+}
+
+
+@media screen and (min-width: 280px) {
+
+    ul.nav__links {
+
+        display: none;
+    }
+
+    .kalba {
+
+        margin-top: 5em;
+        margin-left: 70%;
+    }
+
+    img.logo {
+
+        margin-left: 1.2em;
+    }
+
+    .hamburger__nav--items {
+
+        background-color: var(--clr-hamburger-nav-items);
+    }
+
+    .s9 h2 {
+
+        padding: 0.3em 1em;
+        color: var(--clr-h2);
+        text-align: center;
+        margin-top: -1em;
+    }
+
+    .s9 .description {
+
+        margin: 1em;
+    }
+
+    .skyriausIMG img {
+
+        width: 100%;
+    }
+
+    .s9 .button .placiau {
+
+        color: var(--primary-clr);
+        font-size: var(--fs-btn-pd);
+        border: none;
+        padding: 0.2em 0.9em;
+        margin-bottom: 1em;
+    }
+
+    .hamburger {
+
+        margin-top: -4em;
+    }
+
+    h2.article-title {
+
+        color: var(--clr-h2);
+    }
+
+    article p {
+
+        padding: 0 0.3em;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #0a667e;
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+
+    div h1::after {
+
+        content: "* 320 * / CIRCLE / Puslapis ruošiamas ";
+        color: rgb(247, 236, 87);
+    }
+
+    .kalba {
+
+        z-index: 1;
+        top: 1em;
+        left: 10%;
+    }
+
+    .hamburger__nav--items {
+
+        line-height: 0.2;
+        background-color: var(--clr-hamburger-nav-items);
+        width: 100vw;
+    }
+
+    .hamburger {
+
+        margin-top: -65px;
+    }
+
+    nav.hamburger__nav--items .kalba {
+
+        display: none;
+    }
+
+    .mobile__menu {
+        display: inherit;
+    }
+
+    img.logo {
+        margin-left: 1.2em;
+    }
+
+    .s15 img.dulapu {
+
+        shape-outside: circle(50%);
+        shape-margin: 1rem;
+    }
+
+    h2.article-title {
+
+        margin-left: 1.2em;
+    }
+
+    article p {
+
+        padding: 0 2em;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+
+    div h1::after {
+
+        content: "* 576 * / CIRCLE / Puslapis ruošiamas ";
+        color: rgb(187, 243, 97);
+    }
+
+    .logo {
+
+        height: 6em;
+        min-height: 4em;
+    }
+
+    img.logo {
+
+        height: 6em;
+        width: auto;
+    }
+
+    .kalba {
+
+        left: 10%;
+        top: 3em;
+    }
+
+    header {
+
+        max-height: 7.6em;
+    }
+
+    .hamburger {
+
+        margin-top: -40px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    div h1::after {
+
+        content: " * 768 * / CIRCLE / Puslapis ruošiamas  ";
+        color: rgb(82, 236, 198);
+    }
+
+    img.logo {
+
+        margin-left: 3em;
+    }
+
+    .kalba {
+
+        left: 18%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    div h1::after {
+
+        content: " * 992 * / CIRCLE / Puslapis ruošiamas  ";
+        color: rgb(100, 176, 226);
+    }
+
+    .kalba {
+
+        margin-left: 70%;
+    }
+
+    ul.nav__links {
+
+        display: inherit;
+    }
+
+    .mobile__menu {
+
+        display: none;
+    }
+
+    ul.nav__links>*:nth-child(1) {
+
+        flex: 1 1 2%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links>*:nth-child(2) {
+
+        flex: 1 1 2%;
+        min-width: 4ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links>*:nth-child(3) {
+
+        flex: 1 1 1%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links>*:nth-child(4) {
+
+        flex: 1 1 2%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links>*:nth-child(5) {
+
+        flex: 1 1 1%;
+        min-width: 3ch;
+
+        text-align: center;
+    }
+
+    ul.nav__links>*:nth-child(6) {
+
+        flex: 1 1 40%;
+        min-width: 6ch;
+
+        margin-right: -24%;
+    }
+
+    ul.nav__links a {
+
+        font-size: 1.15rem;
+    }
+
+    .content.flow {
+
+        margin: 2em;
+    }
+
+    .grid-ish>*:nth-child(1) {
+
+        flex: 1 1 12%;
+        min-width: 4ch;
+
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        height: 4.2em;
+    }
+
+    .grid-ish>*:nth-child(2) {
+
+        flex: 1 1 22.5%;
+        min-width: 19ch;
+
+        color: var(--clr-footer-a);
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    }
+
+    .grid-ish>*:nth-child(2) p {
+
+        font-weight: 600;
+    }
+
+    .grid-ish>*:nth-child(3) {
+
+        flex: 1 1 28%;
+        min-width: 20ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        height: 4.7em;
+    }
+
+    .grid-ish>*:nth-child(4) {
+
+        flex: 1 1 22%;
+        min-width: 7ch;
+
+        color: var(--clr-footer-a);
+        font-size: 0.9rem;
+    }
+
+    .grid-ish div p:nth-child(1) {
+
+        margin: 0;
+        padding-top: 0.5em;
+    }
+
+    .grid-ish div p:nth-child(2) {
+
+        margin-top: 0.1em;
+        margin: 0;
+    }
+
+    .footer-distributed {
+
+        display: inherit;
+    }
+
+    nav ul li .melynas {
+
+        margin-right: 5em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    ul.nav__links a {
+
+        font-size: 1.25rem;
+    }
+
+    div h1::after {
+
+        content: " * 1200 * / CIRCLE / Puslapis ruošiamas ";
+        color: rgb(221, 138, 238);
+    }
+
+    .grid-ish>*:nth-child(2) {
+
+        height: 3.5em;
+        color: #4D4D4E;
+        font-size: 1.2rem;
+        padding-top: 0.6em;
+        font-weight: 500;
+    }
+
+    .col2 {
+
+        font-size: 1.17rem;
+    }
+
+    footer p {
+
+        font-size: 1.15rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .kalba {
+
+        margin-left: 73%;
+    }
+
+    div h1::after {
+
+        content: " * 1400 * / CIRCLE / Puslapis ruošiamas ";
+        color: rgb(248, 101, 56);
+    }
+
+    ul.nav__links a {
+
+        font-size: 1.4rem;
+    }
+
+    article.soup p {
+
+        font-size: var(--fs-h5);
+    }
+
+    .grid-ish>*:nth-child(2) p {
+
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+}
+
+article.soup p {
+
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    max-width: 30ch;
+}
+
+article.soup {
+
+    font-size: clamp(0.8rem, 5vw, 1rem);
+
+}
+
+
+.table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,.table th {
+
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+
+    background-color: darkblue;
+    color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+
+    background-color: #dcf1f0;
+}
+
+
+hr {
+
+    width: 90%;
+    height: 2px;
+
+    margin: 1em;
+    color: #025b6e;
+    background-color: #034958;
+    opacity: 0.2;
+}
+
+.description {
+    max-width: 1440px;
+}
+
+
+@media (max-width: 700px) {
+
+    .table thead {
+
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+
+        margin-bottom: 15px;
+    }
+
+    .table td {
+
+        text-align: right;
+        padding-left: 45%;
+        padding-left: 40%;
+        text-align: right;
+        position: relative;
+
+        color: var(--clr-p);
+    }
+
+    .table td::before {
+
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 37%;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .table td {
+
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    ol.main {
+
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    h2 {
+
+        text-align: center;
+    }
+
+    h3 {
+
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    h6 {
+
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 280px) {
+
+    .main ol {
+
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+
+    ol.main {
+
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/*  *************************************************************** */
