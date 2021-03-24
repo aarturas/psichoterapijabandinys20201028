@@ -411,6 +411,63 @@ p.adresas {
     display: none;
 }
 
+@media screen and (min-width: 280px) {
+
+    div  h1::after {
+        
+        content: "280: Puslapis ruošiamas: Jūsų klausimai";
+        color:rgb(119, 247, 87);
+        font-size: 1.5rem;
+    }
+
+    ul.nav__links {
+
+        display: none;
+    }
+
+    .kalba {
+
+        top: 5.5em;
+        margin-left: 75%;
+    }
+
+      img.logo {
+        margin-left: 1.2em;
+    }
+
+    .hamburger__nav--items {
+
+        background-color: var(--clr-hamburger-nav-items);
+    }
+
+    .s6 h2 {
+
+        padding: 0.3em 1em;
+        color: var(--clr-h2);
+        text-align: center;
+        margin-top: -1em;
+    }
+
+    .s6 .description {
+
+        margin: 1em;
+    }
+
+       .skyriausIMG img {
+
+        width: 100%;
+    }
+
+    .s6 .button .placiau {
+
+        color: var(--primary-clr);
+        font-size: var( --fs-btn-pd);
+        border: none;
+        padding: 0.2em 0.9em;
+        margin-bottom: 1em;
+    }
+ }
+
 
 @media screen and (min-width: 320px) { 
     
